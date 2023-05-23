@@ -1,0 +1,804 @@
+[28-Mar-2023 14:36:13 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php:64
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php on line 64
+[28-Mar-2023 14:36:13 Asia/Kuala_Lumpur] PHP Stack trace:
+[28-Mar-2023 14:36:13 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php:64\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php'; protected $line = 64; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php on line <i>64</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcol'... }) Unknown:0
+[28-Mar-2023 15:31:09 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php:71
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php on line 71
+[28-Mar-2023 15:31:09 Asia/Kuala_Lumpur] PHP Stack trace:
+[28-Mar-2023 15:31:09 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php:71\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php'; protected $line = 71; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php on line <i>71</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcolor=\'#eeeee'... }) Unknown:0
+[29-Mar-2023 08:19:37 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php:64
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php on line 64
+[29-Mar-2023 08:19:37 Asia/Kuala_Lumpur] PHP Stack trace:
+[29-Mar-2023 08:19:37 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php:64\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php'; protected $line = 64; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php on line <i>64</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcol'... }) Unknown:0
+[29-Mar-2023 09:03:22 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[29-Mar-2023 09:03:22 Asia/Kuala_Lumpur] PHP Stack trace:
+[29-Mar-2023 09:03:22 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[29-Mar-2023 09:03:22 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[29-Mar-2023 09:03:22 Asia/Kuala_Lumpur] PHP Stack trace:
+[29-Mar-2023 09:03:22 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[29-Mar-2023 09:03:22 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[29-Mar-2023 09:03:22 Asia/Kuala_Lumpur] PHP Stack trace:
+[29-Mar-2023 09:03:22 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[29-Mar-2023 09:03:22 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[29-Mar-2023 09:03:22 Asia/Kuala_Lumpur] PHP Stack trace:
+[29-Mar-2023 09:03:22 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[29-Mar-2023 09:49:54 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php:64
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php on line 64
+[29-Mar-2023 09:49:54 Asia/Kuala_Lumpur] PHP Stack trace:
+[29-Mar-2023 09:49:54 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php:64\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php'; protected $line = 64; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php on line <i>64</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcol'... }) Unknown:0
+[29-Mar-2023 10:49:41 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[29-Mar-2023 10:49:41 Asia/Kuala_Lumpur] PHP Stack trace:
+[29-Mar-2023 10:49:41 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[29-Mar-2023 10:49:41 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[29-Mar-2023 10:49:41 Asia/Kuala_Lumpur] PHP Stack trace:
+[29-Mar-2023 10:49:41 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[29-Mar-2023 10:49:41 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[29-Mar-2023 10:49:41 Asia/Kuala_Lumpur] PHP Stack trace:
+[29-Mar-2023 10:49:41 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[29-Mar-2023 10:49:41 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[29-Mar-2023 10:49:41 Asia/Kuala_Lumpur] PHP Stack trace:
+[29-Mar-2023 10:49:41 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[29-Mar-2023 13:00:23 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[29-Mar-2023 13:00:23 Asia/Kuala_Lumpur] PHP Stack trace:
+[29-Mar-2023 13:00:23 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[29-Mar-2023 13:00:23 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[29-Mar-2023 13:00:23 Asia/Kuala_Lumpur] PHP Stack trace:
+[29-Mar-2023 13:00:23 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[29-Mar-2023 13:00:23 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[29-Mar-2023 13:00:23 Asia/Kuala_Lumpur] PHP Stack trace:
+[29-Mar-2023 13:00:23 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[29-Mar-2023 13:00:23 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[29-Mar-2023 13:00:23 Asia/Kuala_Lumpur] PHP Stack trace:
+[29-Mar-2023 13:00:23 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[29-Mar-2023 17:19:56 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php:64
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php on line 64
+[29-Mar-2023 17:19:56 Asia/Kuala_Lumpur] PHP Stack trace:
+[29-Mar-2023 17:19:56 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php:64\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php'; protected $line = 64; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php on line <i>64</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcol'... }) Unknown:0
+[30-Mar-2023 00:38:06 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php:64
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php on line 64
+[30-Mar-2023 00:38:06 Asia/Kuala_Lumpur] PHP Stack trace:
+[30-Mar-2023 00:38:06 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php:64\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php'; protected $line = 64; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php on line <i>64</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcol'... }) Unknown:0
+[30-Mar-2023 00:41:02 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[30-Mar-2023 00:41:02 Asia/Kuala_Lumpur] PHP Stack trace:
+[30-Mar-2023 00:41:02 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[30-Mar-2023 00:41:02 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[30-Mar-2023 00:41:02 Asia/Kuala_Lumpur] PHP Stack trace:
+[30-Mar-2023 00:41:02 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[30-Mar-2023 00:41:02 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[30-Mar-2023 00:41:02 Asia/Kuala_Lumpur] PHP Stack trace:
+[30-Mar-2023 00:41:02 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[30-Mar-2023 00:41:02 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[30-Mar-2023 00:41:02 Asia/Kuala_Lumpur] PHP Stack trace:
+[30-Mar-2023 00:41:02 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[30-Mar-2023 02:52:45 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[30-Mar-2023 02:52:45 Asia/Kuala_Lumpur] PHP Stack trace:
+[30-Mar-2023 02:52:45 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[30-Mar-2023 02:52:45 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[30-Mar-2023 02:52:45 Asia/Kuala_Lumpur] PHP Stack trace:
+[30-Mar-2023 02:52:45 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[30-Mar-2023 02:52:45 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[30-Mar-2023 02:52:45 Asia/Kuala_Lumpur] PHP Stack trace:
+[30-Mar-2023 02:52:45 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[30-Mar-2023 02:52:45 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[30-Mar-2023 02:52:45 Asia/Kuala_Lumpur] PHP Stack trace:
+[30-Mar-2023 02:52:45 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[30-Mar-2023 09:13:33 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php:64
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php on line 64
+[30-Mar-2023 09:13:33 Asia/Kuala_Lumpur] PHP Stack trace:
+[30-Mar-2023 09:13:33 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php:64\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php'; protected $line = 64; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php on line <i>64</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcol'... }) Unknown:0
+[30-Mar-2023 17:22:48 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php:64
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php on line 64
+[30-Mar-2023 17:22:48 Asia/Kuala_Lumpur] PHP Stack trace:
+[30-Mar-2023 17:22:48 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php:64\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php'; protected $line = 64; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php on line <i>64</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcol'... }) Unknown:0
+[31-Mar-2023 00:21:14 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php:64
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php on line 64
+[31-Mar-2023 00:21:14 Asia/Kuala_Lumpur] PHP Stack trace:
+[31-Mar-2023 00:21:14 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php:64\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php'; protected $line = 64; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php on line <i>64</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcol'... }) Unknown:0
+[31-Mar-2023 06:51:08 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php:64
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php on line 64
+[31-Mar-2023 06:51:08 Asia/Kuala_Lumpur] PHP Stack trace:
+[31-Mar-2023 06:51:08 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php:64\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php'; protected $line = 64; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php on line <i>64</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcol'... }) Unknown:0
+[31-Mar-2023 10:38:44 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php:71
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php on line 71
+[31-Mar-2023 10:38:44 Asia/Kuala_Lumpur] PHP Stack trace:
+[31-Mar-2023 10:38:44 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php:71\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php'; protected $line = 71; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php on line <i>71</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcolor=\'#eeeee'... }) Unknown:0
+[31-Mar-2023 11:40:41 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php:64
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php on line 64
+[31-Mar-2023 11:40:41 Asia/Kuala_Lumpur] PHP Stack trace:
+[31-Mar-2023 11:40:41 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php:64\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php'; protected $line = 64; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php on line <i>64</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcol'... }) Unknown:0
+[31-Mar-2023 17:32:23 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php:64
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php on line 64
+[31-Mar-2023 17:32:23 Asia/Kuala_Lumpur] PHP Stack trace:
+[31-Mar-2023 17:32:23 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php:64\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php'; protected $line = 64; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php on line <i>64</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcol'... }) Unknown:0
+[01-Apr-2023 06:44:53 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php:64
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php on line 64
+[01-Apr-2023 06:44:53 Asia/Kuala_Lumpur] PHP Stack trace:
+[01-Apr-2023 06:44:53 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php:64\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php'; protected $line = 64; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php on line <i>64</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcol'... }) Unknown:0
+[02-Apr-2023 17:19:24 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php:64
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php on line 64
+[02-Apr-2023 17:19:24 Asia/Kuala_Lumpur] PHP Stack trace:
+[02-Apr-2023 17:19:24 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php:64\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php'; protected $line = 64; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php on line <i>64</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcol'... }) Unknown:0
+[02-Apr-2023 18:39:29 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php:64
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php on line 64
+[02-Apr-2023 18:39:29 Asia/Kuala_Lumpur] PHP Stack trace:
+[02-Apr-2023 18:39:29 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php:64\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php'; protected $line = 64; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php on line <i>64</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcol'... }) Unknown:0
+[02-Apr-2023 19:11:59 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php:64
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php on line 64
+[02-Apr-2023 19:11:59 Asia/Kuala_Lumpur] PHP Stack trace:
+[02-Apr-2023 19:11:59 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php:64\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php'; protected $line = 64; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php on line <i>64</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcol'... }) Unknown:0
+[03-Apr-2023 08:01:40 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php:71
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php on line 71
+[03-Apr-2023 08:01:40 Asia/Kuala_Lumpur] PHP Stack trace:
+[03-Apr-2023 08:01:40 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php:71\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php'; protected $line = 71; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php on line <i>71</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcolor=\'#eeeee'... }) Unknown:0
+[03-Apr-2023 18:47:45 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php:64
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php on line 64
+[03-Apr-2023 18:47:45 Asia/Kuala_Lumpur] PHP Stack trace:
+[03-Apr-2023 18:47:45 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php:64\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php'; protected $line = 64; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php on line <i>64</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcol'... }) Unknown:0
+[03-Apr-2023 20:46:10 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php:64
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php on line 64
+[03-Apr-2023 20:46:10 Asia/Kuala_Lumpur] PHP Stack trace:
+[03-Apr-2023 20:46:10 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php:64\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php'; protected $line = 64; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php on line <i>64</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcol'... }) Unknown:0
+[05-Apr-2023 22:24:15 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php:71
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php on line 71
+[05-Apr-2023 22:24:15 Asia/Kuala_Lumpur] PHP Stack trace:
+[05-Apr-2023 22:24:15 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php:71\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php'; protected $line = 71; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php on line <i>71</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcolor=\'#eeeee'... }) Unknown:0
+[06-Apr-2023 10:43:49 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[06-Apr-2023 10:43:49 Asia/Kuala_Lumpur] PHP Stack trace:
+[06-Apr-2023 10:43:49 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[06-Apr-2023 10:43:49 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[06-Apr-2023 10:43:49 Asia/Kuala_Lumpur] PHP Stack trace:
+[06-Apr-2023 10:43:49 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[06-Apr-2023 10:43:49 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[06-Apr-2023 10:43:49 Asia/Kuala_Lumpur] PHP Stack trace:
+[06-Apr-2023 10:43:49 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[06-Apr-2023 10:43:49 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[06-Apr-2023 10:43:49 Asia/Kuala_Lumpur] PHP Stack trace:
+[06-Apr-2023 10:43:49 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[07-Apr-2023 02:57:10 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php:71
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php on line 71
+[07-Apr-2023 02:57:10 Asia/Kuala_Lumpur] PHP Stack trace:
+[07-Apr-2023 02:57:10 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php:71\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php'; protected $line = 71; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php on line <i>71</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcolor=\'#eeeee'... }) Unknown:0
+[08-Apr-2023 00:08:20 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[08-Apr-2023 00:08:20 Asia/Kuala_Lumpur] PHP Stack trace:
+[08-Apr-2023 00:08:20 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[08-Apr-2023 00:08:20 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[08-Apr-2023 00:08:20 Asia/Kuala_Lumpur] PHP Stack trace:
+[08-Apr-2023 00:08:20 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[08-Apr-2023 00:08:20 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[08-Apr-2023 00:08:20 Asia/Kuala_Lumpur] PHP Stack trace:
+[08-Apr-2023 00:08:20 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[08-Apr-2023 00:08:20 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[08-Apr-2023 00:08:20 Asia/Kuala_Lumpur] PHP Stack trace:
+[08-Apr-2023 00:08:20 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[08-Apr-2023 00:33:19 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[08-Apr-2023 00:33:19 Asia/Kuala_Lumpur] PHP Stack trace:
+[08-Apr-2023 00:33:19 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[08-Apr-2023 00:33:19 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[08-Apr-2023 00:33:19 Asia/Kuala_Lumpur] PHP Stack trace:
+[08-Apr-2023 00:33:19 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[08-Apr-2023 00:33:19 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[08-Apr-2023 00:33:19 Asia/Kuala_Lumpur] PHP Stack trace:
+[08-Apr-2023 00:33:19 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[08-Apr-2023 00:33:19 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[08-Apr-2023 00:33:19 Asia/Kuala_Lumpur] PHP Stack trace:
+[08-Apr-2023 00:33:19 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[08-Apr-2023 04:31:23 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[08-Apr-2023 04:31:23 Asia/Kuala_Lumpur] PHP Stack trace:
+[08-Apr-2023 04:31:23 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[08-Apr-2023 04:31:23 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[08-Apr-2023 04:31:23 Asia/Kuala_Lumpur] PHP Stack trace:
+[08-Apr-2023 04:31:23 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[08-Apr-2023 04:31:23 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[08-Apr-2023 04:31:23 Asia/Kuala_Lumpur] PHP Stack trace:
+[08-Apr-2023 04:31:23 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[08-Apr-2023 04:31:23 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[08-Apr-2023 04:31:23 Asia/Kuala_Lumpur] PHP Stack trace:
+[08-Apr-2023 04:31:23 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[08-Apr-2023 19:25:26 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php:71
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php on line 71
+[08-Apr-2023 19:25:26 Asia/Kuala_Lumpur] PHP Stack trace:
+[08-Apr-2023 19:25:26 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php:71\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php'; protected $line = 71; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php on line <i>71</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcolor=\'#eeeee'... }) Unknown:0
+[09-Apr-2023 02:32:30 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php:71
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php on line 71
+[09-Apr-2023 02:32:30 Asia/Kuala_Lumpur] PHP Stack trace:
+[09-Apr-2023 02:32:30 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php:71\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php'; protected $line = 71; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php on line <i>71</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcolor=\'#eeeee'... }) Unknown:0
+[09-Apr-2023 08:01:43 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php:112
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php on line 112
+[09-Apr-2023 08:01:43 Asia/Kuala_Lumpur] PHP Stack trace:
+[09-Apr-2023 08:01:43 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Cannot use object of type stdClass as array'; private $string = 'Error: Cannot use object of type stdClass as array in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php:112\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php'; protected $line = 112; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Cannot use object of type stdClass as array in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php on line <i>112</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bg'... }) Unknown:0
+[10-Apr-2023 02:34:09 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php:71
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php on line 71
+[10-Apr-2023 02:34:09 Asia/Kuala_Lumpur] PHP Stack trace:
+[10-Apr-2023 02:34:09 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php:71\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php'; protected $line = 71; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php on line <i>71</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcolor=\'#eeeee'... }) Unknown:0
+[11-Apr-2023 02:42:25 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php:71
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php on line 71
+[11-Apr-2023 02:42:25 Asia/Kuala_Lumpur] PHP Stack trace:
+[11-Apr-2023 02:42:25 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php:71\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php'; protected $line = 71; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php on line <i>71</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcolor=\'#eeeee'... }) Unknown:0
+[11-Apr-2023 15:24:22 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php:112
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php on line 112
+[11-Apr-2023 15:24:22 Asia/Kuala_Lumpur] PHP Stack trace:
+[11-Apr-2023 15:24:22 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Cannot use object of type stdClass as array'; private $string = 'Error: Cannot use object of type stdClass as array in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php:112\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php'; protected $line = 112; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Cannot use object of type stdClass as array in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php on line <i>112</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bg'... }) Unknown:0
+[12-Apr-2023 09:17:27 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php:112
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php on line 112
+[12-Apr-2023 09:17:27 Asia/Kuala_Lumpur] PHP Stack trace:
+[12-Apr-2023 09:17:27 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Cannot use object of type stdClass as array'; private $string = 'Error: Cannot use object of type stdClass as array in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php:112\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php'; protected $line = 112; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Cannot use object of type stdClass as array in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php on line <i>112</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bg'... }) Unknown:0
+[12-Apr-2023 15:37:26 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php:64
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php on line 64
+[12-Apr-2023 15:37:26 Asia/Kuala_Lumpur] PHP Stack trace:
+[12-Apr-2023 15:37:26 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php:64\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php'; protected $line = 64; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php on line <i>64</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcol'... }) Unknown:0
+[12-Apr-2023 18:05:32 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php:112
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php on line 112
+[12-Apr-2023 18:05:32 Asia/Kuala_Lumpur] PHP Stack trace:
+[12-Apr-2023 18:05:32 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Cannot use object of type stdClass as array'; private $string = 'Error: Cannot use object of type stdClass as array in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php:112\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php'; protected $line = 112; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Cannot use object of type stdClass as array in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php on line <i>112</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bg'... }) Unknown:0
+[12-Apr-2023 18:05:52 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php:112
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php on line 112
+[12-Apr-2023 18:05:52 Asia/Kuala_Lumpur] PHP Stack trace:
+[12-Apr-2023 18:05:52 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Cannot use object of type stdClass as array'; private $string = 'Error: Cannot use object of type stdClass as array in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php:112\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php'; protected $line = 112; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Cannot use object of type stdClass as array in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php on line <i>112</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bg'... }) Unknown:0
+[12-Apr-2023 18:06:21 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php:112
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php on line 112
+[12-Apr-2023 18:06:21 Asia/Kuala_Lumpur] PHP Stack trace:
+[12-Apr-2023 18:06:21 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Cannot use object of type stdClass as array'; private $string = 'Error: Cannot use object of type stdClass as array in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php:112\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php'; protected $line = 112; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Cannot use object of type stdClass as array in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php on line <i>112</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bg'... }) Unknown:0
+[14-Apr-2023 02:09:50 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php:71
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php on line 71
+[14-Apr-2023 02:09:50 Asia/Kuala_Lumpur] PHP Stack trace:
+[14-Apr-2023 02:09:50 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php:71\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php'; protected $line = 71; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php on line <i>71</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcolor=\'#eeeee'... }) Unknown:0
+[16-Apr-2023 10:03:24 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php:112
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php on line 112
+[16-Apr-2023 10:03:24 Asia/Kuala_Lumpur] PHP Stack trace:
+[16-Apr-2023 10:03:24 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Cannot use object of type stdClass as array'; private $string = 'Error: Cannot use object of type stdClass as array in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php:112\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php'; protected $line = 112; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Cannot use object of type stdClass as array in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php on line <i>112</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bg'... }) Unknown:0
+[17-Apr-2023 08:17:12 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php:112
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php on line 112
+[17-Apr-2023 08:17:12 Asia/Kuala_Lumpur] PHP Stack trace:
+[17-Apr-2023 08:17:12 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Cannot use object of type stdClass as array'; private $string = 'Error: Cannot use object of type stdClass as array in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php:112\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php'; protected $line = 112; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Cannot use object of type stdClass as array in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php on line <i>112</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bg'... }) Unknown:0
+[17-Apr-2023 08:17:20 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php:112
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php on line 112
+[17-Apr-2023 08:17:20 Asia/Kuala_Lumpur] PHP Stack trace:
+[17-Apr-2023 08:17:20 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Cannot use object of type stdClass as array'; private $string = 'Error: Cannot use object of type stdClass as array in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php:112\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php'; protected $line = 112; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Cannot use object of type stdClass as array in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php on line <i>112</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bg'... }) Unknown:0
+[17-Apr-2023 12:54:19 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php:71
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php on line 71
+[17-Apr-2023 12:54:19 Asia/Kuala_Lumpur] PHP Stack trace:
+[17-Apr-2023 12:54:19 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php:71\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php'; protected $line = 71; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php on line <i>71</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcolor=\'#eeeee'... }) Unknown:0
+[17-Apr-2023 12:54:25 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php:71
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php on line 71
+[17-Apr-2023 12:54:25 Asia/Kuala_Lumpur] PHP Stack trace:
+[17-Apr-2023 12:54:25 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php:71\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php'; protected $line = 71; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php on line <i>71</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcolor=\'#eeeee'... }) Unknown:0
+[18-Apr-2023 03:10:24 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php:71
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php on line 71
+[18-Apr-2023 03:10:24 Asia/Kuala_Lumpur] PHP Stack trace:
+[18-Apr-2023 03:10:24 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php:71\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php'; protected $line = 71; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php on line <i>71</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcolor=\'#eeeee'... }) Unknown:0
+[18-Apr-2023 03:20:51 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php:64
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php on line 64
+[18-Apr-2023 03:20:51 Asia/Kuala_Lumpur] PHP Stack trace:
+[18-Apr-2023 03:20:51 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php:64\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php'; protected $line = 64; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php on line <i>64</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcol'... }) Unknown:0
+[19-Apr-2023 06:40:58 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php:112
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php on line 112
+[19-Apr-2023 06:40:58 Asia/Kuala_Lumpur] PHP Stack trace:
+[19-Apr-2023 06:40:58 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Cannot use object of type stdClass as array'; private $string = 'Error: Cannot use object of type stdClass as array in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php:112\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php'; protected $line = 112; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Cannot use object of type stdClass as array in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php on line <i>112</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bg'... }) Unknown:0
+[19-Apr-2023 06:41:08 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php:112
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php on line 112
+[19-Apr-2023 06:41:08 Asia/Kuala_Lumpur] PHP Stack trace:
+[19-Apr-2023 06:41:08 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Cannot use object of type stdClass as array'; private $string = 'Error: Cannot use object of type stdClass as array in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php:112\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php'; protected $line = 112; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Cannot use object of type stdClass as array in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php on line <i>112</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bg'... }) Unknown:0
+[19-Apr-2023 06:41:14 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php:112
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php on line 112
+[19-Apr-2023 06:41:14 Asia/Kuala_Lumpur] PHP Stack trace:
+[19-Apr-2023 06:41:14 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Cannot use object of type stdClass as array'; private $string = 'Error: Cannot use object of type stdClass as array in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php:112\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php'; protected $line = 112; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Cannot use object of type stdClass as array in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php on line <i>112</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bg'... }) Unknown:0
+[19-Apr-2023 06:41:19 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php:112
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php on line 112
+[19-Apr-2023 06:41:19 Asia/Kuala_Lumpur] PHP Stack trace:
+[19-Apr-2023 06:41:19 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Cannot use object of type stdClass as array'; private $string = 'Error: Cannot use object of type stdClass as array in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php:112\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php'; protected $line = 112; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Cannot use object of type stdClass as array in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php on line <i>112</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bg'... }) Unknown:0
+[19-Apr-2023 06:41:22 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php:112
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php on line 112
+[19-Apr-2023 06:41:22 Asia/Kuala_Lumpur] PHP Stack trace:
+[19-Apr-2023 06:41:22 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Cannot use object of type stdClass as array'; private $string = 'Error: Cannot use object of type stdClass as array in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php:112\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php'; protected $line = 112; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Cannot use object of type stdClass as array in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php on line <i>112</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bg'... }) Unknown:0
+[21-Apr-2023 15:11:06 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php:71
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php on line 71
+[21-Apr-2023 15:11:06 Asia/Kuala_Lumpur] PHP Stack trace:
+[21-Apr-2023 15:11:06 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php:71\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php'; protected $line = 71; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php on line <i>71</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcolor=\'#eeeee'... }) Unknown:0
+[21-Apr-2023 15:11:13 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php:71
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php on line 71
+[21-Apr-2023 15:11:13 Asia/Kuala_Lumpur] PHP Stack trace:
+[21-Apr-2023 15:11:13 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php:71\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php'; protected $line = 71; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php on line <i>71</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcolor=\'#eeeee'... }) Unknown:0
+[21-Apr-2023 15:11:31 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php:71
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php on line 71
+[21-Apr-2023 15:11:31 Asia/Kuala_Lumpur] PHP Stack trace:
+[21-Apr-2023 15:11:31 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php:71\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php'; protected $line = 71; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php on line <i>71</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcolor=\'#eeeee'... }) Unknown:0
+[21-Apr-2023 15:11:35 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php:71
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php on line 71
+[21-Apr-2023 15:11:35 Asia/Kuala_Lumpur] PHP Stack trace:
+[21-Apr-2023 15:11:35 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php:71\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php'; protected $line = 71; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php on line <i>71</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcolor=\'#eeeee'... }) Unknown:0
+[21-Apr-2023 15:11:41 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php:71
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php on line 71
+[21-Apr-2023 15:11:41 Asia/Kuala_Lumpur] PHP Stack trace:
+[21-Apr-2023 15:11:41 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php:71\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php'; protected $line = 71; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php on line <i>71</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcolor=\'#eeeee'... }) Unknown:0
+[22-Apr-2023 14:49:03 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php:64
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php on line 64
+[22-Apr-2023 14:49:03 Asia/Kuala_Lumpur] PHP Stack trace:
+[22-Apr-2023 14:49:03 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php:64\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php'; protected $line = 64; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php on line <i>64</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcol'... }) Unknown:0
+[22-Apr-2023 23:34:42 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php:64
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php on line 64
+[22-Apr-2023 23:34:42 Asia/Kuala_Lumpur] PHP Stack trace:
+[22-Apr-2023 23:34:42 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php:64\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php'; protected $line = 64; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php on line <i>64</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcol'... }) Unknown:0
+[22-Apr-2023 23:57:11 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php:64
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php on line 64
+[22-Apr-2023 23:57:11 Asia/Kuala_Lumpur] PHP Stack trace:
+[22-Apr-2023 23:57:11 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php:64\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php'; protected $line = 64; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php on line <i>64</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcol'... }) Unknown:0
+[23-Apr-2023 00:19:37 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php:64
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php on line 64
+[23-Apr-2023 00:19:37 Asia/Kuala_Lumpur] PHP Stack trace:
+[23-Apr-2023 00:19:37 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php:64\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php'; protected $line = 64; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php on line <i>64</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcol'... }) Unknown:0
+[23-Apr-2023 01:04:37 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php:64
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php on line 64
+[23-Apr-2023 01:04:37 Asia/Kuala_Lumpur] PHP Stack trace:
+[23-Apr-2023 01:04:37 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php:64\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php'; protected $line = 64; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php on line <i>64</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcol'... }) Unknown:0
+[23-Apr-2023 03:40:03 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[23-Apr-2023 03:40:03 Asia/Kuala_Lumpur] PHP Stack trace:
+[23-Apr-2023 03:40:03 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[23-Apr-2023 03:40:03 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[23-Apr-2023 03:40:03 Asia/Kuala_Lumpur] PHP Stack trace:
+[23-Apr-2023 03:40:03 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[23-Apr-2023 03:40:03 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[23-Apr-2023 03:40:03 Asia/Kuala_Lumpur] PHP Stack trace:
+[23-Apr-2023 03:40:03 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[23-Apr-2023 03:40:03 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[23-Apr-2023 03:40:03 Asia/Kuala_Lumpur] PHP Stack trace:
+[23-Apr-2023 03:40:03 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[23-Apr-2023 04:51:11 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[23-Apr-2023 04:51:11 Asia/Kuala_Lumpur] PHP Stack trace:
+[23-Apr-2023 04:51:11 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[23-Apr-2023 04:51:11 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[23-Apr-2023 04:51:11 Asia/Kuala_Lumpur] PHP Stack trace:
+[23-Apr-2023 04:51:11 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[23-Apr-2023 04:51:11 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[23-Apr-2023 04:51:11 Asia/Kuala_Lumpur] PHP Stack trace:
+[23-Apr-2023 04:51:11 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[23-Apr-2023 04:51:11 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[23-Apr-2023 04:51:11 Asia/Kuala_Lumpur] PHP Stack trace:
+[23-Apr-2023 04:51:11 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[23-Apr-2023 13:37:46 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[23-Apr-2023 13:37:46 Asia/Kuala_Lumpur] PHP Stack trace:
+[23-Apr-2023 13:37:46 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[23-Apr-2023 13:37:46 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[23-Apr-2023 13:37:46 Asia/Kuala_Lumpur] PHP Stack trace:
+[23-Apr-2023 13:37:46 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[23-Apr-2023 13:37:46 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[23-Apr-2023 13:37:46 Asia/Kuala_Lumpur] PHP Stack trace:
+[23-Apr-2023 13:37:46 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[23-Apr-2023 13:37:46 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[23-Apr-2023 13:37:46 Asia/Kuala_Lumpur] PHP Stack trace:
+[23-Apr-2023 13:37:46 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[23-Apr-2023 14:49:03 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php:64
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php on line 64
+[23-Apr-2023 14:49:03 Asia/Kuala_Lumpur] PHP Stack trace:
+[23-Apr-2023 14:49:03 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php:64\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php'; protected $line = 64; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php on line <i>64</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcol'... }) Unknown:0
+[26-Apr-2023 17:34:03 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php:71
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php on line 71
+[26-Apr-2023 17:34:03 Asia/Kuala_Lumpur] PHP Stack trace:
+[26-Apr-2023 17:34:03 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php:71\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php'; protected $line = 71; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php on line <i>71</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcolor=\'#eeeee'... }) Unknown:0
+[28-Apr-2023 12:11:14 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[28-Apr-2023 12:11:14 Asia/Kuala_Lumpur] PHP Stack trace:
+[28-Apr-2023 12:11:14 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[28-Apr-2023 12:11:14 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[28-Apr-2023 12:11:14 Asia/Kuala_Lumpur] PHP Stack trace:
+[28-Apr-2023 12:11:14 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[28-Apr-2023 12:11:14 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[28-Apr-2023 12:11:14 Asia/Kuala_Lumpur] PHP Stack trace:
+[28-Apr-2023 12:11:14 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[28-Apr-2023 12:11:14 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[28-Apr-2023 12:11:14 Asia/Kuala_Lumpur] PHP Stack trace:
+[28-Apr-2023 12:11:14 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[29-Apr-2023 22:40:08 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php:64
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php on line 64
+[29-Apr-2023 22:40:08 Asia/Kuala_Lumpur] PHP Stack trace:
+[29-Apr-2023 22:40:08 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php:64\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php'; protected $line = 64; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php on line <i>64</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcol'... }) Unknown:0
+[30-Apr-2023 06:53:46 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php:64
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php on line 64
+[30-Apr-2023 06:53:46 Asia/Kuala_Lumpur] PHP Stack trace:
+[30-Apr-2023 06:53:46 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php:64\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php'; protected $line = 64; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php on line <i>64</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcol'... }) Unknown:0
+[30-Apr-2023 07:16:48 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php:64
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php on line 64
+[30-Apr-2023 07:16:48 Asia/Kuala_Lumpur] PHP Stack trace:
+[30-Apr-2023 07:16:48 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php:64\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php'; protected $line = 64; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php on line <i>64</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcol'... }) Unknown:0
+[30-Apr-2023 09:55:29 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[30-Apr-2023 09:55:29 Asia/Kuala_Lumpur] PHP Stack trace:
+[30-Apr-2023 09:55:29 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[30-Apr-2023 09:55:29 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[30-Apr-2023 09:55:29 Asia/Kuala_Lumpur] PHP Stack trace:
+[30-Apr-2023 09:55:29 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[30-Apr-2023 09:55:29 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[30-Apr-2023 09:55:29 Asia/Kuala_Lumpur] PHP Stack trace:
+[30-Apr-2023 09:55:29 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[30-Apr-2023 09:55:29 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[30-Apr-2023 09:55:29 Asia/Kuala_Lumpur] PHP Stack trace:
+[30-Apr-2023 09:55:29 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[30-Apr-2023 09:55:31 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[30-Apr-2023 09:55:31 Asia/Kuala_Lumpur] PHP Stack trace:
+[30-Apr-2023 09:55:31 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[30-Apr-2023 09:55:31 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[30-Apr-2023 09:55:31 Asia/Kuala_Lumpur] PHP Stack trace:
+[30-Apr-2023 09:55:31 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[30-Apr-2023 09:55:31 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[30-Apr-2023 09:55:31 Asia/Kuala_Lumpur] PHP Stack trace:
+[30-Apr-2023 09:55:31 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[30-Apr-2023 09:55:31 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[30-Apr-2023 09:55:31 Asia/Kuala_Lumpur] PHP Stack trace:
+[30-Apr-2023 09:55:31 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[30-Apr-2023 09:56:57 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[30-Apr-2023 09:56:57 Asia/Kuala_Lumpur] PHP Stack trace:
+[30-Apr-2023 09:56:57 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[30-Apr-2023 09:56:57 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[30-Apr-2023 09:56:57 Asia/Kuala_Lumpur] PHP Stack trace:
+[30-Apr-2023 09:56:57 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[30-Apr-2023 09:56:57 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[30-Apr-2023 09:56:57 Asia/Kuala_Lumpur] PHP Stack trace:
+[30-Apr-2023 09:56:57 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[30-Apr-2023 09:56:57 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[30-Apr-2023 09:56:57 Asia/Kuala_Lumpur] PHP Stack trace:
+[30-Apr-2023 09:56:57 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[01-May-2023 18:18:04 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php:64
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php on line 64
+[01-May-2023 18:18:04 Asia/Kuala_Lumpur] PHP Stack trace:
+[01-May-2023 18:18:04 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php:64\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php'; protected $line = 64; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php on line <i>64</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcol'... }) Unknown:0
+[03-May-2023 11:54:18 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[03-May-2023 11:54:18 Asia/Kuala_Lumpur] PHP Stack trace:
+[03-May-2023 11:54:18 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[03-May-2023 11:54:18 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[03-May-2023 11:54:18 Asia/Kuala_Lumpur] PHP Stack trace:
+[03-May-2023 11:54:18 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[03-May-2023 11:54:18 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[03-May-2023 11:54:18 Asia/Kuala_Lumpur] PHP Stack trace:
+[03-May-2023 11:54:18 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[03-May-2023 11:54:18 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[03-May-2023 11:54:18 Asia/Kuala_Lumpur] PHP Stack trace:
+[03-May-2023 11:54:18 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[03-May-2023 12:10:54 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[03-May-2023 12:10:54 Asia/Kuala_Lumpur] PHP Stack trace:
+[03-May-2023 12:10:54 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[03-May-2023 12:10:54 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[03-May-2023 12:10:54 Asia/Kuala_Lumpur] PHP Stack trace:
+[03-May-2023 12:10:54 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[03-May-2023 12:10:54 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[03-May-2023 12:10:54 Asia/Kuala_Lumpur] PHP Stack trace:
+[03-May-2023 12:10:54 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[03-May-2023 12:10:54 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[03-May-2023 12:10:54 Asia/Kuala_Lumpur] PHP Stack trace:
+[03-May-2023 12:10:54 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[03-May-2023 14:16:52 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[03-May-2023 14:16:52 Asia/Kuala_Lumpur] PHP Stack trace:
+[03-May-2023 14:16:52 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[03-May-2023 14:16:52 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[03-May-2023 14:16:52 Asia/Kuala_Lumpur] PHP Stack trace:
+[03-May-2023 14:16:52 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[03-May-2023 14:16:52 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[03-May-2023 14:16:52 Asia/Kuala_Lumpur] PHP Stack trace:
+[03-May-2023 14:16:52 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[03-May-2023 14:16:52 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[03-May-2023 14:16:52 Asia/Kuala_Lumpur] PHP Stack trace:
+[03-May-2023 14:16:52 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[04-May-2023 12:09:23 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php:112
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php on line 112
+[04-May-2023 12:09:23 Asia/Kuala_Lumpur] PHP Stack trace:
+[04-May-2023 12:09:23 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Cannot use object of type stdClass as array'; private $string = 'Error: Cannot use object of type stdClass as array in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php:112\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php'; protected $line = 112; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Cannot use object of type stdClass as array in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php on line <i>112</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bg'... }) Unknown:0
+[04-May-2023 12:15:55 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php:112
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php on line 112
+[04-May-2023 12:15:55 Asia/Kuala_Lumpur] PHP Stack trace:
+[04-May-2023 12:15:55 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Cannot use object of type stdClass as array'; private $string = 'Error: Cannot use object of type stdClass as array in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php:112\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php'; protected $line = 112; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Cannot use object of type stdClass as array in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php on line <i>112</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bg'... }) Unknown:0
+[05-May-2023 15:33:35 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php:71
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php on line 71
+[05-May-2023 15:33:35 Asia/Kuala_Lumpur] PHP Stack trace:
+[05-May-2023 15:33:35 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php:71\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php'; protected $line = 71; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php on line <i>71</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcolor=\'#eeeee'... }) Unknown:0
+[07-May-2023 11:53:20 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php:112
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php on line 112
+[07-May-2023 11:53:20 Asia/Kuala_Lumpur] PHP Stack trace:
+[07-May-2023 11:53:20 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Cannot use object of type stdClass as array'; private $string = 'Error: Cannot use object of type stdClass as array in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php:112\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php'; protected $line = 112; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Cannot use object of type stdClass as array in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php on line <i>112</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bg'... }) Unknown:0
+[09-May-2023 03:08:47 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php:64
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php on line 64
+[09-May-2023 03:08:47 Asia/Kuala_Lumpur] PHP Stack trace:
+[09-May-2023 03:08:47 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php:64\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php'; protected $line = 64; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php on line <i>64</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcol'... }) Unknown:0
+[09-May-2023 07:50:18 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php:112
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php on line 112
+[09-May-2023 07:50:18 Asia/Kuala_Lumpur] PHP Stack trace:
+[09-May-2023 07:50:18 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Cannot use object of type stdClass as array'; private $string = 'Error: Cannot use object of type stdClass as array in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php:112\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php'; protected $line = 112; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Cannot use object of type stdClass as array in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php on line <i>112</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bg'... }) Unknown:0
+[09-May-2023 07:50:24 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php:112
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php on line 112
+[09-May-2023 07:50:24 Asia/Kuala_Lumpur] PHP Stack trace:
+[09-May-2023 07:50:24 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Cannot use object of type stdClass as array'; private $string = 'Error: Cannot use object of type stdClass as array in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php:112\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php'; protected $line = 112; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Cannot use object of type stdClass as array in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php on line <i>112</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bg'... }) Unknown:0
+[09-May-2023 07:50:30 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php:112
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php on line 112
+[09-May-2023 07:50:30 Asia/Kuala_Lumpur] PHP Stack trace:
+[09-May-2023 07:50:30 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Cannot use object of type stdClass as array'; private $string = 'Error: Cannot use object of type stdClass as array in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php:112\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php'; protected $line = 112; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Cannot use object of type stdClass as array in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php on line <i>112</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bg'... }) Unknown:0
+[09-May-2023 07:50:38 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php:112
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php on line 112
+[09-May-2023 07:50:38 Asia/Kuala_Lumpur] PHP Stack trace:
+[09-May-2023 07:50:38 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Cannot use object of type stdClass as array'; private $string = 'Error: Cannot use object of type stdClass as array in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php:112\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php'; protected $line = 112; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Cannot use object of type stdClass as array in /home/tahfizte/masjidpro.com/Masjid/SPMD/detail_bantuan.php on line <i>112</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bg'... }) Unknown:0
+[10-May-2023 18:18:48 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php:71
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php on line 71
+[10-May-2023 18:18:48 Asia/Kuala_Lumpur] PHP Stack trace:
+[10-May-2023 18:18:48 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php:71\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php'; protected $line = 71; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php on line <i>71</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcolor=\'#eeeee'... }) Unknown:0
+[11-May-2023 16:21:36 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[11-May-2023 16:21:36 Asia/Kuala_Lumpur] PHP Stack trace:
+[11-May-2023 16:21:36 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[11-May-2023 16:21:36 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[11-May-2023 16:21:36 Asia/Kuala_Lumpur] PHP Stack trace:
+[11-May-2023 16:21:36 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[11-May-2023 16:21:36 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[11-May-2023 16:21:36 Asia/Kuala_Lumpur] PHP Stack trace:
+[11-May-2023 16:21:36 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[11-May-2023 16:21:36 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[11-May-2023 16:21:36 Asia/Kuala_Lumpur] PHP Stack trace:
+[11-May-2023 16:21:36 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[14-May-2023 10:37:16 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php:64
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php on line 64
+[14-May-2023 10:37:16 Asia/Kuala_Lumpur] PHP Stack trace:
+[14-May-2023 10:37:16 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php:64\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php'; protected $line = 64; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php on line <i>64</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcol'... }) Unknown:0
+[16-May-2023 20:25:38 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[16-May-2023 20:25:38 Asia/Kuala_Lumpur] PHP Stack trace:
+[16-May-2023 20:25:38 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[16-May-2023 20:25:38 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[16-May-2023 20:25:38 Asia/Kuala_Lumpur] PHP Stack trace:
+[16-May-2023 20:25:38 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[16-May-2023 20:25:38 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[16-May-2023 20:25:38 Asia/Kuala_Lumpur] PHP Stack trace:
+[16-May-2023 20:25:38 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[16-May-2023 20:25:38 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[16-May-2023 20:25:38 Asia/Kuala_Lumpur] PHP Stack trace:
+[16-May-2023 20:25:38 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[16-May-2023 20:48:54 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[16-May-2023 20:48:54 Asia/Kuala_Lumpur] PHP Stack trace:
+[16-May-2023 20:48:54 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[16-May-2023 20:48:54 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[16-May-2023 20:48:54 Asia/Kuala_Lumpur] PHP Stack trace:
+[16-May-2023 20:48:54 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[16-May-2023 20:48:54 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[16-May-2023 20:48:54 Asia/Kuala_Lumpur] PHP Stack trace:
+[16-May-2023 20:48:54 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[16-May-2023 20:48:54 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[16-May-2023 20:48:54 Asia/Kuala_Lumpur] PHP Stack trace:
+[16-May-2023 20:48:54 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[16-May-2023 21:48:18 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php:71
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php on line 71
+[16-May-2023 21:48:18 Asia/Kuala_Lumpur] PHP Stack trace:
+[16-May-2023 21:48:18 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php:71\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php'; protected $line = 71; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php on line <i>71</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcolor=\'#eeeee'... }) Unknown:0
+[17-May-2023 01:21:47 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[17-May-2023 01:21:47 Asia/Kuala_Lumpur] PHP Stack trace:
+[17-May-2023 01:21:47 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[17-May-2023 01:21:47 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[17-May-2023 01:21:47 Asia/Kuala_Lumpur] PHP Stack trace:
+[17-May-2023 01:21:47 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[17-May-2023 01:21:47 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[17-May-2023 01:21:47 Asia/Kuala_Lumpur] PHP Stack trace:
+[17-May-2023 01:21:47 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[17-May-2023 01:21:47 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[17-May-2023 01:21:47 Asia/Kuala_Lumpur] PHP Stack trace:
+[17-May-2023 01:21:47 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[17-May-2023 09:12:18 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php:71
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php on line 71
+[17-May-2023 09:12:18 Asia/Kuala_Lumpur] PHP Stack trace:
+[17-May-2023 09:12:18 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php:71\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php'; protected $line = 71; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/aduan.php on line <i>71</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcolor=\'#eeeee'... }) Unknown:0
+[18-May-2023 19:43:42 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php:64
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php on line 64
+[18-May-2023 19:43:42 Asia/Kuala_Lumpur] PHP Stack trace:
+[18-May-2023 19:43:42 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php:64\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php'; protected $line = 64; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php on line <i>64</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcol'... }) Unknown:0
+[19-May-2023 04:27:35 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php:64
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php on line 64
+[19-May-2023 04:27:35 Asia/Kuala_Lumpur] PHP Stack trace:
+[19-May-2023 04:27:35 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php:64\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php'; protected $line = 64; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php on line <i>64</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcol'... }) Unknown:0
+[19-May-2023 04:34:55 Asia/Kuala_Lumpur] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php:64
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php on line 64
+[19-May-2023 04:34:55 Asia/Kuala_Lumpur] PHP Stack trace:
+[19-May-2023 04:34:55 Asia/Kuala_Lumpur] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php:64\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php'; protected $line = 64; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/SPMD/login_praktikal.php on line <i>64</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcol'... }) Unknown:0
+[20-May-2023 11:01:08 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[20-May-2023 11:01:08 Asia/Kuala_Lumpur] PHP Stack trace:
+[20-May-2023 11:01:08 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[20-May-2023 11:01:08 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[20-May-2023 11:01:08 Asia/Kuala_Lumpur] PHP Stack trace:
+[20-May-2023 11:01:08 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[20-May-2023 11:01:08 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[20-May-2023 11:01:08 Asia/Kuala_Lumpur] PHP Stack trace:
+[20-May-2023 11:01:08 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[20-May-2023 11:01:08 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[20-May-2023 11:01:08 Asia/Kuala_Lumpur] PHP Stack trace:
+[20-May-2023 11:01:08 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[20-May-2023 11:26:44 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[20-May-2023 11:26:44 Asia/Kuala_Lumpur] PHP Stack trace:
+[20-May-2023 11:26:44 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[20-May-2023 11:26:44 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[20-May-2023 11:26:44 Asia/Kuala_Lumpur] PHP Stack trace:
+[20-May-2023 11:26:44 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[20-May-2023 11:26:44 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[20-May-2023 11:26:44 Asia/Kuala_Lumpur] PHP Stack trace:
+[20-May-2023 11:26:44 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[20-May-2023 11:26:44 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[20-May-2023 11:26:44 Asia/Kuala_Lumpur] PHP Stack trace:
+[20-May-2023 11:26:44 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[20-May-2023 11:40:19 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[20-May-2023 11:40:19 Asia/Kuala_Lumpur] PHP Stack trace:
+[20-May-2023 11:40:19 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[20-May-2023 11:40:19 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[20-May-2023 11:40:19 Asia/Kuala_Lumpur] PHP Stack trace:
+[20-May-2023 11:40:19 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[20-May-2023 11:40:19 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[20-May-2023 11:40:19 Asia/Kuala_Lumpur] PHP Stack trace:
+[20-May-2023 11:40:19 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[20-May-2023 11:40:19 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[20-May-2023 11:40:19 Asia/Kuala_Lumpur] PHP Stack trace:
+[20-May-2023 11:40:19 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[21-May-2023 14:41:37 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[21-May-2023 14:41:37 Asia/Kuala_Lumpur] PHP Stack trace:
+[21-May-2023 14:41:37 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[21-May-2023 14:41:37 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[21-May-2023 14:41:37 Asia/Kuala_Lumpur] PHP Stack trace:
+[21-May-2023 14:41:37 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[21-May-2023 14:41:37 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[21-May-2023 14:41:37 Asia/Kuala_Lumpur] PHP Stack trace:
+[21-May-2023 14:41:37 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[21-May-2023 14:41:37 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[21-May-2023 14:41:37 Asia/Kuala_Lumpur] PHP Stack trace:
+[21-May-2023 14:41:37 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[23-May-2023 01:46:09 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[23-May-2023 01:46:09 Asia/Kuala_Lumpur] PHP Stack trace:
+[23-May-2023 01:46:09 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[23-May-2023 01:46:09 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[23-May-2023 01:46:09 Asia/Kuala_Lumpur] PHP Stack trace:
+[23-May-2023 01:46:09 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[23-May-2023 01:46:09 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[23-May-2023 01:46:09 Asia/Kuala_Lumpur] PHP Stack trace:
+[23-May-2023 01:46:09 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
+[23-May-2023 01:46:09 Asia/Kuala_Lumpur] PHP Warning:  Creating default object from empty value in /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php on line 46
+[23-May-2023 01:46:09 Asia/Kuala_Lumpur] PHP Stack trace:
+[23-May-2023 01:46:09 Asia/Kuala_Lumpur] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/SPMD/login.php:0
