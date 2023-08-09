@@ -70,7 +70,8 @@
         jQuery('.all-ajax-module').html('');
         jQuery('.all-ajax-module').hide();
         jQuery('#'+c).show();
-        jQuery.ajax({
+        console.log(b);
+        var request = jQuery.ajax({
             url:"<?php echo($_SERVER['PHP_SELF'].'?'.$_SERVER['QUERY_STRING']); ?>&data=raw&module="+a,
             //method:"POST",
             //data: { bulan: a, tahun: b },
@@ -84,6 +85,14 @@
                 eval(document.getElementById('modal_delete').innerHTML);
             }
         });
+
+        // request.done(function(msg) {
+        //     console.log( msg );
+        // });
+
+        // request.fail(function(jqXHR, textStatus) {
+        //     console.log( "Request failed: " + textStatus );
+        // });
     }
 
     function post_ajax(a, b, c) {
@@ -244,6 +253,7 @@
         });
     }
     meja_akaun('#meja_akaun', tajuk_dokumen, expot);
+
 </script>
 <script id="sekerip_daftar">
     function dinamik_tambah(a, b, c, d, e, f, g, h, j, k) {
@@ -667,6 +677,6 @@
         weekStart: 0,
         time: false,
         minDate : new Date("2023-01-01"),
-        maxDate : new Date("2023-05-31")
+        // maxDate : new Date("2023-05-31")
     });
 </script>

@@ -4,10 +4,10 @@ if($_GET['module'] != 'add_ahli') {
         $fungsi_kelik = 'page_ajax(\'list_ahli\', \'#module_kariah\', \'tunggu\')';
     if($_GET['module'] == 'list_ahli') {
         echo "<script>
-jQuery(document).ready(function () {
-$fungsi_kelik
-});
-</script>";
+        jQuery(document).ready(function () {
+        $fungsi_kelik
+        });
+        </script>";
     }
 }
 if($_GET['module'] == 'add_ahli') $fungsi_kelik = 'document.location.href=\''.htmlspecialchars($_SERVER['PHP_SELF'].'?'.str_replace('&module=add_ahli', '', $_SERVER['QUERY_STRING']).'&module=list_ahli').'\'';
@@ -110,7 +110,7 @@ if($_GET['module'] == 'add_ahli') $fungsi_kelik = 'document.location.href=\''.ht
         </div>
     </div>
     <?php if($_SESSION['user_type_id'] != 10)  { ?>
-    <div class="row">
+    <div class="row" style="display: none">
         <div class="col-md-12 col-12">
             <div class="row">
                 <div class="col-md-12 col-12">

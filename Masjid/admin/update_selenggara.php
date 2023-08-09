@@ -1,32 +1,36 @@
 <?php
 include("../connection/connection.php");
 
-$id_selenggara=$_POST['id_selenggara'];
-$tarikh_selenggara=$_POST['tarikh_selenggara'];
-$masa_selenggara=$_POST['masa_selenggara'];
-$pilihan_selenggara=$_POST['pilihan_selenggara'];
-$catatan=$_POST['catatan'];
+$id_penyelenggara=$_POST['id_penyelenggara'];
 
-if($_POST['id_pic']==1) {
-    $id_vendor = $_POST['vendor_selenggara'];
-    $query="UPDATE sej6x_data_selenggara SET id_vendor='$id_vendor',tarikh_selenggara='$tarikh_selenggara',masa_selenggara='$masa_selenggara',pilihan_selenggara='$pilihan_selenggara',catatan='$catatan' WHERE id_selenggara='$id_selenggara' ";
-}
-else if($_POST['id_pic']==2)
-{
-    echo $id_dataajk = $_POST['ajk_selenggara'];
-    $query="UPDATE sej6x_data_selenggara SET id_dataajk='$id_dataajk',tarikh_selenggara='$tarikh_selenggara',masa_selenggara='$masa_selenggara',pilihan_selenggara='$pilihan_selenggara',catatan='$catatan' WHERE id_selenggara='$id_selenggara' ";
+$selectedValues = $_POST['kat_peralatan']; // Get the selected values as an array
+$kat_penyelenggara = $_POST['kat_penyelenggara'];
+$no_telefon = $_POST['no_telefon'];
+$tempoh_perkhidmatan = $_POST['tempoh_perkhidmatan'];
 
+$nama_ajkmasjid = $_POST['nama_ajkmasjid'];
+$nama_vendor = $_POST['nama_vendor'];
+
+if ($nama_ajkmasjid !=''){
+    $nama_penyelenggara = $nama_ajkmasjid;
+} else {
+    $nama_penyelenggara = $nama_vendor;
 }
-//$id_lantikan=$_POST['id_lantikan'];
+
+// Combine selected values into a comma-separated string
+$kat_peralatan = implode(',', $selectedValues);
+
+$query = "UPDATE penyelenggara SET kat_penyelenggara = '$kat_penyelenggara', nama_penyelenggara = '$nama_penyelenggara',
+          kat_peralatan = '$kat_peralatan', no_telefon ='$no_telefon', tempoh_perkhidmatan ='$tempoh_perkhidmatan' WHERE id_penyelenggara = '$id_penyelenggara'";
 
 	$test=mysqli_query($bd2,$query);
 	if($test)
 	{
-		    header("location: ../utama.php?view=admin&action=maklumatselenggara"); 
+		    header("location: ../utama.php?view=admin&action=maklumatselenggara&sideMenu=masjid");
 	}
 	else
 	{
-		echo mysql_error();
+		echo mysqli_error();
 	}
 
 //}

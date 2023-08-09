@@ -53,7 +53,7 @@
                                             <div id="moreInfo" style="display: none" class="input-group mt-3">
                                                 <input oninput="this.value = this.value.toUpperCase()" placeholder="KOD AKAUN" class="form-control" name="categoryCode[]" maxlength="50" value="<?php echo($categoryCode); ?>">
                                                 <div class="input-group-append">
-                                                    <input placeholder="TARIKH BAKI AWAL" class="form-control tarikh-baki" name="dateRecords[]" value="<?php echo($dateRecords); ?>">
+                                                    <input placeholder="TARIKH BAKI AWAL" class="form-control tarikh-baki" name="dateRecords[]" value="<?php if($dateRecords == NULL) echo date('Y-m-d'); else echo($dateRecords); ?>">
                                                 </div>
                                             </div>
                                         </td>
@@ -106,16 +106,16 @@
                                     <tr id="inputFormRow2" class="itemGroup2">
                                         <th class="numberIndex2" scope="row" style="vertical-align: middle; text-align: center"><?php echo($ii); ?></th>
                                         <td>
+                                            <select name="assetType[]" class="form-control">
+                                                <option value="">KATEGORI (Jika Berkenaan)</option>
+                                                <option value="7" <?php echo $assetType == 7 ? 'selected' : NULL; ?>>PUITANG</option>
+                                            </select>
                                             <input value="<?php echo($categoryName); ?>" placeholder="* SUB-AKAUN" oninput="this.value = this.value.toUpperCase()" class="form-control" name="categoryName[]" required maxlength="100">
                                             <div id="moreInfo2" style="display: none">
-                                                <select name="assetType[]" class="form-control">
-                                                    <option value="">KATEGORI (Jika Berkenaan)</option>
-                                                    <option value="7" <?php echo $assetType == 7 ? 'selected' : NULL; ?>>PUITANG</option>
-                                                </select>
                                                 <div class="input-group mt-3">
                                                     <input oninput="this.value = this.value.toUpperCase()" placeholder="KOD AKAUN" class="form-control" name="categoryCode[]" maxlength="50" value="<?php echo($categoryCode); ?>">
                                                     <div class="input-group-append">
-                                                        <input placeholder="TARIKH BAKI AWAL" class="form-control tarikh-baki" name="dateRecords[]" value="<?php echo($dateRecords); ?>">
+                                                        <input placeholder="TARIKH BAKI AWAL" class="form-control tarikh-baki" name="dateRecords[]" value="<?php if($dateRecords == NULL) echo date('Y-m-d'); else echo($dateRecords); ?>">
                                                     </div>
                                                 </div>
                                             </div>
@@ -145,6 +145,14 @@
                                 </tr>
                                 </tfoot>
                             </table>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-6" align="right">
+                            <div id="bakiLebihanDebit"class="alert alert-danger font-weight-bold font-20" role="alert"></div>
+                        </div>
+                        <div class="col-12 col-md-6" align="right">
+                            <div id="bakiLebihanKredit"class="alert alert-danger font-weight-bold font-20" role="alert"></div>
                         </div>
                     </div>
                     <div class="row">

@@ -12,6 +12,7 @@
 
         var jumlahKredit = 0.00;
         var subJumlahKredit = 0.00;
+        var bakiLebihan = 0.00;
         $('.amaun-kredit').each(function( index ) {
             if(!isNaN(parseFloat($(this).val()))) subJumlahKredit = $(this).val();
             else subJumlahKredit = 0.00;
@@ -23,10 +24,22 @@
         if(jumlahDebit == jumlahKredit && $('.itemGroup').length > 0 && $('.itemGroup2').length > 0) {
             $('#nilaiKariah').html('RM: ' + addCommas(jumlahDebit));
             $('#buttonSimpan').show();
+            $('#bakiLebihanDebit').hide();
+            $('#bakiLebihanKredit').hide();
         }
         else {
             $('#nilaiKariah').html('');
             $('#buttonSimpan').hide();
+            
+            if(jumlahDebit > jumlahKredit){
+            $('#bakiLebihanDebit').show();
+            bakiLebihan = jumlahDebit - jumlahKredit;
+            $('#bakiLebihanDebit').html('Baki lebihan RM: ' + addCommas(bakiLebihan));
+            }else{
+            $('#bakiLebihanKredit').show();
+            bakiLebihan = jumlahKredit - jumlahDebit;
+            $('#bakiLebihanKredit').html('Baki lebihan RM: ' + addCommas(bakiLebihan));
+            }
         }
     }
 

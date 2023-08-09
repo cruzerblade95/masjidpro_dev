@@ -2,86 +2,105 @@
 require_once('../connection/connection.php');
 // Connect to server and select database.
 
-$jenis_inventori=$_POST['jenis_inventori'];
-$nama_inventori=$_POST['nama_inventori'];
-$tarikh_belian=$_POST['tarikh_belian'];
-$kuantiti=$_POST['kuantiti'];
-$peratus=$_POST['peratus'];
-$bil_tahun=$_POST['bil_tahun'];
-$harga_belian=$_POST['harga_belian'];
-//$no_rujukan=$_POST['no_rujukan'];
-$status_belian=$_POST['status_belian'];
-$catatan=$_POST['catatan'];
+    //masuk table sej6x_data_inventori
+    $nama_peralatan = $_POST['nama_peralatan'];
+    $kod_peralatan_manual = $_POST['kod_peralatan_manual'];
+    $kod_peralatan_auto = $_POST['kod_peralatan_auto'];
+//    $jenis_peralatan = $_POST['jenis_peralatan'];
+    $nama_pegawai = $_POST['nama_pegawai'];
+    $nama_penyelenggara = $_POST['nama_penyelenggara'];
+    $kuantiti_belian = $_POST['kuantiti_belian'];
+    $kuantiti_unit = $_POST['kuantiti_unit'];
+    $tarikh_belian = $_POST['tarikh_belian'];
+    $harga_belian = $_POST['harga_belian'];
+    $lokasi = $_POST['lokasi'];
+    $catatan = $_POST['catatan'];
+    $kat_peralatan = $_POST['kat_peralatan'];
 
-$lokasi=$_POST['lokasi'];
-$id_ajk=$_POST['id_ajk'];
-$harga_sewa=$_POST['harga_sewa'];
-
-if($jenis_inventori==1)
-{
-	$f=substr('PERKAKAS DAPUR', 0, 2); // pre defined function of php	
-}
-else if($jenis_inventori==2)
-{
-	$f=substr('PERALATAN', 0, 2); // pre defined function of php
-}
-else if($jenis_inventori==3)
-{
-	$f=substr('ELEKTRIK', 0, 2); // pre defined function of php
-}
-else if($jenis_inventori==4)
-{
-	$f=substr('PERABOT', 0, 2); // pre defined function of php
-}
-else if($jenis_inventori==5)
-{
-	$f=substr('KENDERAAN', 0, 2); // pre defined function of php
-}
-else if($jenis_inventori==6)
-{
-	$f=substr('LAIN-LAIN', 0, 2); // pre defined function of php
-}
-echo '<br>';
-echo $m=date('m'); // Get the month
-echo '<br>';
-echo $y=date('y'); // Get the dat
-echo '<br>';
-echo $d=date('d'); // Get the Year
-echo '<br>';
-echo '<br>';
-
-// Get the rows count
-$GetSidNo=mysqli_query($bd2, "SELECT * FROM sej6x_data_inventori WHERE id_masjid='$id_masjid'");
-$GetSidNo1=mysqli_num_rows($GetSidNo);
-$invID = str_pad($GetSidNo1, 4, '0', STR_PAD_LEFT);
-
-$no_rujukan=$f.$y.$m.$d.$invID;
-
-$t=time();
+    //masuk table sej6x_data_pembekal
+    $jenis_pembekal = $_POST['jenis_pembekal'];
+    $jenis_sewaan = $_POST['jenis_sewaan'];
+    $kat_wakaf = $_POST['kat_wakaf'];
+    $nama_sewa = $_POST['nama_sewa'];
+    $no_sewa = $_POST['no_sewa'];
+    $nama_beli = $_POST['nama_beli'];
+    $no_beli = $_POST['no_beli'];
+    $nama_sumbang = $_POST['nama_sumbang'];
 
 
-//date($variable, 'd-m-Y H:i:s');
+    $sql1 = "INSERT INTO sej6x_data_pembekal (id_masjid, jenis_pembekal, nama_sewa, no_sewa, jenis_sewaan, nama_beli, no_beli, nama_sumbang, kat_wakaf) 
+            VALUES ('$id_masjid', '$jenis_pembekal', '$nama_sewa', '$no_sewa', '$jenis_sewaan', '$nama_beli', '$no_beli', '$nama_sumbang', '$kat_wakaf')";
+    $r1 = mysqli_query($bd2, $sql1);
+    $id_pembekal = mysqli_insert_id($bd2);
 
 
+//    if($jenis_peralatan == 'other') {
+//
+//        $otherInput = ucwords($_POST['otherInput']);
+//        $jenis_peralatan = $otherInput;
+//
+//        $sql_catTool = "INSERT INTO sej6x_data_jenisinventori (jenis_inventori, id_masjid) VALUE ('$jenis_peralatan', '$id_masjid')";
+//        $r_catTool = mysqli_query($bd2, $sql_catTool);
+//    }
 
-echo $inventori="INSERT INTO sej6x_data_inventori
-(id_masjid,jenis_inventori,nama_inventori,tarikh_belian,kuantiti,harga_belian,peratus,bil_tahun,no_rujukan,status_belian,catatan,lokasi,id_ajk,harga_sewa,susut_nilai,id_lantikkan)
-VALUES ('$id_masjid','$jenis_inventori','$nama_inventori','$tarikh_belian','$kuantiti','$harga_belian','0','0','$no_rujukan','$status_belian','$catatan','$lokasi','$id_ajk','$harga_sewa','0','0')";
+    //generate kod peralatan
+    if($kod_peralatan_auto === '' && $kod_peralatan_manual ==='') {
 
-$sewa= "INSERT INTO status_barang (no_barang,id_masjid,status_nama_perkara,status_nama,status_lokasi,status_luas_kuantiti,status_harga_sewa,status) 
-VALUES('$no_rujukan','$id_masjid','$jenis_inventori','$nama_inventori','$lokasi','$kuantiti','$harga_sewa','ADA')";
+        if($kat_peralatan==1)
+        {
+            $f=substr('DAPUR', 0, 2); // pre defined function of php
+        }
+        else if($kat_peralatan==2)
+        {
+            $f=substr('ELEKTRIK', 0, 2); // pre defined function of php
+        }
+        else if($kat_peralatan==3)
+        {
+            $f=substr('PERABOT', 0, 2); // pre defined function of php
+        }
+        else if($kat_peralatan==4)
+        {
+            $f=substr('KENDERAAN', 0, 2); // pre defined function of php
+        }
+        else
+        {
+            $f=substr($kat_peralatan, 0, 2); // pre defined function of php
+        }
+        echo '<br>';
+        echo $m=date('m'); // Get the month
+        echo '<br>';
+        echo $y=date('y'); // Get the dat
+        echo '<br>';
+        echo $d=date('d'); // Get the Year
+        echo '<br>';
+        echo '<br>';
 
+        // Get the rows count
+        $GetSidNo=mysqli_query($bd2, "SELECT * FROM sej6x_data_inventori WHERE id_masjid='$id_masjid'");
+        $GetSidNo1=mysqli_num_rows($GetSidNo);
+        $invID = str_pad($GetSidNo1, 4, '0', STR_PAD_LEFT);
 
-$r = mysqli_query($bd2, $inventori);
-$r = mysqli_query($bd2, $sewa);
-if($r)
-{
-	header("Location: ../utama.php?view=admin&action=maklumatinventori");  
-}
-else
-{
-echo mysqli_error($bd2);
-}
+        $no_rujukan= $f.$y.$m.$d.$invID;
 
+        $t=time();
 
+        $kod_peralatan = $no_rujukan;
+
+        //date($variable, 'd-m-Y H:i:s');
+    }
+    else {
+        $kod_peralatan = $kod_peralatan_manual;
+    }
+
+    $sql2 = "INSERT INTO sej6x_data_inventori ( id_masjid, nama_peralatan, kod_peralatan, jenis_peralatan, tarikh_belian, id_pegawai, id_penyelenggara, kuantiti_belian, kuantiti_unit, harga_belian, lokasi, id_pembekal, catatan) VALUES ( '$id_masjid', '$nama_peralatan', '$kod_peralatan', '$kat_peralatan', '$tarikh_belian', '$nama_pegawai', '$nama_penyelenggara', '$kuantiti_belian', '$kuantiti_unit', '$harga_belian', '$lokasi', '$id_pembekal', '$catatan')";
+    $r2 = mysqli_query($bd2, $sql2);
+
+    if($r2)
+    {
+        header("Location: ../utama.php?view=admin&action=maklumatinventori&sideMenu=masjid");
+    }
+    else
+    {
+        echo mysqli_error($bd2);
+    }
 ?>

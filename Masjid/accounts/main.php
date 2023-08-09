@@ -16,7 +16,17 @@
                         <a href="<?php echo($curURL."&subModul=2"); ?>"><button type="button" class="btn btn-block btn-lg btn-primary font-weight-bold" style="color: black">Lain-lain<br />Transaksi</button></a>
                     </div>
                     <div class="col-6 col-md-3">
-                        <a href="<?php echo($curURL."&subModul=3"); ?>"><button type="button" class="btn btn-block btn-lg btn-success font-weight-bold" style="color: black">Rekod<br />Transaksi Kewangan</button></a>
+                        <a href="<?php echo($curURL."&subModul=9&pilihRekod=1&pilihSusun="); ?>"><button type="button" class="btn btn-block btn-lg btn-success font-weight-bold" style="color: black">Rekod<br />Transaksi Kewangan</button></a>
+                    </div>
+                    <div class="col-6 col-md-3"></div>
+                    <div class="col-6 col-md-3"></div>
+                    <div class="col-6 col-md-3"></div>
+                    <div class="col-6 col-md-3">
+                        <!-- <a href=" -->
+                        <?php 
+                        // echo($curURL."&subModul=9"); 
+                        ?>
+                        <!-- "><button type="button" class="btn btn-block btn-lg btn-secondary font-weight-bold" style="color: black">(*In Development) Rekod<br />Transaksi Kewangan</button></a> -->
                     </div>
                 </div>
             </div>
@@ -32,10 +42,10 @@
             <div class="card-body">
                 <div class="row button-group">
                     <div class="col-6 col-md-4">
-                        <a href="<?php echo($curURL."&subModul=8&subModul2=4&sub=kedudukan_kewangan_sebenar&data=raw"); ?>"><button type="button" class="btn btn-block btn-lg btn-info font-weight-bold" style="color: black">Kedudukan<br />Kewangan</button></a>
+                        <a href="<?php echo($curURL."&subModul=8&subModul2=4&sub=kedudukan_kewangan_sebenars&tabungan=2&trigger=1&data=raw"); ?>"><button type="button" class="btn btn-block btn-lg btn-info font-weight-bold" style="color: black">Kedudukan Aset<br />Pertubuhan</button></a>
                     </div>
                     <div class="col-6 col-md-4">
-                        <a href="<?php echo($curURL."&subModul=8&subModul2=5&sub=kedudukan_kewangan_sebenar&tabungan=1&data=raw"); ?>"><button type="button" class="btn btn-block btn-lg btn-primary font-weight-bold" style="color: black">Kedudukan<br />Setiap Tabungan</button></a>
+                        <a href="<?php echo($curURL."&subModul=8&subModul2=5&sub=kedudukan_kewangan_sebenar&tabungan=1&data=raw"); ?>"><button type="button" class="btn btn-block btn-lg btn-primary font-weight-bold" style="color: black">Kedudukan<br />Tabungan Pertubuhan</button></a>
                     </div>
                     <div class="col-6 col-md-4">
                         <a href="<?php echo($curURL."&subModul=8&subModul2=6&sub=kedudukan_kewangan_sebenar&tabungan=2&data=raw"); ?>"><button type="button" class="btn btn-block btn-lg btn-success font-weight-bold" style="color: black">Laporan<br />Kewangan</button></a>

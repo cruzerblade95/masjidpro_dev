@@ -194,7 +194,7 @@ while($row1 = mysqli_fetch_assoc($result1))
                             <textarea placeholder="Lain-lain maklumat" name="remark" id="remark" class="form-control" rows="3"></textarea>
                         </div>
                     </div>
-                    <div id="div_noti" style="display:none">
+                    <div id="div_noti" >
                     <div class="row form-group">
                         <div class="col-md-12 col-12">
                             <label>Hantar Notifikasi</label>

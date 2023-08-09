@@ -73,7 +73,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
                                     <td><div align="center"><?php echo $row['no_hp']; ?></div></td>
                                     <td><div align="center"><?php echo $row['jawatan']; ?></div></td>
                                     <td><div align="center"><input name="id_dataajk[]" type="hidden" value="<?php echo($row['id_dataajk']); ?>" form="list_ajk"><input type="number" step="1" class="form-control" name="rank[]" value="<?php echo $row['ranking']; ?>" style="width: 75px; text-align: center" form="list_ajk"></div></td>
-                                    <td><div align="center"><a href="utama.php?view=admin&action=semak_ajk&id_dataajk=<?php echo $row['id_dataajk'];?>">[Kemaskini]</a></div></td>
+                                    <td><div align="center"><a href="utama.php?view=admin&action=semak_ajk&id_dataajk=<?php echo $row['id_dataajk'];?>&sideMenu=organisasi">[Kemaskini]</a></div></td>
                                     <td>
                                         <div align="center">
                                             <form name="delete" method="POST" action="admin/del_senaraiajk.php">

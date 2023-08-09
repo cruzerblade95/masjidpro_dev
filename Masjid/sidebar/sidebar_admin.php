@@ -120,7 +120,7 @@ $sideMenuWakafInfaq = array("wakaf", "infaq","list_infaq","menu_infaqWakaf");
 
 
             <li><a href="utama.php?view=admin&action=pendaftaran&sideMenu=<?php echo($sideMenu); ?>">Ahli Kariah</a></li>
-            <li><a href="utama.php?view=admin&action=pendaftaran&sideMenu=<?php echo($sideMenu); ?>">  Kematian</a></li>
+            <li><a href="utama.php?view=admin&action=pendaftaranKematian&sideMenu=<?php echo($sideMenu); ?>">  Kematian</a></li>
             <li><a href="utama.php?view=admin&action=uploadDaftar&sideMenu=<?php echo($sideMenu); ?>">Muat Naik Excel <br>Ahli Kariah</a></li>
         </ul>
     </li>
@@ -170,7 +170,7 @@ $sideMenuWakafInfaq = array("wakaf", "infaq","list_infaq","menu_infaqWakaf");
         </ul>
     </li>
     <li>
-        <a <?php if($_GET['action'] == "kewangan" && $_GET['newModul'] == 1) echo('class="has-arrow waves-effect waves-dark"'); ?> href="utama.php?view=admin&action=kewangan&sideMenu=<?php echo($sideMenu); ?>">
+        <a <?php if($_GET['action'] == "kewangan" && $_GET['newModul'] == 1) echo('class="has-arrow waves-effect waves-dark"'); ?> href="utama.php?view=admin&action=kewangan&sideMenu=<?php echo($sideMenu); ?>&newModul=1">
             <i class="menu-icon fas fa-money-bill-alt"></i><span class="hide-menu">Kewangan</span>
         </a>
         <?php if($_GET['action'] == "kewangan" && $_GET['newModul'] == 1) { ?>
@@ -225,7 +225,25 @@ $sideMenuWakafInfaq = array("wakaf", "infaq","list_infaq","menu_infaqWakaf");
             <i class="fas fa-warehouse"></i><span class="hide-menu">&nbsp;Fasiliti</span>
         </a>
         <ul aria-expanded="false" class="collapse">
-            <li><a href="utama.php?view=admin&action=dashboard_selenggara&sideMenu=<?php echo($sideMenu); ?>"><i class="menu-icon fas fa-wrench"></i>&nbsp;Selenggara</a></li>
+<!--            <li><a href="utama.php?view=admin&action=dashboard_selenggara&sideMenu=--><?php //echo($sideMenu); ?><!--"><i class=""></i>&nbsp;Menu Fasiliti</a></li>-->
+            <li><a class="has-arrow" href="javascript:void(0)" aria-expanded="false"><i class="menu-icon fas fa-wrench"></i>&nbsp;Penyelenggara</a>
+                <ul aria-expanded="false" class="collapse">
+                    <li><a href="utama.php?view=admin&action=selenggara&sideMenu=masjid">Daftar Penyelenggara</a></li>
+                    <li><a href="utama.php?view=admin&action=maklumatselenggara&sideMenu=masjid">Senarai Penyelenggara</a></li>
+                </ul>
+            </li>
+            <li><a class="has-arrow" href="javascript:void(0)" aria-expanded="false"><i class="menu-icon fas fa-warehouse"></i>&nbsp;Inventori</a>
+                <ul aria-expanded="false" class="collapse">
+                    <li><a href="utama.php?view=admin&action=inventori&sideMenu=masjid">Daftar Inventori</a></li>
+                    <li><a href="utama.php?view=admin&action=maklumatinventori&sideMenu=masjid">Laporan Inventori</a></li>
+                </ul>
+            </li>
+            <li><a class="has-arrow" href="javascript:void(0)" aria-expanded="false"><i class="menu-icon fas fa-house-damage"></i>&nbsp;Kerosakan</a>
+                <ul aria-expanded="false" class="collapse">
+                    <li><a href="utama.php?view=admin&action=kerosakan&sideMenu=masjid">Lapor Kerosakan</a></li>
+                    <li><a href="utama.php?view=admin&action=maklumatkerosakan&sideMenu=masjid">Senarai Kerosakan</a></li>
+                </ul>
+            </li>
         </ul>
     </li>
     <?php } } ?>
@@ -242,9 +260,61 @@ $sideMenuWakafInfaq = array("wakaf", "infaq","list_infaq","menu_infaqWakaf");
                 </ul>
             </li> -->
             <?php } if($_GET['sideMenu'] == "organisasi" || (in_array($_GET['action'], $sideMenuOrganisasi) && $_GET['sideMenu'] == NULL)) { ?>
-            <li><a href="utama.php?view=admin&action=dashboard_tetapan&sideMenu=<?php echo($sideMenu); ?>"><i class="menu-icon fas fa-sitemap"></i><span class="hide-menu">Organisasi</span></a></li>
-            <li><a href="utama.php?view=admin&action=pemilihan_jawatankuasa&sideMenu=<?php echo($sideMenu); ?>"><i class="menu-icon fas fa-briefcase"></i><span class="hide-menu">Pemilihan Jawatankuasa</span></a></li>
-            <li><a href="utama.php?view=admin&action=senaraiPengundiForm&sideMenu=<?php echo($sideMenu); ?>"><i class="menu-icon fas fa-user"></i><span class="hide-menu">Senarai Layak Mengundi</span></a></li>
+<!--            <li><a href="utama.php?view=admin&action=dashboard_tetapan&sideMenu=--><?php //echo($sideMenu); ?><!--"><i class="menu-icon fas fa-sitemap"></i><span class="hide-menu">Organisasi</span></a></li>-->
+<!--            <li><a href="utama.php?view=admin&action=pemilihan_jawatankuasa&sideMenu=--><?php //echo($sideMenu); ?><!--"><i class="menu-icon fas fa-briefcase"></i><span class="hide-menu">Pemilihan Jawatankuasa</span></a></li>-->
+<!--            <li><a href="utama.php?view=admin&action=senaraiPengundiForm&sideMenu=--><?php //echo($sideMenu); ?><!--"><i class="menu-icon fas fa-user"></i><span class="hide-menu">Senarai Layak Mengundi</span></a></li>-->
+            <li><a class="has-arrow" href="javascript:void(0)" aria-expanded="false"><i class="menu-icon fas fa-sitemap"></i>&nbsp;ORGANISASI</a>
+                <ul aria-expanded="false" class="collapse">
+                    <li><a href="utama.php?view=admin&action=semakorganisasi&sideMenu=<?php echo($sideMenu); ?>">Daftar Organisasi</a></li>
+                    <li><a class="has-arrow" href="javascript:void(0)" aria-expanded="false">Senarai Jawatankuasa</a>
+                        <ul aria-expanded="false" class="collapse">
+                            <li><a href="utama.php?view=admin&action=senaraiJawatankuasa_AJK&sideMenu=<?php echo($sideMenu); ?>">AJK Masjid</a></li>
+                            <li><a href="utama.php?view=admin&action=senaraiJawatankuasa_PEGAWAI&sideMenu=<?php echo($sideMenu); ?>">Pegawai Masjid</a></li>
+                            <li><a href="utama.php?view=admin&action=senaraiJawatankuasa_PENGURUSAN&sideMenu=<?php echo($sideMenu); ?>">Pengurusan Masjid</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="has-arrow" href="javascript:void(0)" aria-expanded="false">Tetapan</a>
+                        <ul aria-expanded="false" class="collapse">
+                            <li><a href="utama.php?view=admin&action=organisasi_senaraiAJK&sideMenu=<?php echo($sideMenu); ?>">AJK Masjid</a></li>
+                            <li><a href="utama.php?view=admin&action=organisasi_senaraiPEGAWAI&sideMenu=<?php echo($sideMenu); ?>">Pegawai Masjid</a></li>
+                            <li><a href="utama.php?view=admin&action=organisasi_senaraiPENGURUSAN&sideMenu=<?php echo($sideMenu); ?>">Pengurusan Masjid</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="has-arrow" href="javascript:void(0)" aria-expanded="false">Kehadiran</a>
+                        <ul aria-expanded="false" class="collapse">
+                            <li><a class="has-arrow" href="javascript:void(0)" aria-expanded="false">Laporan</a>
+                                <ul aria-expanded="false" class="collapse">
+<!--                                    <li><a class="has-arrow" href="javascript:void(0)" aria-expanded="false">AJK Masjid</a>-->
+<!--                                        <ul aria-expanded="false" class="collapse">-->
+<!--                                            <li><a href="utama.php?view=admin&action=&sideMenu=--><?php //echo($sideMenu); ?><!--">Laporan Individu</a></li>-->
+<!--                                            <li><a href="utama.php?view=admin&action=&sideMenu=--><?php //echo($sideMenu); ?><!--">Laporan Bulanan</a></li>-->
+<!--                                        </ul>-->
+<!--                                    </li>-->
+                                    <li><a class="has-arrow" href="javascript:void(0)" aria-expanded="false">Pegawai Masjid</a>
+                                        <ul aria-expanded="false" class="collapse">
+                                            <li><a href="utama.php?view=admin&action=organisasi_laporan_senaraiPEGAWAI&sideMenu=<?php echo($sideMenu); ?>">Individu</a></li>
+                                            <li><a href="utama.php?view=admin&action=organisasi_laporan_senaraiPEGAWAI_bulanan&sideMenu=<?php echo($sideMenu); ?>">Bulanan</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="has-arrow" href="javascript:void(0)" aria-expanded="false">Pengurusan Masjid</a>
+                                        <ul aria-expanded="false" class="collapse">
+                                            <li><a href="utama.php?view=admin&action=organisasi_laporan_senaraiPENGURUSAN&sideMenu=<?php echo($sideMenu); ?>">Individu</a></li>
+<!--                                            <li><a href="utama.php?view=admin&action=organisasi_laporan_senaraiPENGURUSAN_bulanan&sideMenu=--><?php //echo($sideMenu); ?><!--">Bulanan</a></li>-->
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a class="has-arrow" href="javascript:void(0)" aria-expanded="false">Tetapan</a>
+                                <ul aria-expanded="false" class="collapse">
+<!--                                    <li><a href="utama.php?view=admin&action=organisasi_tetapankehadiran_AJK&sideMenu=--><?php //echo($sideMenu); ?><!--">AJK Masjid</a></li>-->
+                                    <li><a href="utama.php?view=admin&action=organisasi_tetapankehadiran_PEGAWAI&sideMenu=<?php echo($sideMenu); ?>">Pegawai Masjid</a></li>
+                                    <li><a href="utama.php?view=admin&action=organisasi_tetapankehadiran_PENGURUSAN&sideMenu=<?php echo($sideMenu); ?>">Pengurusan Masjid</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
             <?php } if($_GET['sideMenu'] == "masjid" || (in_array($_GET['action'], $sideMenuMasjid) && $_GET['sideMenu'] == NULL)) { ?>
             <li><a class="has-arrow" href="javascript:void(0)" aria-expanded="false"><i class="menu-icon fas fa-hands-helping"></i><span class="hide-menu">Bantuan</span></a>
                 <ul aria-expanded="false" class="collapse">
@@ -257,6 +327,7 @@ $sideMenuWakafInfaq = array("wakaf", "infaq","list_infaq","menu_infaqWakaf");
             <li><a href="utama.php?view=admin&action=care&sideMenu=<?php echo($sideMenu); ?>"><i class="menu-icon fas fa-pray"></i><span class="hide-menu">Masjid Care</span></a></li>
             <!-- <li><a href="utama.php?view=admin&action=praktikal&sideMenu=<?php //echo($sideMenu); ?>"><i class="menu-icon fas fa-user-graduate"></i>&nbsp;Praktikal</a></li> -->
             <!-- <li><a href="manual/Manual_2021.pdf"><i class="menu-icon fas fa-file"></i>&nbsp;Manual Pengguna</a></li> -->
+            <li><a href="utama.php?view=admin&action=aktivitiMasjid&sideMenu=<?php echo($sideMenu); ?>"><i class="menu-icon fas fa-people-carry"></i><span class="hide-menu">Aktiviti</span></a></li>
         <?php if($hideMenu == 1) { ?>
         </ul>
     </li>
@@ -290,3 +361,4 @@ $sideMenuWakafInfaq = array("wakaf", "infaq","list_infaq","menu_infaqWakaf");
 <?php //}
 //if($tema_layout == 2) include("theme_2_sidebar.php");
 ?>
+

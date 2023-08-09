@@ -94,7 +94,7 @@
 									<td><div align="center"><?php echo $row['no_ic']; ?></div></td>
 									<td>
 										<div align="center">
-											<a href="utama.php?view=admin&action=butiran_jawatanpegawai&id_data=<?php echo $row['id_data'];?>">
+											<a href="utama.php?view=admin&action=butiran_jawatanpegawai&id_data=<?php echo $row['id_data'];?>&sideMenu=organisasi">
 												<input type="button" value="Daftar" class="btn btn-success" />
 											</a>
 										</div>  

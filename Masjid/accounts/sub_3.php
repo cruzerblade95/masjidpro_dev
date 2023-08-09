@@ -44,6 +44,10 @@
                         </div>
                     </div>
                 </form>
+                <?php
+                    // echo $pilihRekod;
+                    // exit;
+                ?>
                 <div class="row">
                     <div class="table-responsive">
                         <?php if($num_listRekod > 0) { ?>
@@ -52,7 +56,7 @@
                                 <thead>
                                 <tr>
                                     <?php foreach ($field_listRekod as $field) {
-                                        $exceptColumn = array("voidStatus", "typeRecords", "typeJournalEntry", "Nama", "Butiran", "categoryType");
+                                        $exceptColumn = array("voidStatus", "typeRecords", "typeJournalEntry", "Nama", "Butiran", "susut_nilai", "categoryType", "assetType", "accountsCategory_id", "pairAccountsCategory_id", "jenis_transaksi", "payNo", "receivedNo");
                                         if($pilihSusun == 5) array_push($exceptColumn, "Pendapatan<br />(RM)");
                                         if($pilihSusun == 4) array_push($exceptColumn, "Perbelanjaan<br />(RM)");
                                         ?>
@@ -68,17 +72,49 @@
                                 </thead>
                                 <tbody>
                                 <?php $i = 1; $baki[0] = 0.00; do {
+                                    $assetType = $row_listRekod['assetType'];
                                     $typeJournalEntry = $row_listRekod['typeJournalEntry'];
                                     $categoryType = $row_listRekod['categoryType'];
                                     $typeRecords = $row_listRekod['typeRecords'];
+                                    $susut_nilai = $row_listRekod['susut_nilai'];
+                                    $accountsCategory_id = $row_listRekod['accountsCategory_id'];
+                                    $pairAccountsCategory_id = $row_listRekod['pairAccountsCategory_id'];
+                                    $jenis_transaksi = $row_listRekod['jenis_transaksi'];
+                                    $payNo = $row_listRekod['payNo'];
+                                    $receivedNo = $row_listRekod['receivedNo'];
+
                                     //$pendapatan = ($typeJournalEntry == 1 && $typeRecords == 1) || ($typeJournalEntry == 2 && $typeRecords == 2) ? number_format($row_listRekod['Pendapatan<br />(RM)'], 2) : '';
                                     //$perbelanjaan = ($typeJournalEntry == 2 && $typeRecords == 1) || ($typeJournalEntry == 1 && $typeRecords == 2) ? number_format($row_listRekod['Perbelanjaan<br />(RM)'], 2) : '';
-                                    $pendapatan = number_format($row_listRekod['Pendapatan<br />(RM)'], 2);
-                                    $perbelanjaan = number_format($row_listRekod['Perbelanjaan<br />(RM)'], 2);
+                                    if($typeRecords == 3 && $susut_nilai == 1 && $assetType == NULL && $pilihRekod == "SEMUA"){
+                                        $pendapatan = number_format($row_listRekod['Perbelanjaan<br />(RM)'], 2);
+                                        $perbelanjaan = number_format($row_listRekod['Pendapatan<br />(RM)'], 2);
+                                    }else if($typeJournalEntry == 1 && $typeRecords == 3 && $susut_nilai == NULL && $assetType == 3 && $pilihRekod == "SEMUA"){
+                                        $pendapatan = number_format($row_listRekod['Pendapatan<br />(RM)'], 2);
+                                        $perbelanjaan = number_format($row_listRekod['Perbelanjaan<br />(RM)'], 2);
+                                    }
+                                    else if(($typeRecords == 3 && $assetType == 3 && strpos($pilihRekod, "A"))){
+                                        $pendapatan = number_format($row_listRekod['Perbelanjaan<br />(RM)'], 2);
+                                        $perbelanjaan = number_format($row_listRekod['Pendapatan<br />(RM)'], 2);
+                                    }
+                                    // else if($typeJournalEntry == 1 && $typeRecords == 1 && ($accountsCategory_id == 32 || $accountsCategory_id == 59) && $assetType == NULL && strpos($_GET['pilihRekod'], "A") == 0){
+                                    //     $pendapatan = number_format($row_listRekod['Perbelanjaan<br />(RM)'], 2)";
+                                    //     $perbelanjaan = number_format($row_listRekod['Pendapatan<br />(RM)'], 2);
+                                    // }
+                                    else if($receivedNo != NULL && strpos($_GET['pilihRekod'], "A") == 0){
+                                        $pendapatan = number_format($row_listRekod['Pendapatan<br />(RM)'], 2);
+                                        $perbelanjaan = number_format($row_listRekod['Perbelanjaan<br />(RM)'], 2);
+                                    }
+                                    else{
+                                        $pendapatan = number_format($row_listRekod['Pendapatan<br />(RM)'], 2);
+                                        $perbelanjaan = number_format($row_listRekod['Perbelanjaan<br />(RM)'], 2);
+                                    }
+
+                                    // "." TJE>".$typeJournalEntry." TR>".$typeRecords." AT>".$assetType." PR>".$_GET['pilihRekod']." SN>".$susut_nilai." ACI>".$accountsCategory_id." PACI>".$pairAccountsCategory_id"
+
                                     $voidStatus = $row_listRekod['voidStatus'];
                                     if($voidStatus != 1) $baki[$i] = $baki[$i-1] + $row_listRekod['Pendapatan<br />(RM)'] - $row_listRekod['Perbelanjaan<br />(RM)'];
                                     else $baki[$i] = $baki[$i-1];
-                                    if($_GET['testDebug'] == 1) echo($typeJournalEntry.' - '.$typeRecords.' - '.$categoryType.'<br />');
+                                    if($_GET['testDebug'] == 1) echo($qBase.' - '.$typeRecords.' - '.$categoryType.'<br />');
                                     ?>
                                     <tr <?php echo $voidStatus == 1 ? 'style="text-decoration: line-through"' : NULL; ?>>
                                         <td style="width: fit-content; vertical-align: middle"><div align="center"><?php echo($i); ?></div></td>

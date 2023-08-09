@@ -34,7 +34,21 @@
         if($('#pilihHutang').val() != null && $('#pilihHutang').val() != "") $('.pairCreditors, .pairDebtors').hide();
         <?php } ?>
     }
+    
+    // function submit_baucar(){
+    //     let tarikh_semasa = document.getElementById("tarikh_semasa");
+    //     document.getElementById("nama_vendor").value = null;
+    //     document.getElementById("tujuan_bayaran").value = null;
+    //     document.getElementById("dateRecords").value = tarikh_semasa;
+    //     // var tarikh_semasa = ('#tarikh_semasa').val();
+    //     // $('#nama_vendor').val(null);
+    //     // $('#tujuan_bayaran').val(null);
+    //     // $('#dateRecords').val(tarikh_semasa);
+    // }
+
     function verifyPair() {
-    // reserved for improvement
+        console.log($('#pairAccountsCategory_id').find(':selected').data("hidden"));
+        var a = $('#pairAccountsCategory_id').find(':selected').data("hidden");
+        $('#assetTypeData').val(a);
     }
 </script>

@@ -9,6 +9,7 @@ if (isset($_POST['id_pegawai']))
     $id_column = 'id_pegawai';
     $id_pegawai = $_POST['id_pegawai'];
     $id_datapegawai = $_POST['id_datapegawai'];
+    $emel = e($_POST['emel'], NULL, NULL);
     $jawatan = e($_POST['jawatan'], NULL, NULL);
     $pekerjaan = e($_POST['pekerjaan '], 1, NULL);
     $lantikkan = e($_POST['lantikkan'], NULL, NULL);
@@ -28,8 +29,8 @@ if (isset($_POST['id_pegawai']))
             $nama_penuh = str_replace("'","''",$nama_penuh);
             $no_ic = e($_POST['no_ic'], NULL, NULL);
             $no_tel = e($_POST['no_tel'], NULL, NULL);
-            $sql1 = "INSERT INTO data_pegawai_masjid (id_masjid, nama_penuh, no_ic, no_tel, jawatan, tarikh_lantikan, gambar, jenis_gambar, time, lantikkan, pekerjaan)
-                       VALUES ($id_masjid, '$nama_penuh', '$no_ic', '$no_tel','$jawatan', '$tarikh_lantikan', '$gambar', '$jenis_gambar', NOW(), '$lantikkan', '$pekerjaan')";
+            $sql1 = "INSERT INTO data_pegawai_masjid (id_masjid, nama_penuh, no_ic, no_tel, emel, jawatan, tarikh_lantikan, gambar, jenis_gambar, time, lantikkan, pekerjaan)
+                       VALUES ($id_masjid, '$nama_penuh', '$no_ic', '$no_tel', '$emel','$jawatan', '$tarikh_lantikan', '$gambar', '$jenis_gambar', NOW(), '$lantikkan', '$pekerjaan')";
         }
         else {
             $sql2 = "UPDATE sej6x_data_peribadi SET data_pegawai = 1 WHERE id_data = $id_pegawai";
@@ -40,9 +41,9 @@ if (isset($_POST['id_pegawai']))
                 $sql2 = "UPDATE sej6x_data_anakqariah SET data_pegawai = 1 WHERE ID = $id_pegawai";
             }
 
-            $sql1 = "INSERT INTO data_pegawai_masjid (id_masjid, $id_column, jawatan, tarikh_lantikan, gambar, jenis_gambar, time, lantikkan)
+            $sql1 = "INSERT INTO data_pegawai_masjid (id_masjid, $id_column, emel, jawatan, tarikh_lantikan, gambar, jenis_gambar, time, lantikkan)
 	
-            VALUES ($id_masjid, $id_pegawai, '$jawatan', '$tarikh_lantikan', '$gambar', '$jenis_gambar', NOW(), '$lantikkan')";
+            VALUES ($id_masjid, $id_pegawai, '$emel', '$jawatan', '$tarikh_lantikan', '$gambar', '$jenis_gambar', NOW(), '$lantikkan')";
 
             //UPDATE STATUS DATA PEGAWAI
 
@@ -51,14 +52,14 @@ if (isset($_POST['id_pegawai']))
     }
 
     if($id_datapegawai != NULL) {
-        $sql1 = "UPDATE data_pegawai_masjid SET lantikkan = '$lantikkan', pekerjaan = '$pekerjaan', jawatan = '$jawatan', tarikh_lantikan = '$tarikh_lantikan', time = NOW() WHERE id_datapegawai = $id_datapegawai";
+        $sql1 = "UPDATE data_pegawai_masjid SET emel = '$emel',lantikkan = '$lantikkan', pekerjaan = '$pekerjaan', jawatan = '$jawatan', tarikh_lantikan = '$tarikh_lantikan', time = NOW() WHERE id_datapegawai = $id_datapegawai";
         if($ada_gambar == 1) {
-            $sql3 = "UPDATE data_pegawai_masjid SET lantikkan = '$lantikkan', pekerjaan = '$pekerjaan', gambar = '$gambar', jenis_gambar = '$jenis_gambar' WHERE id_datapegawai = $id_datapegawai";
+            $sql3 = "UPDATE data_pegawai_masjid SET emel = '$emel', lantikkan = '$lantikkan', pekerjaan = '$pekerjaan', gambar = '$gambar', jenis_gambar = '$jenis_gambar' WHERE id_datapegawai = $id_datapegawai";
             mysqli_query($bd2, $sql3) or die(mysqli_error($bd2));
         }
     }
     mysqli_query($bd2, $sql1) or die(mysqli_error($bd2));
 
-    header("Location: ../utama.php?view=admin&action=senarai_pegawai");
+    header("Location: ../utama.php?view=admin&action=senarai_pegawai&sideMenu=organisasi");
 }
 ?>

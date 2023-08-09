@@ -34,7 +34,7 @@ if(isset($_GET['data']) && $_GET['data'] == 'raw') {
     }
     if($_GET['action'] == 'daftar_solat_senarai') include("admin/daftar_solat_senarai.php");
     if($_GET['action'] == 'daftar_khairat') include("khairat_ajax_page.php");
-    if($_GET['action'] == 'pendaftaran') include("pendaftaran_ajax_page.php");
+    if($_GET['action'] == 'pendaftaran' || $_GET['action'] == 'pendaftaranKematian') include("pendaftaran_ajax_page.php");
     if($_GET['action'] == 'qrcode') include("qrcode.php");
 }
 
@@ -155,6 +155,7 @@ if($_GET['data'] != 'raw') {
     {
         ?>
         <link href="themes/elite/node_modules/select2/dist/css/select2.min.css" rel="stylesheet" type="text/css" />
+<!--        <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" type="text/css"/>-->
         <link href="themes/elite/node_modules/bootstrap-select/bootstrap-select.min.css" rel="stylesheet" />
         <?php
     }
@@ -256,11 +257,15 @@ if($_GET['data'] != 'raw') {
         }
 
         //Sidebar - Pendaftaran
-        elseif ($action=="pendaftaran")
+        elseif ($action=="pendaftaran") //PENDAFTARAN MODUL KARIAH
         {
             include ("admin/pendaftaran_ajax.php");
         }
-        else if($action=="uploadDaftar")
+        elseif ($action=="pendaftaranKematian") //PENDAFTARAN MODUL KEMATIAN
+        {
+            include ("admin/pendaftaran_mati.php");
+        }
+        else if($action=="uploadDaftar") // UPLOAD PENDAFTARAN EXCEL
         {
             include ("admin/uploadDaftar.php");
         }
@@ -452,20 +457,20 @@ if($_GET['data'] != 'raw') {
 
             //Approve Ahli QARIAH
         }
-        elseif ($action=="approve_qariah")
+        elseif ($action=="approve_qariah") //KELULUSAN QARIAH
         {
             include("admin/approve_qariah.php");
         }
-        else if($action=="approve_bantuan") {
+        else if($action=="approve_bantuan") { //KELULUSAN BANTUAN
             include("admin/approve_bantuan.php");
         }
         else if($action=="approve_praktikal"){
             include("admin/approve_praktikal.php");
         }
-        else if($action=="approve_temujanji"){
+        else if($action=="approve_temujanji"){ //KELULUSAN TEMUJANJI
             include("admin/approve_temujanji.php");
         }
-        else if($action=="approve_kematian"){
+        else if($action=="approve_kematian"){ //KELULUSAN KEMATIAN
             include("admin/approve_kematian.php");
         }
 
@@ -614,6 +619,9 @@ if($_GET['data'] != 'raw') {
         else if($action=="upload_surat"){
             include("admin/upload_surat.php");
         }
+        else if($action=="NewMinitMesyuarat"){
+            include("admin/dokumentasi/minit_mesyuarat.php");
+        }
 
 
         //Sidebar - Kewangan
@@ -701,7 +709,7 @@ if($_GET['data'] != 'raw') {
             include("admin/zakat.php");
         }
 
-
+        //INVENTORI
         //Sidebar - Selenggara
         elseif ($action=="selenggara"){
             include ("admin/selenggara.php");
@@ -718,9 +726,19 @@ if($_GET['data'] != 'raw') {
         else if($action=="edit_inventori"){
             include ("admin/edit_inventori.php");
         }
+        else if($action=="view_inventori"){
+            include ("admin/view_inventori.php");
+        }
+        else if($action=="rekod_inventori"){
+            include ("admin/rekod_inventori.php");
+        }
 
 
 
+
+        elseif ($action=="view_kerosakan"){
+            include("admin/view_kerosakan.php");
+        }
         elseif ($action=="kerosakan"){
             include("admin/kerosakan.php");
         }
@@ -795,17 +813,86 @@ if($_GET['data'] != 'raw') {
         }
 
 
+        ///ORGANISASI BARU
 
-
-
-
-
+        elseif ($action=="semakorganisasi") {                    //semak ic
+            include("admin/semak_organisasi.php");
+        }
+        elseif ($action=="daftarorganisasi") {                    //daftar maklumat organisasi
+            include("admin/butiran_organisasi.php");
+        }
+        elseif ($action=="paparorganisasi") {                    //display maklumat organisasi
+            include("admin/papar_organisasi.php");
+        }
+        elseif ($action=="organisasi_senaraiAJK") {                    //jawatan ajk
+            include("admin/organisasi_senaraiAJK.php");
+        }
+        elseif ($action=="organisasi_senaraiPEGAWAI") {                    //jawatan pegawai
+            include("admin/organisasi_senaraiPEGAWAI.php");
+        }
+        elseif ($action=="organisasi_senaraiPENGURUSAN") {                    //jawatan pengurusan
+            include("admin/organisasi_senaraiPENGURUSAN.php");
+        }
+        elseif ($action=="organisasi_senaraiBIRO") {                    //jawatan biro
+            include("admin/organisasi_senaraiBIRO.php");
+        }
+        elseif ($action=="senaraiJawatankuasa_AJK") {                    //Senarai jawatankuasa AJK
+            include("admin/senarai_jawatankuasa_ajk.php");
+        }
+        elseif ($action=="senaraiJawatankuasa_PEGAWAI") {                    //Senarai jawatankuasa pegawai
+            include("admin/senarai_jawatankuasa_pegawai.php");
+        }
+        elseif ($action=="senaraiJawatankuasa_PENGURUSAN") {                    //Senarai jawatankuasa pengurusan
+            include("admin/senarai_jawatankuasa_pengurusan.php");
+        }
+        elseif ($action=="view_jawatankuasa") {                    //view jawatankuasa pengurusan
+            include("admin/view_jawatankuasa.php");
+        }
+        elseif ($action=="edit_jawatankuasa") {                    //edit jawatankuasa pengurusan
+            include("admin/edit_jawatankuasa.php");
+        }
+        elseif ($action=="organisasi_tetapankehadiran_AJK") {                    //kehadiran tetapan ajk
+            include("admin/");
+        }
+        elseif ($action=="organisasi_tetapankehadiran_PEGAWAI") {                    //kehadiran tetapan pegawai
+            include("admin/organisasi_tetapankehadiran_PEGAWAI.php");
+        }
+        elseif ($action=="organisasi_tetapankehadiran_PENGURUSAN") {                    //kehadiran tetapan pengurusan
+            include("admin/organisasi_tetapankehadiran_PENGURUSAN.php");
+        }
+        elseif ($action=="organisasi_laporan_senaraiAJK") {                    // senarai laporan kehadiran ajk
+            include("admin/");
+        }
+        elseif ($action=="organisasi_laporan_senaraiAJK_individu") {                    //laporan kehadiran ajk individu
+            include("admin/");
+        }
+        elseif ($action=="organisasi_laporan_senaraiAJK_bulanan") {                    //laporan kehadiran ajk bulanan
+            include("admin/");
+        }
+        elseif ($action=="organisasi_laporan_senaraiPEGAWAI") {                    // senarai laporan kehadiran pegawai
+            include("admin/organisasi_laporan_senaraiPEGAWAI.php");
+        }
+        elseif ($action=="organisasi_laporan_senaraiPEGAWAI_individu") {                    //laporan kehadiran pegawai individu
+            include("admin/organisasi_laporan_senaraiPEGAWAI_individu.php");
+        }
+        elseif ($action=="organisasi_laporan_senaraiPEGAWAI_bulanan") {                    //laporan kehadiran pegawai bulanan
+            include("admin/organisasi_laporan_senaraiPEGAWAI_bulanan.php");
+        }
+        elseif ($action=="organisasi_laporan_senaraiPENGURUSAN") {                    //senarai laporan kehadiran pengurusan
+            include("admin/organisasi_laporan_senaraiPENGURUSAN.php");
+        }
+        elseif ($action=="organisasi_laporan_senaraiPENGURUSAN_individu") {                    //laporan kehadiran pengurusan individu
+            include("admin/organisasi_laporan_senaraiPENGURUSAN_individu.php");
+        }
+        elseif ($action=="organisasi_laporan_senaraiPENGURUSAN_bulanan") {                    //laporan kehadiran pengurusan bulanan
+            include("admin/organisasi_laporan_senaraiPENGURUSAN_bulanan.php");
+        }
 
 
 
 
         ///Sideabr - Carta Organisasi
-        elseif ($action=="dashboard_tetapan"){
+        elseif ($action=="dashboard_tetapan"){      //SIDEBAR Organisasi
             include("admin/dashboard_tetapan.php");
         }
         elseif ($action=="daftar_ajk") {                    //Daftar AJK
@@ -817,32 +904,65 @@ if($_GET['data'] != 'raw') {
         elseif ($action=="butiran_jawatanajk") {              //Butiran Jawatan AJK
             include("admin/butiran_jawatanajk.php");
         }
-        elseif ($action=="semak_ajk") {              //Butiran Jawatan AJK
+        elseif ($action=="semak_ajk") {              //Semak Jawatan AJK
             include("admin/semak_ajk.php");
-        }elseif ($action=="daftar_pegawai") {
-            include("admin/daftar_pegawai.php");            //Daftar Pegawai
-        }elseif ($action=="senarai_pegawai") {
+        }
+        elseif ($action=="daftar_pegawai") {    //Daftar Pegawai
+            include("admin/daftar_pegawai.php");
+        }
+        elseif ($action=="senarai_pegawai") {       //Senarai Pegawai
             include("admin/senarai_pegawai.php");
-        }elseif ($action=="butiran_jawatanpegawai") {              //Butiran Jawatan Pegawai
+        }
+        elseif ($action=="butiran_jawatanpegawai") {              //Butiran Jawatan Pegawai
             include("admin/butiran_jawatanpegawai.php");
-        }elseif ($action=="semak_pegawai") {              //Butiran Jawatan Pegawai
+        }
+        elseif ($action=="semak_pegawai") {              //Butiran Jawatan Pegawai
             include("admin/semak_pegawai.php");
-        }elseif ($action=="gambar_pegawai") {              //Gambar Jawatan Pegawai
+        }
+        elseif ($action=="gambar_pegawai") {              //Gambar Jawatan Pegawai
             include("admin/gambar_pegawai.php");
         }
-        else if($action=="daftar_pengurusan"){
+        else if($action=="daftar_pengurusan"){      //Daftar Pengurusan
             include("admin/daftar_pengurusan.php");
         }
-        else if($action=="senarai_pengurusan"){
+        else if($action=="senarai_pengurusan"){     //Senarai Pengurusan
             include("admin/senarai_pengurusan.php");
         }
-        else if($action=="jawatan_pengurusan"){
+        else if($action=="jawatan_pengurusan"){     //Senarai Jawatan Pengurusan
             include("admin/jawatan_pengurusan.php");
         }
-        else if($action=="semak_pengurusan"){
+        else if($action=="semak_pengurusan"){       //Semak  Pengurusan
             include("admin/semak_pengurusan.php");
         }
+        else if($action=="daftar_rekod_organisasi"){       //Daftar rekod organisasi
+            include("admin/daftar_rekod_organisasi.php");
+        }
+        elseif ($action=="butiran_rekod_organisasi") {     //Semak IC
+            include("admin/butiran_rekod_organisasi.php");
+        }
+        elseif ($action=="senarai_rekod") {     //Senarai rekod organisasi
+            include("admin/senarai_rekod_organisasi.php");
+        }
+        elseif ($action=="semak_rekod_organisasi") {     //Display Maklumat Rekod
+            include("admin/semak_rekod_organisasi.php");
+        }
+        elseif ($action=="rekod_tahunan_organisasi_masjid") {     //Display Maklumat Rekod Tahunan
+            include("admin/rekod_tahunan_organisasi_masjid.php");
+        }
+        elseif ($action=="kemaskini_rekod_organisasi") {     //Update Maklumat Jawatan Rekod Organisasi
+            include("admin/kemaskini_rekod_organisasi.php");
+        }
+        elseif ($action=="senarai_ajk") {                    //Senarai AJK
+            include("admin/senarai_ajk.php");
+        }
 
+        //Sidebar - AKTIVITI
+        elseif ($action=="aktivitiMasjid"){
+            include("admin/aktivitiMasjid.php");
+        }
+        elseif ($action=="tambahAktiviti"){
+            include("admin/tambah_aktiviti.php");
+        }
 
         //Sideabar - Aduan Awam
         elseif ($action=="aduan"){
@@ -1091,6 +1211,7 @@ if($_GET['data'] != 'raw') {
         <script src="themes/elite/node_modules/sticky-kit-master/dist/sticky-kit.min.js"></script>
         <script src="themes/elite/node_modules/sparkline/jquery.sparkline.min.js"></script>
         <script src="themes/elite/node_modules/select2/dist/js/select2.full.min.js" type="text/javascript"></script>
+<!--        <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js" type="text/javascript"></script>-->
         <script src="themes/elite/dist/js/custom.min.js"></script>
         <script src="themes/elite/node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
         <!--script src="vendors/datatable/datatables.js"></script-->
@@ -1176,7 +1297,9 @@ if($_GET['data'] != 'raw') {
         <script>
             $(function () {
                 // For select 2
-                $(".select2").select2();
+                $(".select2").select2({
+                    multiple: true
+                });
                 $('.selectpicker').selectpicker();
                 $(".ajax").select2({
                     ajax: {

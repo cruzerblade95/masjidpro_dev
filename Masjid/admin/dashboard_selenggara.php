@@ -19,16 +19,16 @@
 <div class="content mt-3">
 	<div class="col-lg-12">
 		<div class="row">
-			<div class="col-lg-4">
-				<div class="card">
-					<div class="card-body">
-						<button class="btn btn-warning btn-lg btn-block" onClick="displayKerosakan()">
-							<i class="fas fa-house-damage"></i>
-							<br>Kerosakan
-						</button>
-					</div>
-				</div>
-			</div>
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-body">
+                        <button class="btn btn-success btn-lg btn-block" onClick="displayInventori()">
+                            <i class="fas fa-warehouse"></i>
+                            <br>Inventori
+                        </button>
+                    </div>
+                </div>
+            </div>
 			<div class="col-lg-4">
 				<div class="card">
 					<div class="card-body">
@@ -39,16 +39,16 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-4">
-				<div class="card">
-					<div class="card-body">
-						<button class="btn btn-success btn-lg btn-block" onClick="displayInventori()">
-							<i class="fas fa-warehouse"></i>
-							<br>Inventori
-						</button>
-					</div>
-				</div>
-			</div>
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-body">
+                        <button class="btn btn-warning btn-lg btn-block" onClick="displayKerosakan()">
+                            <i class="fas fa-house-damage"></i>
+                            <br>Kerosakan
+                        </button>
+                    </div>
+                </div>
+            </div>
 		</div>
 	</div>
 </div>
@@ -61,7 +61,7 @@
 						<div class="card-body">
 							<button class="btn btn-info btn-lg btn-block" onclick="borangSelenggara()">
 								<i class="fas fa-wrench"></i>
-								<br>Borang Penyelenggaraan
+								<br>Daftar Penyelenggara
 							</button>
 						</div>
 					</div>
@@ -71,7 +71,7 @@
 						<div class="card-body">
 							<button class="btn btn-info btn-lg btn-block" onclick="laporanSelenggara()">
 								<i class="fas fa-wrench"></i>
-								<br>Laporan Penyelenggaraan
+								<br>Senarai Penyelenggara
 							</button>
 						</div>
 					</div>
@@ -96,7 +96,7 @@
 						<div class="card-body">
 							<button class="btn btn-warning btn-lg btn-block" onclick="borangKerosakan()">
 								<i class="fas fa-house-damage"></i>
-								<br>Borang Kerosakan
+								<br>Lapor Kerosakan
 							</button>
 						</div>
 					</div>
@@ -106,7 +106,7 @@
 						<div class="card-body">
 							<button class="btn btn-warning btn-lg btn-block" onclick="laporanKerosakan()">
 								<i class="fas fa-house-damage"></i>
-								<br>Laporan Kerosakan
+								<br>Senarai Kerosakan
 							</button>
 						</div>
 					</div>
@@ -131,7 +131,7 @@
 						<div class="card-body">
 							<button class="btn btn-success btn-lg btn-block" onclick="borangInventori()">
 								<i class="fas fa-warehouse"></i>
-								<br>Borang Inventori
+								<br>Daftar Inventori
 							</button>
 						</div>
 					</div>

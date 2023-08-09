@@ -3524,3 +3524,423 @@ Stack trace:
   thrown in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 147
 [20-May-2023 13:01:52 UTC] PHP Stack trace:
 [20-May-2023 13:01:52 UTC] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:147\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php'; protected $line = 147; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line <i>147</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcolor=\''... }) Unknown:0
+[24-May-2023 08:53:25 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[24-May-2023 08:53:25 UTC] PHP Stack trace:
+[24-May-2023 08:53:25 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[24-May-2023 08:53:25 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[24-May-2023 08:53:25 UTC] PHP Stack trace:
+[24-May-2023 08:53:25 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[24-May-2023 08:53:25 UTC] PHP Warning:  include(): Failed opening 'connection.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[24-May-2023 08:53:25 UTC] PHP Stack trace:
+[24-May-2023 08:53:25 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[24-May-2023 08:53:25 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:147
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 147
+[24-May-2023 08:53:25 UTC] PHP Stack trace:
+[24-May-2023 08:53:25 UTC] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:147\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php'; protected $line = 147; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line <i>147</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcolor=\''... }) Unknown:0
+[01-Jun-2023 03:28:29 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[01-Jun-2023 03:28:29 UTC] PHP Stack trace:
+[01-Jun-2023 03:28:29 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[01-Jun-2023 03:28:29 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[01-Jun-2023 03:28:29 UTC] PHP Stack trace:
+[01-Jun-2023 03:28:29 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[01-Jun-2023 03:28:29 UTC] PHP Warning:  include(): Failed opening 'connection.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[01-Jun-2023 03:28:29 UTC] PHP Stack trace:
+[01-Jun-2023 03:28:29 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[01-Jun-2023 03:28:29 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:147
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 147
+[01-Jun-2023 03:28:29 UTC] PHP Stack trace:
+[01-Jun-2023 03:28:29 UTC] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:147\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php'; protected $line = 147; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line <i>147</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcolor=\''... }) Unknown:0
+[02-Jun-2023 18:27:31 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[02-Jun-2023 18:27:31 UTC] PHP Stack trace:
+[02-Jun-2023 18:27:31 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[02-Jun-2023 18:27:31 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[02-Jun-2023 18:27:31 UTC] PHP Stack trace:
+[02-Jun-2023 18:27:31 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[02-Jun-2023 18:27:31 UTC] PHP Warning:  include(): Failed opening 'connection.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[02-Jun-2023 18:27:31 UTC] PHP Stack trace:
+[02-Jun-2023 18:27:31 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[02-Jun-2023 18:27:31 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:147
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 147
+[02-Jun-2023 18:27:31 UTC] PHP Stack trace:
+[02-Jun-2023 18:27:31 UTC] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:147\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php'; protected $line = 147; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line <i>147</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcolor=\''... }) Unknown:0
+[06-Jun-2023 06:59:00 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[06-Jun-2023 06:59:00 UTC] PHP Stack trace:
+[06-Jun-2023 06:59:00 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[06-Jun-2023 06:59:00 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[06-Jun-2023 06:59:00 UTC] PHP Stack trace:
+[06-Jun-2023 06:59:00 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[06-Jun-2023 06:59:00 UTC] PHP Warning:  include(): Failed opening 'connection.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[06-Jun-2023 06:59:00 UTC] PHP Stack trace:
+[06-Jun-2023 06:59:00 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[06-Jun-2023 06:59:00 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:147
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 147
+[06-Jun-2023 06:59:00 UTC] PHP Stack trace:
+[06-Jun-2023 06:59:00 UTC] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:147\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php'; protected $line = 147; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line <i>147</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcolor=\''... }) Unknown:0
+[13-Jun-2023 07:44:21 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[13-Jun-2023 07:44:21 UTC] PHP Stack trace:
+[13-Jun-2023 07:44:21 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[13-Jun-2023 07:44:21 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[13-Jun-2023 07:44:21 UTC] PHP Stack trace:
+[13-Jun-2023 07:44:21 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[13-Jun-2023 07:44:21 UTC] PHP Warning:  include(): Failed opening 'connection.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[13-Jun-2023 07:44:21 UTC] PHP Stack trace:
+[13-Jun-2023 07:44:21 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[13-Jun-2023 07:44:21 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:147
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 147
+[13-Jun-2023 07:44:21 UTC] PHP Stack trace:
+[13-Jun-2023 07:44:21 UTC] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:147\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php'; protected $line = 147; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line <i>147</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcolor=\''... }) Unknown:0
+[13-Jun-2023 21:38:55 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[13-Jun-2023 21:38:55 UTC] PHP Stack trace:
+[13-Jun-2023 21:38:55 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[13-Jun-2023 21:38:55 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[13-Jun-2023 21:38:55 UTC] PHP Stack trace:
+[13-Jun-2023 21:38:55 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[13-Jun-2023 21:38:55 UTC] PHP Warning:  include(): Failed opening 'connection.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[13-Jun-2023 21:38:55 UTC] PHP Stack trace:
+[13-Jun-2023 21:38:55 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[13-Jun-2023 21:38:55 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:147
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 147
+[13-Jun-2023 21:38:55 UTC] PHP Stack trace:
+[13-Jun-2023 21:38:55 UTC] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:147\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php'; protected $line = 147; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line <i>147</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcolor=\''... }) Unknown:0
+[13-Jun-2023 21:38:56 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[13-Jun-2023 21:38:56 UTC] PHP Stack trace:
+[13-Jun-2023 21:38:56 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[13-Jun-2023 21:38:56 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[13-Jun-2023 21:38:56 UTC] PHP Stack trace:
+[13-Jun-2023 21:38:56 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[13-Jun-2023 21:38:56 UTC] PHP Warning:  include(): Failed opening 'connection.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[13-Jun-2023 21:38:56 UTC] PHP Stack trace:
+[13-Jun-2023 21:38:56 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[13-Jun-2023 21:38:56 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:147
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 147
+[13-Jun-2023 21:38:56 UTC] PHP Stack trace:
+[13-Jun-2023 21:38:56 UTC] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:147\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php'; protected $line = 147; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line <i>147</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcolor=\''... }) Unknown:0
+[14-Jun-2023 03:17:12 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[14-Jun-2023 03:17:12 UTC] PHP Stack trace:
+[14-Jun-2023 03:17:12 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[14-Jun-2023 03:17:12 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[14-Jun-2023 03:17:12 UTC] PHP Stack trace:
+[14-Jun-2023 03:17:12 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[14-Jun-2023 03:17:12 UTC] PHP Warning:  include(): Failed opening 'connection.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[14-Jun-2023 03:17:12 UTC] PHP Stack trace:
+[14-Jun-2023 03:17:12 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[14-Jun-2023 03:17:12 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:147
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 147
+[14-Jun-2023 03:17:12 UTC] PHP Stack trace:
+[14-Jun-2023 03:17:12 UTC] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:147\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php'; protected $line = 147; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line <i>147</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcolor=\''... }) Unknown:0
+[14-Jun-2023 17:57:00 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[14-Jun-2023 17:57:00 UTC] PHP Stack trace:
+[14-Jun-2023 17:57:00 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[14-Jun-2023 17:57:00 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[14-Jun-2023 17:57:00 UTC] PHP Stack trace:
+[14-Jun-2023 17:57:00 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[14-Jun-2023 17:57:00 UTC] PHP Warning:  include(): Failed opening 'connection.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[14-Jun-2023 17:57:00 UTC] PHP Stack trace:
+[14-Jun-2023 17:57:00 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[14-Jun-2023 17:57:00 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:147
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 147
+[14-Jun-2023 17:57:00 UTC] PHP Stack trace:
+[14-Jun-2023 17:57:00 UTC] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:147\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php'; protected $line = 147; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line <i>147</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcolor=\''... }) Unknown:0
+[19-Jun-2023 15:56:12 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[19-Jun-2023 15:56:12 UTC] PHP Stack trace:
+[19-Jun-2023 15:56:12 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[19-Jun-2023 15:56:12 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[19-Jun-2023 15:56:12 UTC] PHP Stack trace:
+[19-Jun-2023 15:56:12 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[19-Jun-2023 15:56:12 UTC] PHP Warning:  include(): Failed opening 'connection.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[19-Jun-2023 15:56:12 UTC] PHP Stack trace:
+[19-Jun-2023 15:56:12 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[19-Jun-2023 15:56:12 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:147
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 147
+[19-Jun-2023 15:56:12 UTC] PHP Stack trace:
+[19-Jun-2023 15:56:12 UTC] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:147\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php'; protected $line = 147; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line <i>147</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcolor=\''... }) Unknown:0
+[20-Jun-2023 15:04:28 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[20-Jun-2023 15:04:28 UTC] PHP Stack trace:
+[20-Jun-2023 15:04:28 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[20-Jun-2023 15:04:28 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[20-Jun-2023 15:04:28 UTC] PHP Stack trace:
+[20-Jun-2023 15:04:28 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[20-Jun-2023 15:04:28 UTC] PHP Warning:  include(): Failed opening 'connection.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[20-Jun-2023 15:04:28 UTC] PHP Stack trace:
+[20-Jun-2023 15:04:28 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[20-Jun-2023 15:04:28 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:147
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 147
+[20-Jun-2023 15:04:28 UTC] PHP Stack trace:
+[20-Jun-2023 15:04:28 UTC] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:147\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php'; protected $line = 147; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line <i>147</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcolor=\''... }) Unknown:0
+[24-Jun-2023 16:35:31 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[24-Jun-2023 16:35:31 UTC] PHP Stack trace:
+[24-Jun-2023 16:35:31 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[24-Jun-2023 16:35:31 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[24-Jun-2023 16:35:31 UTC] PHP Stack trace:
+[24-Jun-2023 16:35:31 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[24-Jun-2023 16:35:31 UTC] PHP Warning:  include(): Failed opening 'connection.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[24-Jun-2023 16:35:31 UTC] PHP Stack trace:
+[24-Jun-2023 16:35:31 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[24-Jun-2023 16:35:31 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:147
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 147
+[24-Jun-2023 16:35:31 UTC] PHP Stack trace:
+[24-Jun-2023 16:35:31 UTC] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:147\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php'; protected $line = 147; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line <i>147</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcolor=\''... }) Unknown:0
+[24-Jun-2023 16:40:07 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[24-Jun-2023 16:40:07 UTC] PHP Stack trace:
+[24-Jun-2023 16:40:07 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[24-Jun-2023 16:40:07 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[24-Jun-2023 16:40:07 UTC] PHP Stack trace:
+[24-Jun-2023 16:40:07 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[24-Jun-2023 16:40:07 UTC] PHP Warning:  include(): Failed opening 'connection.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[24-Jun-2023 16:40:07 UTC] PHP Stack trace:
+[24-Jun-2023 16:40:07 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[24-Jun-2023 16:40:07 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:147
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 147
+[24-Jun-2023 16:40:07 UTC] PHP Stack trace:
+[24-Jun-2023 16:40:07 UTC] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:147\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php'; protected $line = 147; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line <i>147</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcolor=\''... }) Unknown:0
+[25-Jun-2023 01:34:28 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[25-Jun-2023 01:34:28 UTC] PHP Stack trace:
+[25-Jun-2023 01:34:28 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[25-Jun-2023 01:34:28 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[25-Jun-2023 01:34:28 UTC] PHP Stack trace:
+[25-Jun-2023 01:34:28 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[25-Jun-2023 01:34:28 UTC] PHP Warning:  include(): Failed opening 'connection.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[25-Jun-2023 01:34:28 UTC] PHP Stack trace:
+[25-Jun-2023 01:34:28 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[25-Jun-2023 01:34:28 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:147
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 147
+[25-Jun-2023 01:34:28 UTC] PHP Stack trace:
+[25-Jun-2023 01:34:28 UTC] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:147\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php'; protected $line = 147; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line <i>147</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcolor=\''... }) Unknown:0
+[27-Jun-2023 20:42:00 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[27-Jun-2023 20:42:00 UTC] PHP Stack trace:
+[27-Jun-2023 20:42:00 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[27-Jun-2023 20:42:00 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[27-Jun-2023 20:42:00 UTC] PHP Stack trace:
+[27-Jun-2023 20:42:00 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[27-Jun-2023 20:42:00 UTC] PHP Warning:  include(): Failed opening 'connection.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[27-Jun-2023 20:42:00 UTC] PHP Stack trace:
+[27-Jun-2023 20:42:00 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[27-Jun-2023 20:42:00 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:147
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 147
+[27-Jun-2023 20:42:00 UTC] PHP Stack trace:
+[27-Jun-2023 20:42:00 UTC] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:147\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php'; protected $line = 147; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line <i>147</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcolor=\''... }) Unknown:0
+[29-Jun-2023 01:23:06 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[29-Jun-2023 01:23:06 UTC] PHP Stack trace:
+[29-Jun-2023 01:23:06 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[29-Jun-2023 01:23:06 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[29-Jun-2023 01:23:06 UTC] PHP Stack trace:
+[29-Jun-2023 01:23:06 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[29-Jun-2023 01:23:06 UTC] PHP Warning:  include(): Failed opening 'connection.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[29-Jun-2023 01:23:06 UTC] PHP Stack trace:
+[29-Jun-2023 01:23:06 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[29-Jun-2023 01:23:06 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:147
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 147
+[29-Jun-2023 01:23:06 UTC] PHP Stack trace:
+[29-Jun-2023 01:23:06 UTC] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:147\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php'; protected $line = 147; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line <i>147</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcolor=\''... }) Unknown:0
+[29-Jun-2023 01:23:43 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[29-Jun-2023 01:23:43 UTC] PHP Stack trace:
+[29-Jun-2023 01:23:43 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[29-Jun-2023 01:23:43 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[29-Jun-2023 01:23:43 UTC] PHP Stack trace:
+[29-Jun-2023 01:23:43 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[29-Jun-2023 01:23:43 UTC] PHP Warning:  include(): Failed opening 'connection.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[29-Jun-2023 01:23:43 UTC] PHP Stack trace:
+[29-Jun-2023 01:23:43 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[29-Jun-2023 01:23:43 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:147
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 147
+[29-Jun-2023 01:23:43 UTC] PHP Stack trace:
+[29-Jun-2023 01:23:43 UTC] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:147\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php'; protected $line = 147; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line <i>147</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcolor=\''... }) Unknown:0
+[30-Jun-2023 15:33:56 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[30-Jun-2023 15:33:56 UTC] PHP Stack trace:
+[30-Jun-2023 15:33:56 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[30-Jun-2023 15:33:56 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[30-Jun-2023 15:33:56 UTC] PHP Stack trace:
+[30-Jun-2023 15:33:56 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[30-Jun-2023 15:33:56 UTC] PHP Warning:  include(): Failed opening 'connection.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[30-Jun-2023 15:33:56 UTC] PHP Stack trace:
+[30-Jun-2023 15:33:56 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[30-Jun-2023 15:33:56 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:147
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 147
+[30-Jun-2023 15:33:56 UTC] PHP Stack trace:
+[30-Jun-2023 15:33:56 UTC] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:147\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php'; protected $line = 147; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line <i>147</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcolor=\''... }) Unknown:0
+[06-Jul-2023 00:22:29 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[06-Jul-2023 00:22:29 UTC] PHP Stack trace:
+[06-Jul-2023 00:22:29 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[06-Jul-2023 00:22:29 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[06-Jul-2023 00:22:29 UTC] PHP Stack trace:
+[06-Jul-2023 00:22:29 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[06-Jul-2023 00:22:29 UTC] PHP Warning:  include(): Failed opening 'connection.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[06-Jul-2023 00:22:29 UTC] PHP Stack trace:
+[06-Jul-2023 00:22:29 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[06-Jul-2023 00:22:29 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:147
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 147
+[06-Jul-2023 00:22:29 UTC] PHP Stack trace:
+[06-Jul-2023 00:22:29 UTC] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:147\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php'; protected $line = 147; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line <i>147</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcolor=\''... }) Unknown:0
+[12-Jul-2023 11:03:54 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[12-Jul-2023 11:03:54 UTC] PHP Stack trace:
+[12-Jul-2023 11:03:54 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[12-Jul-2023 11:03:54 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[12-Jul-2023 11:03:54 UTC] PHP Stack trace:
+[12-Jul-2023 11:03:54 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[12-Jul-2023 11:03:54 UTC] PHP Warning:  include(): Failed opening 'connection.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[12-Jul-2023 11:03:54 UTC] PHP Stack trace:
+[12-Jul-2023 11:03:54 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[12-Jul-2023 11:03:54 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:147
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 147
+[12-Jul-2023 11:03:54 UTC] PHP Stack trace:
+[12-Jul-2023 11:03:54 UTC] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:147\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php'; protected $line = 147; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line <i>147</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcolor=\''... }) Unknown:0
+[12-Jul-2023 14:10:50 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[12-Jul-2023 14:10:50 UTC] PHP Stack trace:
+[12-Jul-2023 14:10:50 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[12-Jul-2023 14:10:50 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[12-Jul-2023 14:10:50 UTC] PHP Stack trace:
+[12-Jul-2023 14:10:50 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[12-Jul-2023 14:10:50 UTC] PHP Warning:  include(): Failed opening 'connection.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[12-Jul-2023 14:10:50 UTC] PHP Stack trace:
+[12-Jul-2023 14:10:50 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[12-Jul-2023 14:10:50 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:147
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 147
+[12-Jul-2023 14:10:50 UTC] PHP Stack trace:
+[12-Jul-2023 14:10:50 UTC] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:147\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php'; protected $line = 147; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line <i>147</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcolor=\''... }) Unknown:0
+[19-Jul-2023 04:20:50 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[19-Jul-2023 04:20:50 UTC] PHP Stack trace:
+[19-Jul-2023 04:20:50 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[19-Jul-2023 04:20:50 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[19-Jul-2023 04:20:50 UTC] PHP Stack trace:
+[19-Jul-2023 04:20:50 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[19-Jul-2023 04:20:50 UTC] PHP Warning:  include(): Failed opening 'connection.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[19-Jul-2023 04:20:50 UTC] PHP Stack trace:
+[19-Jul-2023 04:20:50 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[19-Jul-2023 04:20:50 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:147
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 147
+[19-Jul-2023 04:20:50 UTC] PHP Stack trace:
+[19-Jul-2023 04:20:50 UTC] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:147\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php'; protected $line = 147; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line <i>147</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcolor=\''... }) Unknown:0
+[26-Jul-2023 14:04:03 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[26-Jul-2023 14:04:03 UTC] PHP Stack trace:
+[26-Jul-2023 14:04:03 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[26-Jul-2023 14:04:03 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[26-Jul-2023 14:04:03 UTC] PHP Stack trace:
+[26-Jul-2023 14:04:03 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[26-Jul-2023 14:04:03 UTC] PHP Warning:  include(): Failed opening 'connection.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[26-Jul-2023 14:04:03 UTC] PHP Stack trace:
+[26-Jul-2023 14:04:03 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[26-Jul-2023 14:04:03 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:147
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 147
+[26-Jul-2023 14:04:03 UTC] PHP Stack trace:
+[26-Jul-2023 14:04:03 UTC] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:147\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php'; protected $line = 147; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line <i>147</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcolor=\''... }) Unknown:0
+[26-Jul-2023 14:55:23 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[26-Jul-2023 14:55:23 UTC] PHP Stack trace:
+[26-Jul-2023 14:55:23 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[26-Jul-2023 14:55:23 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[26-Jul-2023 14:55:23 UTC] PHP Stack trace:
+[26-Jul-2023 14:55:23 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[26-Jul-2023 14:55:23 UTC] PHP Warning:  include(): Failed opening 'connection.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[26-Jul-2023 14:55:23 UTC] PHP Stack trace:
+[26-Jul-2023 14:55:23 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[26-Jul-2023 14:55:23 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:147
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 147
+[26-Jul-2023 14:55:23 UTC] PHP Stack trace:
+[26-Jul-2023 14:55:23 UTC] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:147\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php'; protected $line = 147; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line <i>147</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcolor=\''... }) Unknown:0
+[31-Jul-2023 12:12:50 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[31-Jul-2023 12:12:50 UTC] PHP Stack trace:
+[31-Jul-2023 12:12:50 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[31-Jul-2023 12:12:50 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[31-Jul-2023 12:12:50 UTC] PHP Stack trace:
+[31-Jul-2023 12:12:50 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[31-Jul-2023 12:12:50 UTC] PHP Warning:  include(): Failed opening 'connection.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[31-Jul-2023 12:12:50 UTC] PHP Stack trace:
+[31-Jul-2023 12:12:50 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[31-Jul-2023 12:12:50 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:147
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 147
+[31-Jul-2023 12:12:50 UTC] PHP Stack trace:
+[31-Jul-2023 12:12:50 UTC] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:147\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php'; protected $line = 147; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line <i>147</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcolor=\''... }) Unknown:0
+[04-Aug-2023 05:35:25 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[04-Aug-2023 05:35:25 UTC] PHP Stack trace:
+[04-Aug-2023 05:35:25 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[04-Aug-2023 05:35:25 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[04-Aug-2023 05:35:25 UTC] PHP Stack trace:
+[04-Aug-2023 05:35:25 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[04-Aug-2023 05:35:25 UTC] PHP Warning:  include(): Failed opening 'connection.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[04-Aug-2023 05:35:25 UTC] PHP Stack trace:
+[04-Aug-2023 05:35:25 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[04-Aug-2023 05:35:25 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:147
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 147
+[04-Aug-2023 05:35:25 UTC] PHP Stack trace:
+[04-Aug-2023 05:35:25 UTC] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:147\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php'; protected $line = 147; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line <i>147</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcolor=\''... }) Unknown:0
+[04-Aug-2023 05:35:25 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[04-Aug-2023 05:35:25 UTC] PHP Stack trace:
+[04-Aug-2023 05:35:25 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[04-Aug-2023 05:35:25 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[04-Aug-2023 05:35:25 UTC] PHP Stack trace:
+[04-Aug-2023 05:35:25 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[04-Aug-2023 05:35:25 UTC] PHP Warning:  include(): Failed opening 'connection.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[04-Aug-2023 05:35:25 UTC] PHP Stack trace:
+[04-Aug-2023 05:35:25 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[04-Aug-2023 05:35:25 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:147
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 147
+[04-Aug-2023 05:35:25 UTC] PHP Stack trace:
+[04-Aug-2023 05:35:25 UTC] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:147\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php'; protected $line = 147; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line <i>147</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcolor=\''... }) Unknown:0
+[06-Aug-2023 16:41:42 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[06-Aug-2023 16:41:42 UTC] PHP Stack trace:
+[06-Aug-2023 16:41:42 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[06-Aug-2023 16:41:42 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[06-Aug-2023 16:41:42 UTC] PHP Stack trace:
+[06-Aug-2023 16:41:42 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[06-Aug-2023 16:41:42 UTC] PHP Warning:  include(): Failed opening 'connection.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 144
+[06-Aug-2023 16:41:42 UTC] PHP Stack trace:
+[06-Aug-2023 16:41:42 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:0
+[06-Aug-2023 16:41:42 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:147
+Stack trace:
+#0 {main}
+  thrown in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line 147
+[06-Aug-2023 16:41:42 UTC] PHP Stack trace:
+[06-Aug-2023 16:41:42 UTC] PHP   1. newrelic_exception_handler($"exception" = class Error { protected $message = 'Call to undefined function mysql_query()'; private $string = 'Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php:147\nStack trace:\n#0 {main}'; protected $code = 0; protected $file = '/home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php'; protected $line = 147; private $trace = []; private $previous = NULL; public $xdebug_message = '<tr><th align=\'left\' bgcolor=\'#f57900\' colspan="5"><span style=\'background-color: #cc0000; color: #fce94f; font-size: x-large;\'>( ! )</span> Error: Call to undefined function mysql_query() in /home/tahfizte/masjidpro.com/Masjid/App/pendaftaran.php on line <i>147</i></th></tr>\n<tr><th align=\'left\' bgcolor=\'#e9b96e\' colspan=\'5\'>Call Stack</th></tr>\n<tr><th align=\'center\' bgcolor=\'#eeeeec\'>#</th><th align=\'left\' bgcolor=\'#eeeeec\'>Time</th><th align=\'left\' bgcolor=\'#eeeeec\'>Memory</th><th align=\'left\' bgcolor=\''... }) Unknown:0

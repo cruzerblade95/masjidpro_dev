@@ -117,10 +117,22 @@ $tahun = $_POST['tahun'];
                         include("connection/connection_kehadiran.php");
                         $kod_masjid_kecik = strtolower($kod_masjid);
                         $kod_masjid_besaq = $kod_masjid;
-                        if(isset($_POST['search']))
-                        {
-                        $id_bulan = $_POST['month'];
-                        $tahun = $_POST['tahun'];
+                        // if(isset($_POST['search']))
+                        // {
+                        
+                        if($_POST['month'] && $_POST['tahun']){
+                            $id_bulan = $_POST['month'];
+                            $tahun = $_POST['tahun'];
+                        }else{
+                            $id_bulan = date("m");
+                            $tahun = date("Y");
+                        }
+
+                        // echo $id_bulan;
+                        // echo $tahun;
+                        // echo $id_bulan1;
+                        // echo $tahun1;
+                        // exit;
                         //Bulan
 
                         $hari = date("t", mktime(0,0,0,$id_bulan,1,$tahun));
@@ -172,6 +184,10 @@ $tahun = $_POST['tahun'];
                                 <td>  <?php echo $row['nama_penuh']; ?></td>
                             </tr>
                             <tr>
+                                <td align="left"><strong>NO IC</strong></td>
+                                <td>  <?php echo $row['id_fingerprint']; ?></td>
+                            </tr>
+                            <tr>
                                 <td align="left"><strong>Jawatan</strong></td>
                                 <td>  <?php echo $row['jawatan']; ?></td>
                             </tr>
@@ -185,6 +201,7 @@ $tahun = $_POST['tahun'];
                             </tr>
                             <tr>
                                 <td colspan="2">
+                                    <?php if($row['jawatan'] != "Siak"){ ?>
                                     <table width="100%" border="0" cellspacing="0" cellpadding="5" align="center">
                                         <tr style="text-align: center">
                                             <th colspan="5"><strong>Jumlah Kehadiran</strong></th>
@@ -204,10 +221,12 @@ $tahun = $_POST['tahun'];
                                             <td id="jumIsyak"></td>
                                         </tr>
                                     </table>
+                                    <?php } ?>
                                 </td>
                             </tr>
                             <?php $DIN = $row['id_fingerprint']; ?>
                         </table><br />
+                        <?php if($row['jawatan'] != "Siak"){ ?>
                         <table class="table table-bordered table-hover">
                             <thead>
                             <tr>
@@ -248,7 +267,9 @@ $tahun = $_POST['tahun'];
                                         $waktu_tamatArray[$kk] = $tarikh." ".$waktu_solat['Waktu Tamat'];
                                         $waktu_mula = $waktu_mulaArray[$kk];
                                         $waktu_tamat = $waktu_tamatArray[$kk];
-                                        $sql1 = "SELECT DATE_FORMAT(masa, '%r') 'Waktu Hadir' FROM kehadiran_pegawai WHERE no_ic='$DIN' AND masa BETWEEN DATE_FORMAT('$waktu_mula', '%Y-%m-%d %H:%i:%s') AND DATE_FORMAT('$waktu_tamat', '%Y-%m-%d %H:%i:%s') GROUP BY year(masa), month(masa), day(masa), hour(masa)";
+                                        $sql1 = "SELECT DATE_FORMAT(a.masa, '%r') 'Waktu Hadir' FROM kehadiran_pegawai a WHERE a.no_ic='$DIN' AND a.masa BETWEEN DATE_FORMAT('$waktu_mula', '%Y-%m-%d %H:%i:%s') AND DATE_FORMAT('$waktu_tamat', '%Y-%m-%d %H:%i:%s') 
+                                        UNION SELECT DATE_FORMAT(b.masa, '%r') 'Waktu Hadir' FROM kehadiran_pegawai_siak b WHERE b.no_ic='$DIN' AND b.masa BETWEEN DATE_FORMAT('$waktu_mula', '%Y-%m-%d %H:%i:%s') AND DATE_FORMAT('$waktu_tamat', '%Y-%m-%d %H:%i:%s')
+                                        GROUP BY year(masa), month(masa), day(masa), hour(masa)";
                                         $sql2 = "SELECT DATE_FORMAT(Clock, '%r') 'Waktu Hadir' FROM $kod_masjid_besaq WHERE DIN='$DIN' AND Clock BETWEEN DATE_FORMAT('$waktu_mula', '%Y-%m-%d %H:%i:%s') AND DATE_FORMAT('$waktu_tamat', '%Y-%m-%d %H:%i:%s') GROUP BY year(Clock), month(Clock), day(Clock), hour(Clock)";
                                         $sql3 = "SELECT DATE_FORMAT(auth, '%r') 'Waktu Hadir' FROM $kod_masjid_kecik WHERE nama='$DIN' AND auth BETWEEN DATE_FORMAT('$waktu_mula', '%Y-%m-%d %H:%i:%s') AND DATE_FORMAT('$waktu_tamat', '%Y-%m-%d %H:%i:%s') GROUP BY year(auth), month(auth), day(auth), hour(auth)";
                                         //echo($sql1.'<br />');
@@ -279,9 +300,91 @@ $tahun = $_POST['tahun'];
                                     } while ($waktu_solat = mysqli_fetch_assoc($resultspecial));
                                     ?>
                                 </tr>
-                                <?php $i++; } while ($i <= $hari); } ?>
+                                <?php $i++; } while ($i <= $hari); 
+                            // } 
+                            ?>
                             </tbody>
                         </table>
+                        <?php } ?>
+
+                        <?php if($row['jawatan'] == "Siak"){ ?>
+                        <table class="table table-bordered table-hover">
+                            <thead>
+                            <tr>
+                                <th rowspan="2" style="display:none"><div align="center">Bil</div></th>
+                                <th rowspan="2"><div align="center">Tarikh</div></th>
+                                <th colspan="5"><div align="center">Butir-butir Kehadiran</div></th>
+                            </tr>
+                            <tr>
+                                <th><div align="center">Imbas Masuk</div></th>
+                                <th><div align="center">Imbas Keluar</div></th>
+                            </tr>
+                            </thead>
+
+                            <tbody>
+                            <?php
+
+                            $ic = $row['id_fingerprint'];
+                            $i = 1;
+                            do {
+                                $z=mktime(00, 00, 00, $bulan3, $i, $tahun);
+                                $namahari = date("w", $z);
+                                $namahari2 = date("D", $z);
+                                $tarikh = date("Y-m-d",$z);
+
+                                $waktu_mula = $tarikh." 00:00:01";
+                                $waktu_tamat = $tarikh." 23:59:59";
+                                ?>
+
+                                <?php $x=1; ?>
+
+                                <tr>
+                                    <td style="display:none"><?php echo $x; ?></td>
+                                    <td align="center"><?php echo $tarikh; ?></td>
+                                    <td align="center">
+                                        <?php
+                                        //$sql1 = "SELECT DATE_FORMAT(Clock, '%r') 'Waktu Hadir' FROM $kod_masjid_kecik WHERE DIN='$DIN' AND Clock BETWEEN DATE_FORMAT('$waktu_mula', '%Y-%m-%d %H:%i:%s') AND DATE_FORMAT('$waktu_tamat', '%Y-%m-%d %H:%i:%s') GROUP BY year(Clock), month(Clock), day(Clock), hour(Clock)";
+                                        $sql_in = "SELECT DATE_FORMAT(a.masa, '%r') 'Waktu Hadir' FROM kehadiran_pegawai a WHERE DATE_FORMAT(a.masa, '%H:%i:%s') BETWEEN '06:00:00' AND '17:59:59' AND a.no_ic='$ic' AND a.masa BETWEEN DATE_FORMAT('$waktu_mula', '%Y-%m-%d %H:%i:%s') AND DATE_FORMAT('$waktu_tamat', '%Y-%m-%d %H:%i:%s') 
+                                        UNION SELECT DATE_FORMAT(b.masa, '%r') 'Waktu Hadir' FROM kehadiran_pegawai_siak b WHERE DATE_FORMAT(b.masa, '%H:%i:%s') BETWEEN '06:00:00' AND '17:59:59' AND b.no_ic='$ic' AND b.masa BETWEEN DATE_FORMAT('$waktu_mula', '%Y-%m-%d %H:%i:%s') AND DATE_FORMAT('$waktu_tamat', '%Y-%m-%d %H:%i:%s')
+                                        GROUP BY year(masa), month(masa), day(masa), hour(masa)";
+                                        //$sql_in = "SELECT * FROM kehadiran_pengurusan WHERE id_masjid='$id_masjid' AND no_ic='$ic'";
+                                        $query_in = mysqli_query($bd2,$sql_in);
+                                        $row_in = mysqli_num_rows($query_in);
+
+                                        if($row_in>0){
+                                            $data_in = mysqli_fetch_array($query_in);
+                                            echo $data_in['Waktu Hadir'];
+                                        }
+                                        ?>
+                                    </td>
+                                    <td align="center">
+                                        <?php
+                                        $sql_out = "SELECT DATE_FORMAT(a.masa, '%r') 'Waktu Hadir' FROM kehadiran_pegawai a WHERE DATE_FORMAT(a.masa, '%H:%i:%s') BETWEEN '18:00:00' AND '23:59:59' AND a.no_ic='$ic' AND a.masa BETWEEN DATE_FORMAT('$waktu_mula', '%Y-%m-%d %H:%i:%s') AND DATE_FORMAT('$waktu_tamat', '%Y-%m-%d %H:%i:%s') 
+                                        UNION SELECT DATE_FORMAT(b.masa, '%r') 'Waktu Hadir' FROM kehadiran_pegawai_siak b WHERE DATE_FORMAT(b.masa, '%H:%i:%s') BETWEEN '18:00:00' AND '23:59:59' AND b.no_ic='$ic' AND b.masa BETWEEN DATE_FORMAT('$waktu_mula', '%Y-%m-%d %H:%i:%s') AND DATE_FORMAT('$waktu_tamat', '%Y-%m-%d %H:%i:%s')
+                                        GROUP BY year(masa), month(masa), day(masa), hour(masa)";
+                                        $query_out = mysqli_query($bd2,$sql_out);
+                                        $row_out = mysqli_num_rows($query_out);
+
+                                        if($row_out>0){
+                                            $data_out = mysqli_fetch_array($query_out);
+                                            echo $data_out['Waktu Hadir'];
+                                        }
+                                        ?>
+                                    </td>
+                                </tr>
+
+                                <?php $i++; } while ($i <= $hari);
+
+
+                            // }
+
+                            ?>
+
+                            </tbody>
+
+                        </table>
+                        <?php } ?>
+
                     </div>
                     <!-- /.table-responsive -->
                     <div class="well">

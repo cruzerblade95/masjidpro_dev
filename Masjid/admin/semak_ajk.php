@@ -118,6 +118,12 @@
                                             </label>
                                         </div>
                                     </div>
+                                    <div class="form-group">
+                                        <div class="col-lg-12 col-md-6">
+                                            <label>Alamat Emel</label>
+                                            <input class="form-control" type="email" name="emel" id="emel">
+                                        </div>
+                                    </div>
                                     <div class="form-group row">
                                         <div class="col-12 col-md-6">
                                             <label>Jawatan</label>

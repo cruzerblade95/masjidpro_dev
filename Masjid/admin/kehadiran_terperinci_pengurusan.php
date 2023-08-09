@@ -116,10 +116,15 @@
                         include("connection/connection_kehadiran.php");
                         $kod_masjid_kecik = ($kod_masjid);
                         //echo($kod_masjid_kecik);
-                        if(isset($_POST['search']))
-                        {
-                        $id_bulan = $_POST['month'];
-                        $tahun = $_POST['tahun'];
+                        // if(isset($_POST['search']))
+                        // {
+                            if($_POST['month'] && $_POST['tahun']){
+                                $id_bulan = $_POST['month'];
+                                $tahun = $_POST['tahun'];
+                            }else{
+                                $id_bulan = date("m");
+                                $tahun = date("Y");
+                            }
                         //Bulan
 
                         $hari = date("t", mktime(0,0,0,$id_bulan,1,$tahun));
@@ -235,7 +240,7 @@
                                 <?php $i++; } while ($i <= $hari);
 
 
-                            }
+                            // }
 
                             ?>
 

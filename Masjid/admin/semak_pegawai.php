@@ -43,7 +43,7 @@
 						AND a.id_data=b.id_pegawai";
                 }
                 if($r_result['id_pegawai2'] != NULL) {
-                    $sql_search="SELECT CONCAT('A-', c.ID) 'id_data',c.nama_penuh,c.no_ic,c.no_tel,a.alamat_terkini,a.poskod,c.jantina,c.tarikh_lahir,
+                    $sql_search="SELECT CONCAT('A-', c.ID) 'id_data',c.nama_penuh,c.no_ic,c.no_tel'no_hp',a.alamat_terkini,a.poskod,c.jantina,c.tarikh_lahir,
 						b.id_datapegawai,b.id_pegawai2 'id_ajk',b.jawatan,b.tarikh_lantikan
 						FROM sej6x_data_peribadi a, data_pegawai_masjid b, sej6x_data_anakqariah c
 						WHERE b.id_datapegawai='".$idd."' 

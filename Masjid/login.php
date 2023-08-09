@@ -141,6 +141,8 @@ if (isset($_POST['submit'])){
         $_SESSION['username'] = $data['username'];
         $_SESSION['user_name'] = $data['user_name'];
         $_SESSION['user_id'] = $data['user_id'];
+        $_SESSION['no_hp'] = $data['no_hp'];
+        $_SESSION['user_ic'] = $data['user_ic'];
 
         $id_masjid = $_SESSION['id_masjid'];
         $kod_masjid = $_SESSION['kod_masjid'];
@@ -151,6 +153,8 @@ if (isset($_POST['submit'])){
         $daerah_masjid = $_SESSION['daerah_masjid'];
         $user_id = $_SESSION['user_id'];
         $user_type_id = $_SESSION['user_type_id'];
+        $no_hp_login = $_SESSION['no_hp'];
+        $user_ic_login = $_SESSION['user_ic'];
 
         //echo "<p>Login Berjaya user : ".$_SESSION['user_name']."</p>";  //xfunction lg..
         //session_start();

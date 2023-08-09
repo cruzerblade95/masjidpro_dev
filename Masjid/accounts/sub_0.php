@@ -16,20 +16,23 @@
                     <div class="row form-group">
                         <div class="col-12 col-md-auto">
                             <label>* Tarikh Transaksi</label>
-                            <input readonly class="tarikh-bootstrap form-control" name="dateRecords" value="<?php echo date('Y-m-d'); ?>">
+                            <input id="dateRecords" <?php if($_GET['training'] == NULL){echo 'readonly';}else{} ?> class="<?php if($_GET['training'] == 1){echo 'tarikh-bootstrap';}else{} ?> form-control" name="dateRecords" value="<?php echo date('Y-m-d'); ?>">
+                            <input type="hidden" id="tarikh_semasa" name="tarikh_semasa" value="<?php echo date('Y-m-d'); ?>">
                         </div>
                     </div>
                     <?php //} ?>
                     <div class="row form-group">
                         <div class="col-12 col-md-12">
                             <label>* <?php echo $_GET['mode'] == 2 ? 'Bayar Kepada' : 'Terima Daripada'; ?></label>
-                            <input oninput="this.value = this.value.toUpperCase()" required class="form-control" name="vendor" value="<?php echo($vendor); ?>">
+                            <input id="nama_vendor" oninput="this.value = this.value.toUpperCase()" required class="form-control" name="vendor" value="">
+                            <!--echo($vendor);-->
                         </div>
                     </div>
                     <div class="row form-group">
                         <div class="col-12 col-md-12">
                             <label>* Tujuan Bayaran</label>
-                            <input oninput="this.value = this.value.toUpperCase()" required class="form-control" name="particulars" value="<?php echo($particulars); ?>">
+                            <input id="tujuan_bayaran" oninput="this.value = this.value.toUpperCase()" required class="form-control" name="particulars" value="">
+                            <!--echo($particulars);-->
                         </div>
                     </div>
                     <div class="row">
@@ -38,7 +41,7 @@
                     <div class="row form-group border p-3">
                         <div class="col-12 col-md-6">
                             <label>Tunai</label>
-                            <select onchange="pilihBayaran(this.value, '.tunaiGroup')" class="kategori form-control" name="accountsCategory_id[]">
+                            <select onchange="pilihBayaran(this.value, '.tunaiGroup')" class="kategori form-control" name="accountsCategory_id_tunai">
                                 <option value=""></option>
                                 <?php do { ?>
                                     <option value="<?php echo($row_tunai['id']); ?>"><?php echo($row_tunai['categoryName']); ?></option>
@@ -57,7 +60,7 @@
                     <div class="row form-group border p-3">
                         <div class="col-12 col-md-6">
                             <label>Bank (Online Transfer)</label>
-                            <select onchange="pilihBayaran(this.value, '.bankGroup')" class="kategori form-control" name="accountsCategory_id[]">
+                            <select onchange="pilihBayaran(this.value, '.bankGroup')" class="kategori form-control" name="accountsCategory_id_bank">
                                 <option value=""></option>
                                 <?php do { ?>
                                     <option value="<?php echo($row_bank['id']); ?>"><?php echo($row_bank['categoryName']); ?></option>
@@ -76,7 +79,7 @@
                     <div class="row form-group border p-3">
                         <div class="col-12 col-md-6">
                             <label>Hutang</label>
-                            <select id="pilihHutang" onchange="pilihBayaran(this.value, '.hutangGroup')" class="kategori form-control" name="accountsCategory_id[]">
+                            <select id="pilihHutang" onchange="pilihBayaran(this.value, '.hutangGroup')" class="kategori form-control" name="accountsCategory_id_hutang">
                                 <option value=""></option>
                                 <?php do { ?>
                                     <option value="<?php echo($row_hutang['id']); ?>"><?php echo($row_hutang['categoryName']); ?></option>
@@ -97,12 +100,14 @@
                         <?php } else { ?>
                         <div class="balanceAccount row border border-success alert alert-success" role="alert" style="display: none">
                             <?php } ?>
+
+                        <input type="hidden" id="assetTypeData" name="assetType" value="">
                             <div class="col-12 col-md-6">
                                 <label class="font-weight-bold">* <?php echo $_GET['mode'] == 2 ? 'Caj' : 'Masuk'; ?> Ke Akaun / Tabung</label>
-                                <select onchange2="verifyPair()" id="pairAccountsCategory_id" class="form-control" required name="pairAccountsCategory_id">
+                                <select onchange="verifyPair()" id="pairAccountsCategory_id" class="form-control" required name="pairAccountsCategory_id">
                                     <option value=""></option>
                                     <?php do { ?>
-                                        <option class="pairAccountAll<?php echo $row_liabiliti['assetType'] == 7 ? ' pairCreditors' : ''; ?><?php echo $row_liabiliti['assetType'] == 6 ? ' pairDebtors' : ''; ?>" id="pairAccountsCategory_id_<?php echo($row_liabiliti['id']); ?>" value="<?php echo($row_liabiliti['id']); ?>"><?php echo($row_liabiliti['categoryName']); ?></option>
+                                        <option data-hidden="<?php echo $row_liabiliti['assetType']; ?>" class="pairAccountAll<?php echo $row_liabiliti['assetType'] == 7 ? ' pairCreditors' : ''; ?><?php echo $row_liabiliti['assetType'] == 6 ? ' pairDebtors' : ''; ?>" id="pairAccountsCategory_id_<?php echo($row_liabiliti['id']); ?>" value="<?php echo($row_liabiliti['id']); ?>"><?php echo($row_liabiliti['categoryName']); ?></option>
                                     <?php } while($row_liabiliti = mysqli_fetch_assoc($fetch_liabiliti)); ?>
                                 </select>
                             </div>

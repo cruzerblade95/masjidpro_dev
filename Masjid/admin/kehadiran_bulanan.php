@@ -1,12 +1,18 @@
 <?php
 if(isset($_POST['month'])){
     $month = $_POST['month'];
+}else{
+    $month = date("m");
 }
 if(isset($_POST['tahun'])){
     $tahun = $_POST['tahun'];
+}else{
+    $tahun = date("Y");
 }
 if(isset($_POST['jawatan'])){
     $jawatan = $_POST['jawatan'];
+}else{
+    $jawatan = "Imam";
 }
 ?>
 
@@ -54,7 +60,11 @@ if(isset($_POST['jawatan'])){
                                             <option value="">Sila Pilih Jawatan</option>
                                             <option value="Imam" <?php if ($jawatan=="Imam"){echo "selected='SELECTED'";}?>>Imam</option>
                                             <option value="Bilal" <?php if ($jawatan=="Bilal"){echo "selected='SELECTED'";}?>>Bilal</option>
-                                            <option value="Siak" <?php if ($jawatan=="Siak"){echo "selected='SELECTED'";}?>>Siak</option>
+                                            <!-- <option value="Siak" -->
+                                             <?php 
+                                            //  if ($jawatan=="Siak"){echo "selected='SELECTED'";}
+                                             ?>
+                                             <!-- >Siak</option> -->
                                         </select>
                                     </div>
                                 </div>
@@ -109,7 +119,11 @@ if(isset($_POST['jawatan'])){
             </div>
         </div>
     </div>
-    <?php if(isset($_POST['tahun']) OR isset($_POST['bulan'])){ ?>
+    <?php 
+    
+    // if(isset($_POST['tahun']) OR isset($_POST['bulan'])){
+        
+        ?>
     <div class="row">
         <div class="col-lg-12">
             <div class="card">
@@ -141,11 +155,11 @@ if(isset($_POST['jawatan'])){
                         $kod_masjid_kecik = strtolower($kod_masjid);
                         $kod_masjid_besaq = $kod_masjid;
                         //echo($kod_masjid_kecik);
-                        if(isset($_POST['search']))
-                        {
-                        $id_bulan = $_POST['month'];
-                        $tahun = $_POST['tahun'];
+                        // if(isset($_POST['search']))
+                        // {
+                        $id_bulan = $month;
                         //Bulan
+                        // echo $month. "\n" . $tahun . "\n" . $jawatan;
 
                         //$hari = date("t", mktime(0,0,0,$id_bulan,1,$tahun));
                         $hari = cal_days_in_month(CAL_GREGORIAN,$id_bulan,$tahun);
@@ -337,7 +351,9 @@ if(isset($_POST['jawatan'])){
                                             $sqlquery1=mysqli_query($conn2, $sql1);
                                         }
                                         else if($id_device==NULL OR $id_device==3){
-                                            $sql1 = "SELECT no_ic 'DIN', DATE_FORMAT(masa,'%H:%i') 'time' FROM kehadiran_pegawai WHERE masa BETWEEN DATE_FORMAT('$waktu_mula', '%Y-%m-%d %H:%i:%s') AND DATE_FORMAT('$waktu_tamat', '%Y-%m-%d %H:%i:%s') GROUP BY year(masa), month(masa), day(masa), hour(masa)";
+                                            $sql1 = "SELECT a.no_ic 'DIN', DATE_FORMAT(a.masa,'%H:%i') 'time' FROM kehadiran_pegawai a WHERE a.masa BETWEEN DATE_FORMAT('$waktu_mula', '%Y-%m-%d %H:%i:%s') AND DATE_FORMAT('$waktu_tamat', '%Y-%m-%d %H:%i:%s') 
+                                            UNION SELECT b.no_ic 'DIN', DATE_FORMAT(b.masa,'%H:%i') 'time' FROM kehadiran_pegawai_siak b WHERE b.masa BETWEEN DATE_FORMAT('$waktu_mula', '%Y-%m-%d %H:%i:%s') AND DATE_FORMAT('$waktu_tamat', '%Y-%m-%d %H:%i:%s')
+                                            GROUP BY year(masa), month(masa), day(masa), hour(masa)";
                                             $sqlquery1=mysqli_query($bd2, $sql1);
                                         }
 
@@ -384,7 +400,9 @@ if(isset($_POST['jawatan'])){
                                         $sqlquery1=mysqli_query($conn2, $sql1);
                                     }
                                     else if($id_device==NULL OR $id_device==3){
-                                        $sql1 = "SELECT no_ic 'DIN', DATE_FORMAT(masa,'%H:%i') 'time' FROM kehadiran_pegawai WHERE masa BETWEEN DATE_FORMAT('$waktu_mula', '%Y-%m-%d %H:%i:%s') AND DATE_FORMAT('$waktu_tamat', '%Y-%m-%d %H:%i:%s') GROUP BY year(masa), month(masa), day(masa), hour(masa)";
+                                        $sql1 = "SELECT a.no_ic 'DIN', DATE_FORMAT(a.masa,'%H:%i') 'time' FROM kehadiran_pegawai a WHERE a.masa BETWEEN DATE_FORMAT('$waktu_mula', '%Y-%m-%d %H:%i:%s') AND DATE_FORMAT('$waktu_tamat', '%Y-%m-%d %H:%i:%s') 
+                                        UNION SELECT b.no_ic 'DIN', DATE_FORMAT(b.masa,'%H:%i') 'time' FROM kehadiran_pegawai_siak b WHERE b.masa BETWEEN DATE_FORMAT('$waktu_mula', '%Y-%m-%d %H:%i:%s') AND DATE_FORMAT('$waktu_tamat', '%Y-%m-%d %H:%i:%s')
+                                        GROUP BY year(masa), month(masa), day(masa), hour(masa)";
                                         $sqlquery1=mysqli_query($bd2, $sql1);
                                     }
 
@@ -431,7 +449,9 @@ if(isset($_POST['jawatan'])){
                                         $sqlquery1=mysqli_query($conn2, $sql1);
                                     }
                                     else if($id_device==NULL OR $id_device==3){
-                                        $sql1 = "SELECT no_ic 'DIN', DATE_FORMAT(masa,'%H:%i') 'time' FROM kehadiran_pegawai WHERE masa BETWEEN DATE_FORMAT('$waktu_mula', '%Y-%m-%d %H:%i:%s') AND DATE_FORMAT('$waktu_tamat', '%Y-%m-%d %H:%i:%s') GROUP BY year(masa), month(masa), day(masa), hour(masa)";
+                                        $sql1 = "SELECT a.no_ic 'DIN', DATE_FORMAT(a.masa,'%H:%i') 'time' FROM kehadiran_pegawai a WHERE a.masa BETWEEN DATE_FORMAT('$waktu_mula', '%Y-%m-%d %H:%i:%s') AND DATE_FORMAT('$waktu_tamat', '%Y-%m-%d %H:%i:%s') 
+                                        UNION SELECT b.no_ic 'DIN', DATE_FORMAT(b.masa,'%H:%i') 'time' FROM kehadiran_pegawai_siak b WHERE b.masa BETWEEN DATE_FORMAT('$waktu_mula', '%Y-%m-%d %H:%i:%s') AND DATE_FORMAT('$waktu_tamat', '%Y-%m-%d %H:%i:%s')
+                                        GROUP BY year(masa), month(masa), day(masa), hour(masa)";
                                         $sqlquery1=mysqli_query($bd2, $sql1);
                                     }
 
@@ -478,7 +498,9 @@ if(isset($_POST['jawatan'])){
                                         $sqlquery1=mysqli_query($conn2, $sql1);
                                     }
                                     else if($id_device==NULL OR $id_device==3){
-                                        $sql1 = "SELECT no_ic 'DIN', DATE_FORMAT(masa,'%H:%i') 'time' FROM kehadiran_pegawai WHERE masa BETWEEN DATE_FORMAT('$waktu_mula', '%Y-%m-%d %H:%i:%s') AND DATE_FORMAT('$waktu_tamat', '%Y-%m-%d %H:%i:%s') GROUP BY year(masa), month(masa), day(masa), hour(masa)";
+                                        $sql1 = "SELECT a.no_ic 'DIN', DATE_FORMAT(a.masa,'%H:%i') 'time' FROM kehadiran_pegawai a WHERE a.masa BETWEEN DATE_FORMAT('$waktu_mula', '%Y-%m-%d %H:%i:%s') AND DATE_FORMAT('$waktu_tamat', '%Y-%m-%d %H:%i:%s') 
+                                        UNION SELECT b.no_ic 'DIN', DATE_FORMAT(b.masa,'%H:%i') 'time' FROM kehadiran_pegawai_siak b WHERE b.masa BETWEEN DATE_FORMAT('$waktu_mula', '%Y-%m-%d %H:%i:%s') AND DATE_FORMAT('$waktu_tamat', '%Y-%m-%d %H:%i:%s')
+                                        GROUP BY year(masa), month(masa), day(masa), hour(masa)";
                                         $sqlquery1=mysqli_query($bd2, $sql1);
                                     }
 
@@ -525,7 +547,9 @@ if(isset($_POST['jawatan'])){
                                         $sqlquery1=mysqli_query($conn2, $sql1);
                                     }
                                     else if($id_device==NULL OR $id_device==3){
-                                        $sql1 = "SELECT no_ic 'DIN', DATE_FORMAT(masa,'%H:%i') 'time' FROM kehadiran_pegawai WHERE masa BETWEEN DATE_FORMAT('$waktu_mula', '%Y-%m-%d %H:%i:%s') AND DATE_FORMAT('$waktu_tamat', '%Y-%m-%d %H:%i:%s') GROUP BY year(masa), month(masa), day(masa), hour(masa)";
+                                        $sql1 = "SELECT a.no_ic 'DIN', DATE_FORMAT(a.masa,'%H:%i') 'time' FROM kehadiran_pegawai a WHERE a.masa BETWEEN DATE_FORMAT('$waktu_mula', '%Y-%m-%d %H:%i:%s') AND DATE_FORMAT('$waktu_tamat', '%Y-%m-%d %H:%i:%s') 
+                                        UNION SELECT b.no_ic 'DIN', DATE_FORMAT(b.masa,'%H:%i') 'time' FROM kehadiran_pegawai_siak b WHERE b.masa BETWEEN DATE_FORMAT('$waktu_mula', '%Y-%m-%d %H:%i:%s') AND DATE_FORMAT('$waktu_tamat', '%Y-%m-%d %H:%i:%s')
+                                        GROUP BY year(masa), month(masa), day(masa), hour(masa)";
                                         $sqlquery1=mysqli_query($bd2, $sql1);
                                     }
 
@@ -561,7 +585,7 @@ if(isset($_POST['jawatan'])){
                                 <?php $i++; } while ($i <= $hari);
 
 
-                            }
+                            // }
 
                             ?>
 
@@ -660,6 +684,6 @@ if(isset($_POST['jawatan'])){
         </div>
     </div>
     <?php
-    }
+    // }
     ?>
 </div>

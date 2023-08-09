@@ -7,14 +7,14 @@ $result = mysqli_query($bd2, $sql_search) or die ("Error :".mysqli_error($bd2));
 
 ?>
 <div class="breadcrumbs">
-    <div class="col-sm-4">
+    <div class="col-sm-5">
         <div class="page-header float-left">
             <div class="page-title">
                 <h1>Senarai Pegawai Masjid</h1>
             </div>
         </div>
     </div>
-    <div class="col-sm-8">
+    <div class="col-sm-7">
         <div class="page-header float-right">
             <div class="page-title">
                 <ol class="breadcrumb text-right">
@@ -58,7 +58,7 @@ $result = mysqli_query($bd2, $sql_search) or die ("Error :".mysqli_error($bd2));
                                     <td><div align="center"><?php echo $row['no_ic']; ?></div></td>
                                     <td><div align="center"><?php echo $row['no_hp']; ?></div></td>
                                     <td><div align="center"><?php echo $row['jawatan']; ?></div></td>
-                                    <td><div align="center"><a href="utama.php?view=admin&action=semak_pegawai&id_datapegawai=<?php echo $row['id_datapegawai'];?>">[Semak]</a></div></td>
+                                    <td><div align="center"><a href="utama.php?view=admin&action=semak_pegawai&id_datapegawai=<?php echo $row['id_datapegawai'];?>&sideMenu=organisasi">[Semak]</a></div></td>
                                     <td>
                                         <div align="center">
                                             <form name="delete" method="POST" action="admin/del_senaraipegawai.php">

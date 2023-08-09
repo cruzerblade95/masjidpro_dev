@@ -73,7 +73,7 @@
 <!-- ============================================================== -->
 <footer class="footer">
     © <?php echo date('Y'); ?> Masjid Pro <label class="printPageShow">, Dicetak pada <?php fungsi_tarikh(date('Y-m-d H:i:s'), 1, 7); ?></label>
-    <?php if($_GET['action'] == "kewangan" && $_GET['newModul'] != 1) { ?><a style="color: black" class="font-weight-bold" href="utama.php?view=admin&action=kewangan&sideMenu=masjid&newModul=1">* Modul baharu kewangan</a><?php } ?>
+    <?php if($_GET['action'] == "kewangan" && $_GET['newModul'] = 1) { ?><a style="color: black" class="font-weight-bold" href="utama.php?view=admin&action=kewangan&sideMenu=masjid">* Modul lama kewangan</a><?php } ?>
 </footer>
 <!-- ============================================================== -->
 <!-- End footer -->

@@ -1,5 +1,7 @@
+
 <?php
 //echo($strPage[2].' : '.$strPage[3].' : '.$strPage[4]);
+
 if($strPage[4] != NULL) {
     //$trainingBaucar = e($strPage[2], NULL, NULL);
     $id_masjid = e($strPage[3], NULL, NULL);
@@ -7,19 +9,26 @@ if($strPage[4] != NULL) {
     $idBill = explode("-", $idBill);
     $typeJournalEntry = $idBill[0];
     $baucarIDNo = $idBill[1];
-    if($typeJournalEntry == 1) $baucarID = "a.receivedNo = $baucarIDNo";
-    if($typeJournalEntry == 2) $baucarID = "a.payNo = $baucarIDNo";
+    if($typeJournalEntry == 2) {
+        $baucarID = "a.receivedNo = $baucarIDNo";
+        $baucarIDs = "aa.receivedNo = $baucarIDNo";
+    }
+    if($typeJournalEntry == 1) {
+        $baucarID = "a.payNo = $baucarIDNo";
+        $baucarIDs = "aa.payNo = $baucarIDNo";
+    }
 
     $q = "SELECT a.*, c.kod_masjid, c.nama_masjid, d.assetType, d.categoryName FROM accountsRecords a
     LEFT JOIN accountsCategory b ON a.pairAccountsCategory_id = b.id
     LEFT JOIN sej6x_data_masjid c ON a.id_masjid = c.id_masjid
     LEFT JOIN accountsCategory d ON a.accountsCategory_id = d.id
-WHERE $baucarID AND a.id_masjid = $id_masjid AND a.typeModule = $training";
+WHERE $baucarID AND a.id_masjid = $id_masjid AND a.typeModule = $training AND a.kiraan IS NULL";
     //echo($q);
     $q2 = "SELECT a.*, c.kod_masjid, c.logo, c.nama_masjid, c.alamat_masjid, c.negeri, c.daerah, c.no_tel,
-       SUM(a.amount) 'Jumlah' FROM accountsRecords a LEFT JOIN accountsCategory b ON a.pairAccountsCategory_id = b.id
+        (SELECT bb.categoryName FROM accountsRecords aa LEFT JOIN accountsCategory bb ON a.accountsCategory_id = bb.id WHERE $baucarID AND a.id_masjid = $id_masjid AND a.typeModule = $training AND a.kiraan = 1 LIMIT 1) 'paparans',
+       SUM(a.amount) 'Jumlah' FROM accountsRecords a LEFT JOIN accountsCategory b ON a.accountsCategory_id = b.id
     LEFT JOIN sej6x_data_masjid c ON a.id_masjid = c.id_masjid
-WHERE $baucarID AND a.id_masjid = $id_masjid AND a.typeModule = $training GROUP BY a.typeJournalEntry";
+WHERE $baucarID AND a.id_masjid = $id_masjid AND a.typeModule = $training AND a.kiraan = 1 GROUP BY a.typeJournalEntry";
 
     $qq = mysqli_query($bd2, $q) or die(mysqli_error($bd2));
     $q_row = mysqli_fetch_assoc($qq);
@@ -27,13 +36,17 @@ WHERE $baucarID AND a.id_masjid = $id_masjid AND a.typeModule = $training GROUP 
     $q_row2 = mysqli_fetch_assoc($qq2);
 
 
-    if($typeJournalEntry == 1) {
+    if($typeJournalEntry == 2) {
         $tajuk = 'RESIT';
         $status = 'Terima Daripada:';
+        $status2 = 'Terima Ke:';
+        $hideCol = 'display: none;';
     }
-    if($typeJournalEntry == 2) {
+    if($typeJournalEntry == 1) {
         $tajuk = 'BAUCAR BAYARAN';
         $status = 'Bayar Kepada:';
+        $status2 = 'Bayar Ke:';
+        $hideCol = 'display: table-row;';
     }
 
 }
@@ -96,6 +109,25 @@ else {
                         <th align="left" valign="middle" class="isi-padat">No Cek: <?php echo($q_row['chequeNo']); ?></th>
                     <?php } ?>
                     <th align="right" valign="middle" class="isi-padat"><div align="right">RM <?php echo number_format($q_row['amount'], 2); ?></div></th>
+                </tr>
+                <?php } while($q_row = mysqli_fetch_assoc($qq)); ?>
+                </tbody>
+            </table>
+        </td>
+    </tr>
+    <tr style="<?php echo $hideCol ?>">
+        <th align="left" class="isi-padat"><?php echo $status2; ?></th>
+        <td align="center" class="isi-padat">:</td>
+        <td align="right" class="isi-padat">
+            <table width="100%" border="0" cellspacing="0" cellpadding="5">
+                <tbody>
+                <?php do { ?>
+                <tr style="<?php echo $hideCol ?>">
+                    <th align="left" valign="middle" class="isi-padat"><?php echo $q_row2['assetType'] == 2 ? $q_row2['paparans']." (Online Transfer)" : $q_row2['paparans']; ?></th>
+                    <?php if($q_row2['chequeNo'] != NULL && $q_row2['assetType'] == 1) { ?>
+                        <th align="left" valign="middle" class="isi-padat">No Cek: <?php echo($q_row2['chequeNo']); ?></th>
+                    <?php } ?>
+                    <th align="right" valign="middle" class="isi-padat"><div align="right">RM <?php echo number_format($q_row2['amount'], 2); ?></div></th>
                 </tr>
                 <?php } while($q_row = mysqli_fetch_assoc($qq)); ?>
                 </tbody>

@@ -110,8 +110,8 @@
 									<?php
 									$id_masjid1=$row['id_masjid'];
 									$sql1="SELECT * FROM sej6x_data_masjid WHERE id_masjid='$id_masjid1'";
-									$sqlquery1=mysql_query($sql1,$bd);
-									$data=mysql_fetch_array($sqlquery1);
+									$sqlquery1=mysqli_query($sql1,$bd2);
+									$data=mysqli_fetch_array($sqlquery1);
 									
 									echo $data['nama_masjid'];
 									?>
@@ -155,7 +155,7 @@
 					include("connection/connection.php");
 
 					$sql_search="SELECT id_data,nama_penuh,no_ic,umur,alamat_terkini FROM sej6x_data_peribadi WHERE id_masjid='$id_masjid'"; 
-					$result = mysql_query($sql_search) or die ("Error :".mysql_error());  
+					$result = mysqli_query($sql_search) or die ("Error :".mysqli_error());
 					?> 
 					<div class="modal-body">
 						<div class="row">

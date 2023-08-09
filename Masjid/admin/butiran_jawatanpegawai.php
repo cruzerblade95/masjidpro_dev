@@ -45,8 +45,8 @@ FROM sej6x_data_peribadi a LEFT JOIN pekerjaan b ON a.pekerjaan = b.id_pekerjaan
                     ?>
                     <div class="card-body">
                         <form action="admin/add_pegawai.php" method='post' enctype="multipart/form-data">
+                            <?php while($row = mysqli_fetch_assoc($result)) { ?>
                             <div class="row">
-                                <?php while($row = mysqli_fetch_assoc($result)) { ?>
                                     <div class="col-12">
                                         <div class="form-group">
                                             <label>Nama Pegawai Masjid:</label> <?php echo $row['nama_penuh'];?>
@@ -63,6 +63,12 @@ FROM sej6x_data_peribadi a LEFT JOIN pekerjaan b ON a.pekerjaan = b.id_pekerjaan
                                         </div>
                                     </div>
                                     <hr>
+                                    <div class="col-12 col-md-4">
+                                        <div class="form-group">
+                                            <label>Alamat E-mel</label>
+                                            <input class="form-control" type="email" name="emel" id="emel" required>
+                                        </div>
+                                    </div>
                                     <div class="col-12 col-md-4">
                                         <div class="form-group">
                                             <label>Jawatan</label>
@@ -100,20 +106,21 @@ FROM sej6x_data_peribadi a LEFT JOIN pekerjaan b ON a.pekerjaan = b.id_pekerjaan
                                             <img class="img-fluid p-3" id="output1" src="">
                                         </div>
                                     </div>
-                                    <div class="col-12 col-md-4">
+                            </div>
+                            <div class="row">
+                                    <div class="col-12">
                                         <center>
                                             <div class="form-group">
-                                                <br>
                                                 <input type="hidden" name="id_data" value="<?php echo $row['id_data']; ?>">
                                                 <input type="hidden" name="id_pegawai" value="<?php echo $row['id_data']; ?>">
                                                 <input type="submit"  value="Simpan" class="btn btn-primary">
                                             </div>
                                         </center>
                                     </div>
-                                    <?php
-                                }
-                                ?>
                             </div>
+                            <?php
+                            }
+                            ?>
                         </form>
                     </div>
                     <?php
@@ -178,6 +185,12 @@ FROM sej6x_data_peribadi a LEFT JOIN pekerjaan b ON a.pekerjaan = b.id_pekerjaan
                                             <option value="MAIP">MAIP </option>
                                             <option value="Masjid">Masjid</option>
                                         </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="form-group">
+                                        <label>Alamat E-mel</label>
+                                        <input class="form-control" type="email" name="emel" id="emel" required>
                                     </div>
                                 </div>
                                 <div class="col-lg-4">

@@ -57,8 +57,8 @@ else if($_SERVER['REQUEST_METHOD'] == "POST") {
             }
             array_push($cols[$i],"id_masjid", "updatedBy", "typeModule");
             array_push($vals[$i], $_SESSION['id_masjid'], $_SESSION['user_id'], $training);
-            array_push($cols2[$i],"id_masjid", "updatedBy", "typeModule");
-            array_push($vals2[$i], $_SESSION['id_masjid'], $_SESSION['user_id'], $training);
+            array_push($cols2[$i],"id_masjid", "updatedBy", "typeModule", "baki_permulaan");
+            array_push($vals2[$i], $_SESSION['id_masjid'], $_SESSION['user_id'], $training, 1);
             $colsSQL = implode(", ", $cols[$i]);
             $valsSQL = implode(", ", $vals[$i]);
             $colsSQL2 = implode(", ", $cols2[$i]);
@@ -81,6 +81,8 @@ else if($_SERVER['REQUEST_METHOD'] == "POST") {
             }
             else {
                 $q = "INSERT INTO accountsCategory ($colsSQL) VALUES ($valsSQL)";
+                // echo $q;
+                // exit;
                 $updateTable1[$i] = mysqli_query($bd2, $q);
                 //echo($q.'<br />'."\r\n".$q2."\r\n");
                 if(!$updateTable1[$i]) $tidakBerjaya = 1;
@@ -99,7 +101,9 @@ else if($_SERVER['REQUEST_METHOD'] == "POST") {
                     }
                 }
             }
-            //echo($q.'<br />'."\r\n".$q2."\r\n");
+            // echo($q.'<br />'."\r\n".$q2."\r\n");
+            // echo mysqli_error($bd2);
+            // exit;
         }
         if($tidakBerjaya == 0) $_SESSION['msgType'] = "success";
         if($tidakBerjaya == 1) $_SESSION['msgType'] = "danger";

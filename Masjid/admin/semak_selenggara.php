@@ -1,138 +1,241 @@
-<?php 
 
-	include("connection/connection.php"); 
-
-	$idd = $_GET['id_selenggara'];
-
-	//sql view selenggara
-	$sql_search="SELECT * FROM sej6x_data_selenggara WHERE id_selenggara='$idd'";
-	$result = mysqli_query($bd2,$sql_search) or die ("Error :".mysqli_error());
-	$row = mysqli_fetch_assoc($result);
-?> 
-<div class="breadcrumbs">
-	<div class="col-sm-4">
-		<div class="page-header float-left">
-			<div class="page-title">
-				<h1>Semak Selenggara</h1>
-			</div>
-		</div>
-	</div>
-	<div class="col-sm-8">
-		<div class="page-header float-right">
-			<div class="page-title">
-				<ol class="breadcrumb text-right">
-					<li><a href="utama.php?view=admin&action=maklumatselenggara">Laporan Selenggara</a></li>
-					<li class="active">Semak Selenggara</li>
-				</ol>
-			</div>
-		</div>
-	</div>
-</div>
+<?php
+$idd = $_GET['id_selenggara'];
+$sqlw = "SELECT id_penyelenggara, id_masjid, kat_penyelenggara, nama_penyelenggara, kat_peralatan,
+        no_telefon, tempoh_perkhidmatan FROM penyelenggara WHERE id_penyelenggara = $idd";
+$result = mysqli_query($bd2, $sqlw) or die ("Error :".mysqli_error($bd2));
+$row = mysqli_fetch_assoc($result);
+?>
+<?php
+$sql = "SELECT a.id_dataajk 'id_dataajk', a.jawatan 'jawatan', b.nama_penuh 'nama_penuh' FROM data_ajkmasjid a, sej6x_data_peribadi b WHERE a.id_ajk=b.id_data AND a.id_masjid='$id_masjid' ORDER BY (CASE a.jawatan WHEN 'Pengerusi' THEN 1 WHEN 'Timbalan Pengerusi' THEN 2 WHEN 'Setiausaha' THEN 3 WHEN 'Bendahari' THEN 4 WHEN 'AJK' THEN 5 ELSE 'Pemeriksa Kira-Kira' END), b.nama_penuh ASC";
+$list_ajk = mysqli_query($bd2, $sql) or die(mysqli_error($bd2));
+?>
+<?php
+$sqll = "SELECT id_jenisinventori,jenis_inventori FROM sej6x_data_jenisinventori WHERE id_masjid='0' OR id_masjid='$id_masjid' ";
+$list_peralatan = mysqli_query($bd2, $sqll) or die(mysqli_error($bd2));
+?>
+<?php
+if($_GET['action']=="selenggara")
+{
+    ?>
+    <div class="breadcrumbs">
+        <div class="col-sm-4">
+            <div class="page-header float-left">
+                <div class="page-title">
+                    <h1>Borang Selenggara</h1>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-8">
+            <div class="page-header float-right">
+                <div class="page-title">
+                    <ol class="breadcrumb text-right">
+                        <li><a href="utama.php?view=admin&action=dashboard_selenggara">Menu Selenggara</a></li>
+                        <li class="active">Borang Selenggara</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <?php
+}
+?>
 <div class="content mt-3">
-	<div class="row">
-		<div class="col-lg-12">
-			<div class="card">
-				<div class="card-header">Maklumat Selenggara</div>
-				<div class="card-body">
-					<form method="POST" action="admin/update_selenggara.php" name="selenggara">
-					<div class="row">
-						<div class="col-lg-12" align="center">
-							<h4>JENIS SELENGGARA</h4>
-						</div>
-						<hr>
-						<div class="col-lg-6">
-							<div class="form-group">
-                                <?php
-                                if($row['id_vendor']!="")
-                                {
-                                ?>
-								<label>Vendor</label>
-								<select class="form-control" name="vendor_selenggara" required>
-									<option>Sila Pilih:-</option>
-									<?php
-
-									$id_vendor=$row['id_vendor'];
-									
-									$sql1="SELECT * FROM kew_vendor WHERE id_masjid='$id_masjid' AND jenis_vendor='5'";
-									$sqlquery1=mysqli_query($bd2,$sql1);
-									
-									while($data1=mysqli_fetch_array($sqlquery1))
-									{
-									?>
-									<option value="<?php echo $data1['id_vendor']; ?>" <?php if($id_vendor==$data1['id_vendor']) { echo "selected"; } ?>><?php echo $data1['nama_vendor']; ?></option>
-									<?php
-									}
-									?>
-								</select>
-                                <?php
-                                }
-                                else if($row['id_dataajk']!="")
-                                {
-                                ?>
-                                <label>AJK Masjid</label>
-                                <select class="form-control" name="ajk_selenggara">
-                                <?php
-
-                                $id_dataajk=$row['id_dataajk'];
-
-                                $sql3="SELECT a.nama_penuh, a.no_ic, a.no_hp, a.alamat_terkini, a.id_data FROM sej6x_data_peribadi a, data_ajkmasjid b WHERE b.id_dataajk='$id_dataajk' AND a.id_data=b.id_ajk";
-                                $sqlquery3=mysqli_query($bd2,$sql3);
-                                $data3=mysqli_fetch_array($sqlquery3);
-
-                                $sql2="SELECT a.nama_penuh,b.id_dataajk FROM sej6x_data_peribadi a, data_ajkmasjid b WHERE b.id_masjid='$id_masjid' AND a.id_data=b.id_ajk";
-                                $sqlquery2=mysqli_query($bd2,$sql2);
-
-                                while($data2=mysqli_fetch_array($sqlquery2))
-                                {
-                                ?>
-                                <option value="<?php echo $data2['id_dataajk']; ?>" <?php if($id_dataajk==$data2['id_dataajk']) { echo "selected"; } ?>><?php echo $data2['nama_penuh']; ?></option>
-                                <?php
-                                }
-                                ?>
-                                </select>
-                                <?php
-                                }
-                                ?>
-							</div>
-							<div class="form-group">
-								<label>Tarikh Selenggara</label>
-								<input type="date" class="form-control" name="tarikh_selenggara" value="<?php echo $row['tarikh_selenggara'] ?>" required>	            
-							</div>
-							<div class="form-group">
-								<label>Masa Selenggara</label>
-								<input type="time" class="form-control" name="masa_selenggara" value="<?php echo $row['masa_selenggara'] ?>" required>	            
-							</div>
-						</div>
-						<div class="col-lg-6">
-							<div class="form-group">
-								<label>Pilihan Selenggara</label>
-								<select class="form-control" name="pilihan_selenggara" id="pilihan_selenggara">
-									<option>Sila Pilih:-</option>
-									<option value="1" <?php if($row["pilihan_selenggara"]=='1') { echo "selected"; } ?>>Fasiliti</option>
-									<option value="2" <?php if($row["pilihan_selenggara"]=='2') { echo "selected"; } ?>>Elektrik</option>
-									<option value="3" <?php if($row["pilihan_selenggara"]=='3') { echo "selected"; } ?>>Air</option>
-									<option value="4" <?php if($row["pilihan_selenggara"]=='4') { echo "selected"; } ?>>Komunikasi</option>
-									<option value="5" <?php if($row["pilihan_selenggara"]=='5') { echo "selected"; } ?>>Perkakasan</option>
-								</select>
-							</div>
-							<div class="form-group">
-								<label>Catatan</label>
-								<textarea class="form-control" rows="3" name="catatan"><?php echo $row['catatan'] ?></textarea>
-							</div>
-							<div class="form-group">  
-								<input type="hidden" name="id_selenggara" value="<?php echo $row['id_selenggara']; ?>">                    
-								<input type="hidden" name="id_pic" <?php if($row['id_vendor']!="") { ?>value="1"<?php } else if($row['id_dataajk']!="") { ?>value="2"<?php } ?>>
-							</div>
-						</div>
-                        <div class="col-lg-12" align="center">
-                            <div class="form-group">
-                                <button type="submit" class="btn btn-primary">Kemaskini</button>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-header">
+                    Maklumat Penyelenggaraan
+                </div>
+                <div class="card-body">
+                    <form method="POST" action="admin/update_selenggara.php" name="selenggara">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <!-- kategori penyelenggara & nama penyelenggara-->
+                                <div class="form-group">
+                                    <label>Kategori Penyelenggara</label>
+                                    <select class="form-control" name="kat_penyelenggara" id="kat_penyelenggara" onchange="showForm1()">
+                                        <option value="">Sila Pilih</option>
+                                        <option value="masjid" <?php if($row['kat_penyelenggara']=='masjid') { echo "selected"; } ?>>Masjid</option>
+                                        <option value="vendor" <?php if($row['kat_penyelenggara']=='vendor') { echo "selected"; } ?>>Vendor</option>
+                                    </select>
+                                </div>
+                                <!--Bila select akan display maklumat untuk isi nama-->
+                                <!--MASJID-->
+                                <div id="masjid-form" style="display: none" class="form-group">
+                                    <label>Nama Penyelenggara</label>
+                                    <select class="form-control" name="nama_ajkmasjid" id="nama_ajkmasjid" >
+                                        <option value="">Sila Pilih Pegawai</option>
+                                        <?php
+                                        $nama_ajkmasjid=$row['nama_penyelenggara'];
+                                        while($row_list_ajk = mysqli_fetch_assoc($list_ajk))
+                                        {
+                                            ?>
+                                            <option value="<?php echo($row_list_ajk['nama_penuh']); ?>" <?php if($nama_ajkmasjid==$row_list_ajk['nama_penuh']) { echo "selected"; } ?>><?php echo($row_list_ajk['nama_penuh']); ?> - <?php echo $row_list_ajk['jawatan']; ?></option>
+                                            <?php
+                                        }
+                                        ?>
+                                    </select>
+                                </div>
+                                <!--VENDOR-->
+                                <div id="vendor-form" style="display: none" class="form-group">
+                                    <label>Nama Penyelenggara</label></br>
+                                    <?php $nama_vendor = $row['nama_penyelenggara']; ?>
+                                    <input type="text" name="nama_vendor" id="nama_vendor" placeholder="Sila masukkan nama penyelenggara" class="form-control" oninput="this.value = this.value.toUpperCase()" value="<?php echo $nama_vendor; ?>">
+                                </div>
+                                <!-- kategori peralatan-->
+                                <div class="form-group">
+                                    <label for="kat_peralatan">Kategori Peralatan<span class="help"></span></label>
+                                    <select id="kat_peralatan" name="kat_peralatan[]" class="select2 m-b-10 select2-multiple" style="width: 100%" multiple="multiple">
+                                        <option value=""></option>
+                                        <?php
+                                        while($row_list_peralatan = mysqli_fetch_assoc($list_peralatan))
+                                        {
+                                            ?>
+                                            <option value="<?php echo($row_list_peralatan['jenis_inventori']); ?>"><?php echo($row_list_peralatan['jenis_inventori']); ?></option>
+                                            <?php
+                                        }
+                                        ?>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <!-- no telefon-->
+                                <div class="form-group">
+                                    <label>No Telefon Penyelenggara</label>
+                                    <input class="form-control" name="no_telefon" id="no_telefon" maxlength="12" value="<?php echo $row['no_telefon']; ?>">
+                                </div>
+                                <!-- tempoh perkhidmatan-->
+                                <div class="form-group">
+                                    <label>Tempoh Perkhidmatan</label>
+                                    <select class="form-control" name="tempoh_perkhidmatan" id="tempoh_perkhidmatan" >
+                                        <option value="">Sila Pilih Tempoh Perkhidmatan</option>
+                                        <option value="1" <?php if($row['tempoh_perkhidmatan']==1) { echo "selected"; } ?>>Satu Tahun</option>
+                                        <option value="2" <?php if($row['tempoh_perkhidmatan']==2) { echo "selected"; } ?>>Dua Tahun</option>
+                                        <option value="0" <?php if($row['tempoh_perkhidmatan']==0) { echo "selected"; } ?>>Tiada Tempoh</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-12" align="center">
+                                <input type="hidden" value="<?php echo $row['id_penyelenggara']; ?>" name="id_penyelenggara">
+                                <button type="submit" class="btn btn-success">Kemaskini</button>
+<!--                                <button type="reset" class="btn btn-danger">Set Semula</button>-->
                             </div>
                         </div>
-					</div>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
+                        <!-- /.row (nested) -->
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+<script>
+    var selectBox = document.getElementById("kat_penyelenggara");
+    var selectedOption = selectBox.value;
+    console.log(selectedOption);
+
+    viewForm1(selectedOption);
+
+    function showForm1() {
+        var selectBox = document.getElementById("kat_penyelenggara");
+        var selectedOption = selectBox.options[selectBox.selectedIndex].value;
+
+        document.getElementById("masjid-form").style.display = "none";
+        document.getElementById("vendor-form").style.display = "none";
+
+        viewForm1(selectedOption);
+    }
+
+    function viewForm1(selectedOption){
+        if (selectedOption === "masjid") {
+            document.getElementById("masjid-form").style.display = "block";
+        } else {
+            document.getElementById("vendor-form").style.display = "block";
+        }
+    }
+</script>
+<!--<script>-->
+<!--    $(document).ready(function() {-->
+<!--        $('.multiselect').multiselect({-->
+<!--            nonSelectedText: 'Sila Pilih Kategori',-->
+<!--            includeSelectAllOption: true-->
+<!--        });-->
+<!--    });-->
+<!--</script>-->
+<script>
+    $(function () {
+
+        // For select 2
+        $("#kat_peralatan").select2({
+            placeholder: '',
+            multiple:true
+        });
+
+         var selOpts = "<?php echo $row['kat_peralatan']; ?>";
+        selOpts = selOpts.replaceAll(", ",",");
+        const myArray = selOpts.split(",");
+
+        $("#kat_peralatan").val(myArray).trigger("change");
+         console.log(selOpts);
+
+        // For multiselect
+        $('#pre-selected-options').multiSelect();
+        $('#optgroup').multiSelect({
+            selectableOptgroup: true
+        });
+        $('#public-methods').multiSelect();
+        $('#select-all').click(function () {
+            $('#public-methods').multiSelect('select_all');
+            return false;
+        });
+        $('#deselect-all').click(function () {
+            $('#public-methods').multiSelect('deselect_all');
+            return false;
+        });
+        $('#refresh').on('click', function () {
+            $('#public-methods').multiSelect('refresh');
+            return false;
+        });
+        $('#add-option').on('click', function () {
+            $('#public-methods').multiSelect('addOption', {
+                value: 42,
+                text: 'test 42',
+                index: 0
+            });
+            return false;
+        });
+        $(".ajax").select2({
+            ajax: {
+                url: "https://api.github.com/search/repositories",
+                dataType: 'json',
+                delay: 250,
+                data: function (params) {
+                    return {
+                        q: params.term, // search term
+                        page: params.page
+                    };
+                },
+                processResults: function (data, params) {
+                    // parse the results into the format expected by Select2
+                    // since we are using custom formatting functions we do not need to
+                    // alter the remote JSON data, except to indicate that infinite
+                    // scrolling can be used
+                    params.page = params.page || 1;
+                    return {
+                        results: data.items,
+                        pagination: {
+                            more: (params.page * 30) < data.total_count
+                        }
+                    };
+                },
+                cache: true
+            },
+            escapeMarkup: function (markup) {
+                return markup;
+            }, // let our custom formatter work
+            minimumInputLength: 1,
+            //templateResult: formatRepo, // omitted for brevity, see the source of this page
+            //templateSelection: formatRepoSelection // omitted for brevity, see the source of this page
+        });
+    });
+</script>

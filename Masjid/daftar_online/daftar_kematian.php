@@ -35,6 +35,10 @@ $sqlquery4 = mysqli_query($bd2, $sql4);
 $data4 = mysqli_fetch_array($sqlquery4);
 $nama_masjid = $data4['nama_masjid'];
 
+$noama_pengesah = $_SESSION['user_name'] ?? NULL;
+$no_tel_pengesah =$_SESSION['no_hp'] ?? NULL;
+$no_tel_pengesah =$_SESSION['no_hp'] ?? NULL;
+
 if($_SERVER["REQUEST_METHOD"] == "POST") $id_masjid = $_POST['id_masjid'];
 //echo($semak.'<br />'.$no_ic);
 if (isset($_POST['simpan']) || $_GET['id_kematian'] != NULL) {
@@ -44,12 +48,12 @@ if (isset($_POST['simpan']) || $_GET['id_kematian'] != NULL) {
     if($_GET['id_kematian'] != NULL) $no_ic = $_GET['no_ic'];
     if($semak == 1 || $_GET['id_kematian'] != NULL) {
         if($id_masjid != NULL) {
-            $extra = "AND a.id_masjid = $id_masjid";
-            $extra2 = "AND c.id_masjid = $id_masjid";
+            $extra = "AND sej6x_data_peribadi.id_masjid = $id_masjid";
+            $extra2 = "AND sej6x_data_anakqariah.id_masjid = $id_masjid";
         }
 
-        $q = "SELECT a.nama_penuh, a.no_ic, a.id_data, b.nama_masjid, a.id_masjid FROM sej6x_data_peribadi a, sej6x_data_masjid b WHERE a.id_masjid = b.id_masjid AND a.no_ic = '$no_ic' $extra 
-            UNION SELECT c.nama_penuh, c.no_ic, CONCAT('A-', c.ID) 'id_data', d.nama_masjid, c.id_masjid FROM sej6x_data_anakqariah c, sej6x_data_masjid d WHERE c.id_masjid = d.id_masjid AND c.no_ic = '$no_ic' $extra2";
+        $q = "SELECT sej6x_data_peribadi.nama_penuh, sej6x_data_peribadi.no_ic, sej6x_data_peribadi.id_data, sej6x_data_masjid.nama_masjid, sej6x_data_peribadi.id_masjid FROM sej6x_data_peribadi , sej6x_data_masjid WHERE sej6x_data_peribadi.id_masjid = sej6x_data_masjid.id_masjid AND sej6x_data_peribadi.no_ic = '$no_ic' $extra 
+            UNION SELECT sej6x_data_anakqariah.nama_penuh, sej6x_data_anakqariah.no_ic, CONCAT('A-', sej6x_data_anakqariah.ID) 'id_data', sej6x_data_masjid.nama_masjid, sej6x_data_anakqariah.id_masjid FROM sej6x_data_anakqariah, sej6x_data_masjid WHERE sej6x_data_anakqariah.id_masjid = sej6x_data_masjid.id_masjid AND sej6x_data_anakqariah.no_ic = '$no_ic' $extra2";
         $q_query = mysqli_query($bd2, $q) or die(mysqli_error($bd2));
         $row_q = mysqli_fetch_assoc($q_query);
         $jumpa = mysqli_num_rows($q_query);
@@ -59,8 +63,8 @@ if (isset($_POST['simpan']) || $_GET['id_kematian'] != NULL) {
         if(strpos($row_q['id_data'], 'A-') !== true) $id_data = $row_q['id_data'];
 
             if($jumpa > 0) {
-            $q2 = "SELECT a.* FROM data_kematian a, sej6x_data_peribadi b WHERE a.id_data = b.id_data AND b.no_ic = '$no_ic'
-            UNION SELECT c.* FROM data_kematian c, sej6x_data_anakqariah d WHERE c.id_anak = d.ID AND d.no_ic = '$no_ic'";
+            $q2 = "SELECT data_kematian.* FROM data_kematian, sej6x_data_peribadi WHERE data_kematian.id_data = sej6x_data_peribadi.id_data AND sej6x_data_peribadi.no_ic = '$no_ic'
+            UNION SELECT data_kematian.* FROM data_kematian, sej6x_data_anakqariah WHERE data_kematian.id_anak = sej6x_data_anakqariah.ID AND sej6x_data_anakqariah.no_ic = '$no_ic'";
             $q2_query = mysqli_query($bd2, $q2) or die(mysqli_error($bd2));
             $row_q2 = mysqli_fetch_assoc($q2_query);
             $jumpa2 = mysqli_num_rows($q2_query);
@@ -81,6 +85,9 @@ if (isset($_POST['simpan']) || $_GET['id_kematian'] != NULL) {
                 $no_kubur = $row_q2['no_kubur'];
                 $nama_fail = $row_q2['nama_fail'];
                 $nama_fail2 = $row_q2['nama_fail2'];
+                $nama_pengesah = $row_q2['nama_pengesah'];
+                $no_ic_pengesah = $row_q2['no_ic_pengesah'];
+                $no_tel_pengesah = $row_q2['no_tel_pengesah'];
                 $jenis_file = explode(":", $nama_fail);
                 $jenis_file2 = explode(":", $nama_fail2);
             }
@@ -90,6 +97,7 @@ if (isset($_POST['simpan']) || $_GET['id_kematian'] != NULL) {
     if($semak == 2) {
         $myObj = array();
         $id_kematian = e($_POST['id_kematian'], NULL, NULL);
+        $nama_penuh = e($_POST['nama_penuh'], NULL, NULL);
         $id_data = e($_POST['id_data'], NULL, NULL);
         $id_anak = e($_POST['id_anak'], NULL, NULL);
         $no_sijil = e($_POST['no_sijil'], NULL, NULL);
@@ -100,6 +108,9 @@ if (isset($_POST['simpan']) || $_GET['id_kematian'] != NULL) {
         $tarikh_dikebumikan = $_POST['tarikh_dikebumikan'];
         $waktu_dikebumikan = $_POST['waktu_dikebumikan'];
         $no_kubur = e($_POST['no_kubur'], NULL, NULL);
+        $nama_pengesah = e($_POST['nama_pengesah'], NULL, NULL);
+        $no_ic_pengesah = e($_POST['no_ic_pengesah'], NULL, NULL);
+        $no_tel_pengesah = e($_POST['no_tel_pengesah'], NULL, NULL);
 
         //if($tarikh_kematian == NULL || $tarikh_kematian = '') $tarikh_kematian = '0000-00-00';
         //if($waktu_kematian == NULL || $waktu_kematian = '') $waktu_kematian = '00:00:00';
@@ -137,7 +148,7 @@ if (isset($_POST['simpan']) || $_GET['id_kematian'] != NULL) {
             $extra = "";
             if($nama_fail != NULL) $extra .= "nama_fail = '$nama_fail', ";
             if($nama_fail2 != NULL) $extra .= "nama_fail2 = '$nama_fail2', ";
-            $q = "UPDATE data_kematian SET $extra id_masjid = $id_masjid, approved = $approved, $column = $id_update, no_sijil = '$no_sijil', tarikh_kematian = '$tarikh_kematian', waktu_kematian = '$waktu_kematian', sebab_kematian = '$sebab_kematian', lokasi = '$lokasi', tarikh_dikebumikan = '$tarikh_dikebumikan', waktu_dikebumikan = '$waktu_dikebumikan', no_kubur = '$no_kubur', time = NOW() WHERE id_kematian = $id_kematian";
+            $q = "UPDATE data_kematian SET $extra id_masjid = $id_masjid, approved = $approved, $column = $id_update, nama_penuh = '$nama_penuh', no_sijil = '$no_sijil', tarikh_kematian = '$tarikh_kematian', waktu_kematian = '$waktu_kematian', sebab_kematian = '$sebab_kematian', lokasi = '$lokasi', tarikh_dikebumikan = '$tarikh_dikebumikan', waktu_dikebumikan = '$waktu_dikebumikan', nama_pengesah='$nama_pengesah', no_ic_pengesah='$no_ic_pengesah', no_tel_pengesah='$no_tel_pengesah', no_kubur = '$no_kubur', time = NOW() WHERE id_kematian = $id_kematian";
         }
         if ($id_kematian == NULL) {
             $extra2 = "";
@@ -150,12 +161,12 @@ if (isset($_POST['simpan']) || $_GET['id_kematian'] != NULL) {
                 $extra2 .= "nama_fail2, ";
                 $extra3 .= "'$nama_fail2', ";
             }
-            $q = "INSERT INTO data_kematian ($extra2 id_masjid, approved, $column, no_sijil, tarikh_kematian, waktu_kematian, sebab_kematian, lokasi, tarikh_dikebumikan, waktu_dikebumikan, no_kubur, time) VALUES ($extra3 $id_masjid, $approved, $id_update, '$no_sijil', '$tarikh_kematian', '$waktu_kematian', '$sebab_kematian', '$lokasi', '$tarikh_dikebumikan', '$waktu_dikebumikan', '$no_kubur', NOW())";
+            $q = "INSERT INTO data_kematian ($extra2 id_masjid, approved, $column, nama_penuh, no_ic, no_sijil, tarikh_kematian, waktu_kematian, sebab_kematian, lokasi, tarikh_dikebumikan, waktu_dikebumikan, no_kubur, nama_pengesah, no_tel_pengesah, no_ic_pengesah, time) VALUES ($extra3 $id_masjid, $approved, $id_update, '$nama_penuh', '$no_ic','$no_sijil', '$tarikh_kematian', '$waktu_kematian', '$sebab_kematian', '$lokasi', '$tarikh_dikebumikan', '$waktu_dikebumikan', '$no_kubur', '$nama_pengesah', '$no_tel_pengesah', '$no_ic_pengesah', NOW())";
         }
         //if ($id_kematian != NULL) $q = "UPDATE data_kematian SET id_masjid = $id_masjid, approved = $approved, $column = $id_update, no_sijil = '$no_sijil', tarikh_kematian = '$tarikh_kematian', waktu_kematian = '$waktu_kematian', sebab_kematian = '$sebab_kematian', lokasi = '$lokasi', tarikh_dikebumikan = '$tarikh_dikebumikan', waktu_dikebumikan = '$waktu_dikebumikan', no_kubur = '$no_kubur', nama_fail = '$nama_fail', nama_fail2 = '$nama_fail2', time = NOW() WHERE id_kematian = $id_kematian";
         //if ($id_kematian == NULL) $q = "INSERT INTO data_kematian (id_masjid, approved, $column, no_sijil, tarikh_kematian, waktu_kematian, sebab_kematian, lokasi, tarikh_dikebumikan, waktu_dikebumikan, no_kubur, nama_fail, nama_fail2, time) VALUES ($id_masjid, $approved, $id_update, '$no_sijil', '$tarikh_kematian', '$waktu_kematian', '$sebab_kematian', '$lokasi', '$tarikh_dikebumikan', '$waktu_dikebumikan', '$no_kubur', '$nama_fail', '$nama_fail2', NOW())";
-        mysqli_query($bd2, $q) or die($q.' - '.mysqli_error($bd2));
-        $notis = "Maklumat Kematian BERJAYA Disimpan / Dikemaskini";
+            $update_data = mysqli_query($bd2, $q) or die($q . ' - ' . mysqli_error($bd2));
+            $notis = "Maklumat Kematian BERJAYA Disimpan / Dikemaskini";
 
         $last_id = mysqli_insert_id($bd2);
 
@@ -295,11 +306,16 @@ DATA;
                             <b>Daftar Kematian Ahli Kariah</b>
                         <?php } ?>
                     <?php } ?>
-                    <?php if($no_ic != NULL && $jumpa == 0) { $tajuk_button = 'Semak Semula'; ?>
+                <?php if($update_data) { $tajuk_button = 'Semak Semula'; ?>
+                    <div class="alert alert-success" role="alert">
+                        Maklumat Kematian BERJAYA Disimpan / Dikemaskini
+                    </div>
+                    <?php if($no_ic == NULL && $jumpa == 0 ) { $tajuk_button = 'Semak Semula'; ?>
                         <div class="alert alert-danger" role="alert">
                             No K/P belum didaftarkan sebagai ahli kariah, anda perlu mendaftarkan maklumat si mati sebagai ahli kariah terlebih dahulu.
                         </div>
                     <?php } ?>
+                <?php } ?>
                 </center>
         </div>
         <div class="card-body">
@@ -323,6 +339,8 @@ DATA;
                                 <input id="id_kematian" name="id_kematian" type="hidden" value="<?php echo($id_kematian); ?>">
                                 <input id="id_data" name="id_data" type="hidden" value="<?php echo($id_data); ?>">
                                 <input id="id_anak" name="id_anak" type="hidden" value="<?php echo($id_anak); ?>">
+                                <input id="nama_penuh" name="nama_penuh" type="hidden" value="<?php echo($row_q['nama_penuh']); ?>">
+                                <input id="no_ic" name="no_ic" type="hidden" value="<?php echo($row_q['no_ic']); ?>">
                                 <input id="id_masjid_user" name="id_masjid_user" type="hidden" value="<?php echo($id_masjid_user); ?>">
                                 <input id="approved" name="approved" type="hidden" value="<?php echo($approved); ?>">
                                 <h5 class="card-header"><?php echo($row_q['nama_penuh']); ?></h5>
@@ -369,6 +387,23 @@ DATA;
                                     <div class="card-title">
                                         <label>No Kubur (Jika Berkenaan)</label>
                                         <input id="no_kubur" name="no_kubur" class="form-control" value="<?php echo($no_kubur); ?>" maxlength="20">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <h5 class="card-header">Pengesahan Kematian</h5>
+                                <div class="card-body">
+                                    <div class="card-title">
+                                        <label>Nama Penuh</label>
+                                        <input id="nama_pengesah" name="nama_pengesah" class="form-control" value="<?php echo($nama_pengesah); ?>">
+                                    </div>
+                                    <div class="card-title">
+                                        <label>No Telefon</label>
+                                        <input id="no_tel_pengesah" name="no_tel_pengesah" class="form-control" value="<?php echo($no_tel_pengesah); ?>" maxlength="11">
+                                    </div>
+                                    <div class="card-title">
+                                        <label>No Kad Pengenalan</label>
+                                        <input id="no_ic_pengesah" name="no_ic_pengesah" class="form-control" value="<?php echo($no_ic_pengesah); ?>" maxlength="12">
                                     </div>
                                 </div>
                             </div>

@@ -179,6 +179,9 @@ $q_row = mysqli_fetch_assoc($qq);
             .printPageButton {
                 display: none;
             }
+            #butang_pering{
+                display: none;
+            }
             footer {page-break-after: always;}
             .kelastd, .kelasth {
                 border: none;
@@ -191,19 +194,48 @@ $q_row = mysqli_fetch_assoc($qq);
             }
         }
     </style>
+    <?php if($training == 2){ ?>
+    <style type="text/css" media="print">
+    * { 
+        /*
+        display: none; 
+       */ 
+    }
+    </style>
+    <?php } ?>
     <?php include("loader.php"); ?>
 </head>
 <body>
 <div class="container-fluid printPageButton" align="center">
     <?php if($_GET['sub'] != 'baucar') { ?>
         <div class="row justify-content-md-center form-group">
-            <div class="col-md-auto col-4" style="display: none"><label>Bulan:</label><select id="bulan" name="bulan" class="form-control" onchange="tunjuk_minggu($('#tahun').val(), this.value)">
+            <div class="col-md-auto col-4"><label>Bulan:</label><br/>
+                Dari:<select id="bulan1" name="bulan1" class="form-control" onchange="tunjuk_minggu($('#tahun').val(), this.value)">
                     <option></option>
                     <option style="display: none" value="minggu" <?php echo $_GET['bulan'] == "minggu" ? 'selected' : ''; ?>>Minggu</option>
-                    <?php for($i=1; $i<=12; $i++) { $bulan = $i; if($i<10) $bulan = '0'.$i; ?><option value="<?php echo($bulan); ?>" <?php echo $_GET['bulan'] == $bulan ? 'selected' : NULL; ?>><?php echo fungsi_tarikh('2000-'.$bulan.'-01 10:00:00', 8, 99); ?></option><?php } ?></select>
+                    <?php for($i=1; $i<=12; $i++) { $bulan = $i; if($i<10) $bulan = '0'.$i; ?><option value="<?php echo($bulan); ?>" <?php echo $_GET['bulan1'] == $bulan ? 'selected' : NULL; ?>><?php echo fungsi_tarikh('2000-'.$bulan.'-01 10:00:00', 8, 99); ?></option><?php } ?>
+                </select>
+                Hingga:<select id="bulan2" name="bulan2" class="form-control" onchange="tunjuk_minggu($('#tahun').val(), this.value)">
+                    <option></option>
+                    <option style="display: none" value="minggu" <?php echo $_GET['bulan'] == "minggu" ? 'selected' : ''; ?>>Minggu</option>
+                    <?php for($i=1; $i<=12; $i++) { $bulan = $i; if($i<10) $bulan = '0'.$i; ?><option value="<?php echo($bulan); ?>" <?php echo $_GET['bulan2'] == $bulan ? 'selected' : NULL; ?>><?php echo fungsi_tarikh('2000-'.$bulan.'-01 10:00:00', 8, 99); ?></option><?php } ?>
+                </select>
             </div>
-            <div class="col-md-auto col-4"><label>Tahun:</label><select id="tahun" name="tahun" class="form-control" onchange="tunjuk_minggu(this.value, $('#bulan').val())"><option></option>
-                    <?php do { ?><option value="<?php echo($q_row['tahun']); ?>" <?php echo $q_row['tahun'] == $tahun ? 'selected' : ''; ?>><?php echo($q_row['tahun']); ?></option><?php } while($q_row = mysqli_fetch_assoc($qq)); ?></select>
+            <div class="col-md-auto col-4"><label>Tahun:</label>
+                <select id="tahun" name="tahun" class="form-control" onchange="tunjuk_minggu(this.value, $('#bulan').val())">
+                <option value=""></option>
+                    <?php do { 
+                            if($q_row['tahun'] != NULL){
+                        ?>
+                            <option value="<?php echo($q_row['tahun']); ?>" <?php echo $q_row['tahun'] == $tahun ? 'selected' : ''; ?>><?php echo($q_row['tahun']); ?></option>
+                        <?php 
+                            }else if($q_row['tahun'] == NULL){
+                        ?>
+                                <!-- <option value="2023">2023</option> -->
+                        <?php
+                            }
+                    } while($q_row = mysqli_fetch_assoc($qq)); ?>
+                </select>
             </div>
             <div id="tunggu_minggu" class="col-md-auto col-4 sk-circle" style="display: none" align="center">
                 <div class="sk-circle1 sk-child"></div>
@@ -230,14 +262,20 @@ $q_row = mysqli_fetch_assoc($qq);
                     </select>
                 </div>
             <?php } ?>
-            <div class="col-md-auto col-6"><button type="button" onClick="document.location.href='utama.php?view=admin&action=kewangan&newModul=1&training=<?php echo($_GET['training']); ?>&subModul=8&subModul2=<?php echo($_GET['subModul2']); ?>&sub=kedudukan_kewangan_sebenar&tabungan=<?php echo($_GET['tabungan']); ?>&data=raw&tahun='+$('#tahun').val()" class="btn btn-primary btn-block" style="margin-top: 30px; text-align: center; font-size: 14pt; font-weight: bold">Lihat</button></div>
+            <div class="col-md-auto col-6">
+                <?php if($_GET['trigger'] == 1){ ?>
+                    <button type="button" onClick="document.location.href='utama.php?view=admin&action=kewangan&newModul=1&training=<?php echo($_GET['training']); ?>&subModul=8&subModul2=<?php echo($_GET['subModul2']); ?>&sub=kedudukan_kewangan_sebenars&trigger=1&tabungan=<?php echo($_GET['tabungan']); ?>&data=raw&tahun='+$('#tahun').val()+'&bulan1='+$('#bulan1').val()+'&bulan2='+$('#bulan2').val()" class="btn btn-primary btn-block" style="margin-top: 30px; text-align: center; font-size: 14pt; font-weight: bold">Lihat</button>
+                <?php }else{ ?>
+                    <button type="button" onClick="document.location.href='utama.php?view=admin&action=kewangan&newModul=1&training=<?php echo($_GET['training']); ?>&subModul=8&subModul2=<?php echo($_GET['subModul2']); ?>&sub=kedudukan_kewangan_sebenar&tabungan=<?php echo($_GET['tabungan']); ?>&data=raw&tahun='+$('#tahun').val()+'&bulan1='+$('#bulan1').val()+'&bulan2='+$('#bulan2').val()" class="btn btn-primary btn-block" style="margin-top: 30px; text-align: center; font-size: 14pt; font-weight: bold">Lihat</button>
+                <?php }?>
+            </div>
         </div>
     <?php } ?>
     <?php if($_GET['mode'] != 1) { ?>
         <div class="row justify-content-md-center form-group">
             <div class="col-md-6 col-12">
                 <?php if($_GET['subModul2'] != NULL) { ?><a href="utama.php?view=admin&action=kewangan&newModul=1&training=<?php echo($_GET['training']); ?>"><button class="btn btn-info" style="text-align: center; font-size: 14pt; font-weight: bold">Menu Utama Kewangan</button></a><?php } ?>
-                <button class="btn btn-success" id="butang_pering" style="text-align: center; font-size: 14pt; font-weight: bold" onclick="window.print()">Cetak Halaman Ini</button>
+                <?php // if($training != 2) { ?><button class="btn btn-success" id="butang_pering" style="text-align: center; font-size: 14pt; font-weight: bold" onclick="window.print()">Cetak Halaman Ini</button><?php // } ?>
             </div>
         </div>
     <?php } ?>
@@ -564,6 +602,62 @@ $q_row = mysqli_fetch_assoc($qq);
             }
         });
     }
+    var jum_buka_akaun = document.getElementById('jum_buka_akaun').value;
+    var jum_pendapatan = document.getElementById('jum_pendapatan').value;
+    var jum_perbelanjaan = document.getElementById('jum_perbelanjaan').value;
+    var jum_baki = document.getElementById('jum_baki').value;
+
+    document.getElementById('output_jum_buka_akaun').innerHTML = jum_buka_akaun;
+    document.getElementById('output_jum_buka_akaun1').innerHTML = jum_buka_akaun;
+    document.getElementById('output_jum_pendapatan').innerHTML = jum_pendapatan;
+    document.getElementById('output_jum_perbelanjaan').innerHTML = jum_perbelanjaan;
+    document.getElementById('output_jum_baki').innerHTML = jum_baki;
+    console.log(jum_pendapatan);
+    console.log(jum_perbelanjaan);
+    var jpendapatan = parseFloat(jum_pendapatan.replace(",", ""));
+    var jperbelanjaan = parseFloat(jum_perbelanjaan.replace(",", ""));
+    var jbaki = parseFloat(jum_buka_akaun.replace(",", ""));
+    console.log(jpendapatan);
+    console.log(jperbelanjaan);
+    console.log(jbaki);
+    
+    var jum_baki_1;
+    var jum_baki_2;
+    var percentage_pendapatan;
+    
+    function commafy( num ) {
+        var str = num.toString().split('.');
+        if (str[0].length >= 5) {
+            str[0] = str[0].replace(/(\d)(?=(\d{3})+$)/g, '$1,');
+        }
+        if (str[1] && str[1].length >= 5) {
+            str[1] = str[1].replace(/(\d{3})/g, '$1 ');
+        }
+        return str.join('.');
+    }
+    
+    if(jpendapatan > jperbelanjaan){
+        
+        jum_baki_1 = jpendapatan - jperbelanjaan;
+        percentage_pendapatan = (jum_baki_1 / jbaki) * 100;
+        
+        document.getElementById('percentage_pendapatan').innerHTML = percentage_pendapatan.toFixed(2);
+        document.getElementById('jum_baki_1').innerHTML = commafy(jum_baki_1.toFixed(2));
+        document.getElementById('rowSurplus').style.display = 'table-row';
+        document.getElementById('rowDeficit').style.display = 'none';
+    }else if(jperbelanjaan > jpendapatan){
+        
+        jum_baki_1 = jperbelanjaan - jpendapatan;
+        jum_baki_2 = jpendapatan - jperbelanjaan;
+        percentage_pendapatan = (jum_baki_1 / jbaki) * 100;
+        
+        document.getElementById('percentage_perbelanjaan').innerHTML = percentage_pendapatan.toFixed(2);
+        document.getElementById('jum_baki_2').innerHTML = commafy(jum_baki_2.toFixed(2));
+        document.getElementById('rowDeficit').style.display = 'table-row';
+        document.getElementById('rowSurplus').style.display = 'none';
+    }
+
+    // console.log(jum_pendapatan);
 </script>
 <?php
 if(file_exists("accounts/js-page/sub_".$_GET['subModul'].".php")) include("accounts/js-page/sub_".$_GET['subModul'].".php");

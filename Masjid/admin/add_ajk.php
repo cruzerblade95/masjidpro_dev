@@ -10,6 +10,7 @@ if (isset($_POST['id_ajk']) || $_SERVER['REQUEST_METHOD'] == 'POST')
 	$id_dataajk = $_POST['id_dataajk'];
 
     $rank = $_POST['index_ajk'];
+    $emel = e($_POST['emel'], NULL, NULL);
     $jawatan = e($_POST['jawatan'], NULL, NULL);
     $tarikh_lantikan = e($_POST['tarikh_lantikan'], NULL, NULL);
 
@@ -30,9 +31,9 @@ if (isset($_POST['id_ajk']) || $_SERVER['REQUEST_METHOD'] == 'POST')
             $sql2 = "UPDATE sej6x_data_anakqariah SET data_ajk = 1 WHERE ID = $id_ajk";
         }
 
-        $sql1 = "INSERT INTO data_ajkmasjid (id_masjid, $id_column, jawatan, tarikh_lantikan, gambar, jenis_gambar, time, `rank`)
+        $sql1 = "INSERT INTO data_ajkmasjid (id_masjid, $id_column, jawatan, tarikh_lantikan, gambar, jenis_gambar, time, `rank`, emel)
 	
-            VALUES ($id_masjid, $id_ajk, '$jawatan', '$tarikh_lantikan', '$gambar', '$jenis_gambar', NOW(), '$rank')";
+            VALUES ($id_masjid, $id_ajk, '$jawatan', '$tarikh_lantikan', '$gambar', '$jenis_gambar', NOW(), '$rank', '$emel')";
 
         //UPDATE STATUS DATA AJK
 
@@ -40,14 +41,14 @@ if (isset($_POST['id_ajk']) || $_SERVER['REQUEST_METHOD'] == 'POST')
     }
 
 	if($id_dataajk != NULL) {
-	    $sql1 = "UPDATE data_ajkmasjid SET jawatan = '$jawatan', tarikh_lantikan = '$tarikh_lantikan', time = NOW() WHERE id_dataajk = $id_dataajk";
+	    $sql1 = "UPDATE data_ajkmasjid SET emel = '$emel', jawatan = '$jawatan', tarikh_lantikan = '$tarikh_lantikan', time = NOW() WHERE id_dataajk = $id_dataajk";
         if($ada_gambar == 1) {
-            $sql3 = "UPDATE data_ajkmasjid SET gambar = '$gambar', jenis_gambar = '$jenis_gambar' WHERE id_dataajk = $id_dataajk";
+            $sql3 = "UPDATE data_ajkmasjid SET emel = '$emel', gambar = '$gambar', jenis_gambar = '$jenis_gambar' WHERE id_dataajk = $id_dataajk";
             mysqli_query($bd2, $sql3) or die(mysqli_error($bd2));
         }
     }
 	mysqli_query($bd2, $sql1) or die(mysqli_error($bd2));
 
-	header("Location: ../utama.php?view=admin&action=senarai_ajk");
+	header("Location: ../utama.php?view=admin&action=senarai_ajk&sideMenu=organisasi");
 }
 ?>

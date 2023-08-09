@@ -42,22 +42,33 @@
 				<div class="card-body">
 					<div class="row"> 
 						<form action="admin/add_ajk.php" method='post' enctype="multipart/form-data">
-							<?php 
+                            <?php
 							while($row = mysqli_fetch_assoc($result))
 							{ 
-							?> 
-							<div class="col-lg-12">
-								<div class="form-group">
-									<label>Nama Ahli Jawatankuasa (AJK):</label> <?php echo $row['nama_penuh'];?>
-								</div>
-							</div>
-							<div class="col-lg-12">
-								<div class="form-group">
-									<label>No K/P:</label> <?php echo $row['no_ic'];?>
-								</div>
-							</div>
+							?>
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label>Nama Ahli Jawatankuasa (AJK):</label> <?php echo $row['nama_penuh'];?>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label>No K/P:</label> <?php echo $row['no_ic'];?>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label>No Telefon:</label> <?php echo $row['no_hp'];?>
+                                </div>
+                            </div>
 							<hr>
-							<div class="col-lg-12">
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label>Alamat E-mel</label>
+                                    <input class="form-control" type="email" name="emel" id="emel" required>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
 								<div class="form-group">
 									<label>Jawatan</label>
 									<select class="form-control" name="jawatan" id="jawatan">
@@ -89,7 +100,7 @@
 									<br>
 									<input type="hidden" name="id_data" value="<?php echo $row['id_data']; ?>">
 									<input type="hidden" name="id_ajk" value="<?php echo $row['id_data']; ?>">
-									<input type="submit"  value="Upload" class="btn btn-primary"></input> 
+									<input type="submit"  value="Simpan" class="btn btn-primary"></input>
 								</div>
 							</div>
 							<?php 
