@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+
+		<!-- Meta data -->
+		<meta charset="UTF-8">
+		<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+		<meta content="DayOne - It is one of the Major Dashboard Template which includes - HR, Employee and Job Dashboard. This template has multipurpose HTML template and also deals with Task, Project, Client and Support System Dashboard." name="description">
+		<meta content="Spruko Technologies Private Limited" name="author">
+		<meta name="keywords" content="admin dashboard, admin panel template, html admin template, dashboard html template, bootstrap 4 dashboard, template admin bootstrap 4, simple admin panel template, simple dashboard html template,  bootstrap admin panel, task dashboard, job dashboard, bootstrap admin panel, dashboards html, panel in html, bootstrap 4 dashboard"/>
+
+		<!-- Title -->
+		<title>Dayone - Multipurpose Admin & Dashboard Template</title>
+
+		<!--Favicon -->
+		<link rel="icon" href="../../assets/images/brand/favicon.ico" type="image/x-icon"/>
+
+		<!-- Bootstrap css -->
+		<link href="../../assets/plugins/bootstrap/css/bootstrap.css" rel="stylesheet" />
+
+		<!-- Style css -->
+		<link href="../../assets/css/style.css" rel="stylesheet" />
+		<link href="../../assets/css/dark.css" rel="stylesheet" />
+		<link href="../../assets/css/skin-modes.css" rel="stylesheet" />
+
+		<!-- Animate css -->
+		<link href="../../assets/css/animated.css" rel="stylesheet" />
+
+		<!-- P-scroll bar css-->
+		<link href="../../assets/plugins/p-scrollbar/p-scrollbar.css" rel="stylesheet" />
+
+		<!---Icons css-->
+		<link href="../../assets/css/icons.css" rel="stylesheet" />
+
+		<!-- Select2 css -->
+		<link href="../../assets/plugins/select2/select2.min.css" rel="stylesheet" />
+
+		<!-- INTERNAL owl-carousel css-->
+		<link href="../../assets/plugins/owl-carousel/owl-carousel.css" rel="stylesheet" />
+
+		<!-- INTERNAL jquery.autocomplete css-->
+		<link href="../../assets/plugins/jquery.autocomplete/jquery.autocomplete.css" rel="stylesheet" />
+
+		<!-- INTERNAl Summernote css -->
+		<link rel="stylesheet" href="../../assets/plugins/summernote/summernote-bs4.css">
+
+		<!-- INTERNAL Data table css -->
+		<link href="../../assets/plugins/datatable/css/dataTables.bootstrap4.min.css" rel="stylesheet" />
+		<link href="../../assets/plugins/datatable/responsive.bootstrap4.min.css" rel="stylesheet" />
+
+		<!-- INTERNAL Datepicker css-->
+		<link href="../../assets/plugins/modal-datepicker/datepicker.css" rel="stylesheet" />
+
+	</head>
+
+	<body>
+
+		<!---Global-loader-->
+		<div id="global-loader" >
+			<img src="../../assets/images/svgs/loader.svg" alt="loader">
+		</div>
+
+		<!-- Mobile Header -->
+		<div class="support-mobile-header clearfix">
+			<div class="container">
+				<div class="d-flex">
+					<a class="animated-arrow horizontal-navtoggle"><span></span></a>
+					<span class="smallogo">
+						<a class="header-brand" href="index.html">
+							<img src="../../assets/images/brand/logo.png" class="header-brand-img desktop-lgo" alt="Dayonelogo">
+							<img src="../../assets/images/brand/logo-white.png" class="header-brand-img light-logo" alt="Dayonelogo">
+						</a>
+					</span>
+					<div class="dropdown profile-dropdown ml-auto">
+						<a href="#" class="nav-link pr-1 pl-0 leading-none" data-toggle="dropdown">
+							<span>
+								<img src="../../assets/images/users/16.jpg" alt="img" class="avatar avatar-md bradius">
+							</span>
+						</a>
+						<div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+							<div class="p-3 text-center border-bottom">
+								<a href="#" class="text-center user pb-0 font-weight-bold">John Thomson</a>
+								<p class="text-center user-semi-title">App Developer</p>
+							</div>
+							<a class="dropdown-item d-flex" href="#">
+								<i class="feather feather-user mr-3 fs-16 my-auto"></i>
+								<div class="mt-1">Profile</div>
+							</a>
+							<a class="dropdown-item d-flex" href="#">
+								<i class="ri-ticket-2-line mr-3 fs-16 my-auto"></i>
+								<div class="mt-1">Tickets</div>
+							</a>
+							<a class="dropdown-item d-flex" href="#">
+								<i class="feather feather-mail mr-3 fs-16 my-auto"></i>
+								<div class="mt-1">Messages</div>
+							</a>
+							<a class="dropdown-item d-flex" href="#">
+								<i class="feather feather-settings mr-3 fs-16 my-auto"></i>
+								<div class="mt-1">Settings</div>
+							</a>
+							<a class="dropdown-item d-flex" href="#" data-toggle="modal" data-target="#changepasswordnmodal">
+								<i class="feather feather-edit-2 mr-3 fs-16 my-auto"></i>
+								<div class="mt-1">Change Password</div>
+							</a>
+							<a class="dropdown-item d-flex" href="#">
+								<i class="feather feather-power mr-3 fs-16 my-auto"></i>
+								<div class="mt-1">Log Out</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /Mobile Header -->
+
+		<!-- Header-->
+		<div class="landingmain-header header">
+			<div class="horizontal-main landing-header clearfix">
+				<div class="horizontal-mainwrapper container clearfix">
+					<div class="d-flex">
+						<div class="headerlanding-logo">
+							<a class="header-brand" href="index.html">
+								<img src="../../assets/images/brand/logo.png" class="header-brand-img desktop-lgo" alt="Dayonelogo">
+								<img src="../../assets/images/brand/logo-white.png" class="header-brand-img light-logo" alt="Dayonelogo">
+							</a>
+						</div>
+						<nav class="horizontalMenu clearfix order-lg-2 my-auto ml-auto">
+							<ul class="horizontalMenu-list">
+								<li>
+									<a href="support-landing.html">Home</a>
+								</li>
+								<li>
+									<a href="#" class="sub-icon">Knowledge <span class="fe fe-chevron-down m-0"></span></a>
+									<ul class="sub-menu">
+										<li><a href="support-knowledge.html">Knowledge</a></li>
+										<li><a href="support-knowledgeview.html">KnowledgeView</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="support-openticket.html">Open Ticket</a>
+								</li>
+								<li>
+									<a href="support-contact.html">Contact Us</a>
+								</li>
+								<li>
+									<a href="#" class="sub-icon">Pages<span class="fe fe-chevron-down m-0"></span></a>
+									<div class="horizontal-megamenu clearfix">
+										<div class="container">
+											<div class="mega-menubg">
+												<div class="row">
+													<div class="col-lg-2 col-md-12 col-xs-12 link-list">
+														<ul class="sub-menu">
+															<li><h3 class="mega-subtitle">User Pages</h3></li>
+															<li><a href="support-userdash.html">Dashboard</a></li>
+															<li><a href="support-editprofile.html">Edit Profile</a></li>
+															<li><a href="support-ticketlist.html">Ticket Lists</a></li>
+															<li><a href="support-ticketactive.html">Active Tickets</a></li>
+															<li><a href="support-ticketclosed.html">Closed Tickets</a></li>
+															<li><a href="support-ticketview.html">View Ticket</a></li>
+															<li><a href="support-ticketcreate.html">Create Ticket</a></li>
+														</ul>
+													</div>
+													<div class="col-lg-2 col-md-12 col-xs-12 link-list">
+														<ul class="sub-menu">
+															<li><h3 class="mega-subtitle">Admin Pages</h3></li>
+															<li><a href="support-admindash.html">Dashboard</a></li>
+															<li><a href="support-admineditprofile.html">Edit Profile</a></li>
+															<li><a href="support-adminticketlist.html">Ticket Lists</a></li>
+															<li><a href="support-adminticketactive.html">Active Tickets</a></li>
+															<li><a href="support-adminticketclosed.html">Closed Tickets</a></li>
+															<li><a href="support-adminticketview.html">View Ticket</a></li>
+															<li><a href="support-adminticketnew.html">New Ticket</a></li>
+														</ul>
+													</div>
+													<div class="col-lg-2 col-md-12 col-xs-12 link-list">
+														<ul class="sub-menu mt-lg-7">
+															<li><a href="support-admincustomer.html">Customers</a></li>
+															<li><a href="support-admincustomerview.html">CustomersView</a></li>
+															<li><a href="support-admincategories.html">Categories</a></li>
+															<li><a href="support-adminarticles.html">Articles</a></li>
+														</ul>
+													</div>
+													<div class="col-lg-2 col-md-12 col-xs-12 link-list">
+														<ul class="sub-menu">
+															<li><h3 class="mega-subtitle">Agent Pages</h3></li>
+															<li><a href="support-agentdash.html">Dashboard</a></li>
+															<li><a href="support-agenteditprofile.html">Edit Profile</a></li>
+															<li><a href="support-agentticketlist.html">Ticket List</a></li>
+															<li><a href="support-agentticketactive.html">Active Tickets</a></li>
+															<li><a href="support-agentticketclosed.html">Closed Tickets</a></li>
+															<li><a href="support-agentticketview.html">View Ticket</a></li>
+															<li><a href="support-agentassign.html">Assigned Categories</a></li>
+														</ul>
+													</div>
+													<div class="col-lg-2 col-md-12 col-xs-12 link-list">
+														<ul class="sub-menu">
+															<li><h3 class="mega-subtitle">Other Pages</h3></li>
+															<li><a href="#" data-toggle="modal" data-target="#loginmodal">Login</a></li>
+															<li><a href="#" data-toggle="modal" data-target="#registermodal">Register</a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<a href="#" class="sub-icon">My Dashboard <span class="fe fe-chevron-down m-0"></span></a>
+									<ul class="sub-menu">
+										<li><a href="#">My Dashboard</a></li>
+										<li><a href="#">Edit Profile</a></li>
+										<li><a href="#">My Tickets</a></li>
+										<li><a href="#">Logout</a></li>
+									</ul>
+								</li>
+								<li>
+									<span class="menu-btn">
+										<a class="btn btn-success" href="#"><i class="fa fa-paper-plane-o "></i> Submit Request</a>
+									</span>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--Header-->
+
+		<!-- Section -->
+		<section>
+			<div class="bannerimg cover-image" data-image-src="../../assets/images/photos/banner1.jpg">
+				<div class="header-text mb-0">
+					<div class="container">
+						<div class="row text-white">
+							<div class="col">
+								<h1 class="mb-0">TicketList</h1>
+							</div>
+							<div class="col col-auto">
+								<ol class="breadcrumb text-center">
+									<li class="breadcrumb-item">
+										<a href="#" class="text-white-50">Home</a>
+									</li>
+									<li class="breadcrumb-item active">
+										<a href="#" class="text-white">Pages</a>
+									</li>
+									<li class="breadcrumb-item active">
+										<a href="#" class="text-white">TicketList</a>
+									</li>
+								</ol>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Section -->
+
+		<!--Section-->
+		<section>
+			<div class="cover-image sptb">
+				<div class="container">
+					<div class="row">
+						<div class="col-xl-3">
+							<div class="card">
+								<div class="card-body text-center item-user">
+									<div class="profile-pic">
+										<div class="profile-pic-img">
+											<span class="bg-success dots" data-toggle="tooltip" data-placement="top" title="" data-original-title="online"></span>
+											<img src="../../assets/images/users/16.jpg" class="brround avatar-xxl" alt="user">
+										</div>
+										<a href="#" class="text-dark">
+											<h5 class="mt-3 mb-1 font-weight-semibold2">Abigali kelly</h5>
+										</a>
+										<small class="text-muted ">Admin</small>
+									</div>
+								</div>
+								<div class="support-sidebar">
+									<ul class="side-menu">
+										<li>
+											<a class="side-menu__item" href="support-agentdash.html"><i class="side-menu__icon las la-home"></i><span class="side-menu__label">Dashboard</span></a>
+										</li>
+										<li>
+											<a class="side-menu__item" href="support-agenteditprofile.html"><i class="side-menu__icon las la-edit"></i><span class="side-menu__label">Edit Profile</span></a>
+										</li>
+										<li>
+											<a class="side-menu__item" href="support-agentticketlist.html"><i class="side-menu__icon las la-ticket-alt"></i><span class="side-menu__label">Ticket Lists</span></a>
+										</li>
+										<li>
+											<a class="side-menu__item" href="support-agentticketactive.html"><i class="side-menu__icon las la-compass"></i><span class="side-menu__label">Active Tickets</span></a>
+										</li>
+										<li>
+											<a class="side-menu__item" href="support-agentticketclosed.html"><i class="side-menu__icon las la-edit"></i><span class="side-menu__label">Closed Tickets</span></a>
+										</li>
+										<li>
+											<a class="side-menu__item" href="support-agentticketview.html"><i class="side-menu__icon las la-file-alt"></i><span class="side-menu__label">View Ticket</span></a>
+										</li>
+										<li>
+											<a class="side-menu__item" href="support-agentassign.html"><i class="side-menu__icon las la-briefcase"></i><span class="side-menu__label">Assigned Categories</span></a>
+										</li>
+										<li class="slide">
+											<a class="side-menu__item slide-show" href="#"><i class="side-menu__icon lab la-buffer"></i><span class="side-menu__label">Level 1</span><i class="angle fa fa-angle-right"></i></a>
+											<ul class="slide-menu">
+												<li><a class="slide-item" href="#">Level 1.1</a></li>
+												<li><a class="slide-item" href="#">Level 1.2</a></li>
+												<li><a class="slide-item" href="#">Level 1.3</a></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-9">
+							<div class="card mb-0">
+								<div class="card-body">
+									<div class="row">
+										<div class="col-md-3">
+											<div class="form-group">
+												<label class="form-label">Select Priority:</label>
+												<select class="form-control custom-select select2" data-placeholder="Select Priority">
+													<option label="Select Priority"></option>
+													<option value="1">High</option>
+													<option value="2">Medium</option>
+													<option value="3">Low</option>
+												</select>
+											</div>
+										</div>
+										<div class="col-md-3">
+											<div class="form-group">
+												<label class="form-label">From:</label>
+												<div class="input-group">
+													<div class="input-group-prepend">
+														<div class="input-group-text">
+															<i class="feather feather-calendar"></i>
+														</div>
+													</div><input class="form-control fc-datepicker" placeholder="DD-MM-YYYY" type="text">
+												</div>
+											</div>
+										</div>
+										<div class="col-md-3">
+											<div class="form-group">
+												<label class="form-label">To:</label>
+												<div class="input-group">
+													<div class="input-group-prepend">
+														<div class="input-group-text">
+															<i class="feather feather-calendar"></i>
+														</div>
+													</div><input class="form-control fc-datepicker" placeholder="DD-MM-YYYY" type="text">
+												</div>
+											</div>
+										</div>
+										<div class="col-md-3">
+											<div class="form-group mt-5">
+												<a href="#" class="btn btn-primary btn-block">Search</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card-body pl-0 pr-0 pt-0">
+									<div class="table-responsive">
+										<table class="table table-vcenter text-nowrap table-hover supportticket-list border-bottom">
+											<thead>
+												<tr class="bg-light">
+													<th class="border-bottom-0">#ID</th>
+													<th class="border-bottom-0">Subject</th>
+													<th class="border-bottom-0">User</th>
+													<th class="border-bottom-0 w-5">Category</th>
+													<th class="border-bottom-0 w-5">Status</th>
+													<th class="border-bottom-0">Last Replied</th>
+													<th class="border-bottom-0 w-5">Action</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>#01</td>
+													<td>
+														<div><a href="#" class="h5">Sed ut perspiciatis</a><span class="badge badge-success-light ml-2 badge-md">Low</span></div>
+														<small class="fs-12 text-muted"><i class="fa fa-clock-o mr-1 text-muted"></i>Opened: <span class="font-weight-normal1">12-01-2021 12:10AM</span></small>
+													</td>
+													<td><a href="#" class="">Faith Harris</a></td>
+													<td>Support</td>
+													<td><span class="badge badge-success">Open</span></td>
+													<td><span class="fs-13 text-muted">5 hours ago</span></td>
+													<td>
+														<div class="d-flex">
+															<a href="#" class="action-btns1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="feather feather-more-vertical text-primary"></i></a>
+															<ul class="dropdown-menu dropdown-menu-right" role="menu">
+																<li><a href="#"><i class="feather feather-send mr-2"></i>Reply Ticket</a></li>
+																<li><a href="#"><i class="feather feather-eye mr-2"></i>View Ticket</a></li>
+																<li><a href="#"><i class="feather feather-trash-2 mr-2"></i>Delete Ticket</a></li>
+																<li><a href="#"><i class="feather feather-settings mr-2"></i>More</a></li>
+															</ul>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td>#02</td>
+													<td>
+														<div><a href="#" class="h5">Excepteur occaecat</a><span class="badge badge-success-light ml-2 badge-md">Low</span></div>
+														<small class="fs-12 text-muted"><i class="fa fa-clock-o mr-1 text-muted"></i>Opened: <span class="font-weight-normal1">05-02-2021 10:00AM</span></small>
+													</td>
+													<td><a href="#" class="">Faith Harris</a></td>
+													<td>Services</td>
+													<td><span class="badge badge-danger">Closed</span></td>
+													<td><span class="fs-13 text-muted">12 hours ago</span></td>
+													<td>
+														<div class="d-flex">
+															<a href="#" class="action-btns1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="feather feather-more-vertical text-primary"></i></a>
+															<ul class="dropdown-menu dropdown-menu-right" role="menu">
+																<li><a href="#"><i class="feather feather-send mr-2"></i>Reply Ticket</a></li>
+																<li><a href="#"><i class="feather feather-eye mr-2"></i>View Ticket</a></li>
+																<li><a href="#"><i class="feather feather-trash-2 mr-2"></i>Delete Ticket</a></li>
+																<li><a href="#"><i class="feather feather-settings mr-2"></i>More</a></li>
+															</ul>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td>#03</td>
+													<td>
+														<div><a href="#" class="h5">Sample Test1</a><span class="badge badge-danger-light ml-2 badge-md">High</span></div>
+														<small class="fs-12 text-muted"><i class="fa fa-clock-o mr-1 text-muted"></i>Opened: <span class="font-weight-normal1">05-02-2021 05:30PM</span></small>
+													</td>
+													<td><a href="#" class="">Amelia Russell</a></td>
+													<td>Customization</td>
+													<td><span class="badge badge-success">open</span></td>
+													<td><span class="fs-13 text-muted">1 week ago</span></td>
+													<td>
+														<div class="d-flex">
+															<a href="#" class="action-btns1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="feather feather-more-vertical text-primary"></i></a>
+															<ul class="dropdown-menu dropdown-menu-right" role="menu">
+																<li><a href="#"><i class="feather feather-send mr-2"></i>Reply Ticket</a></li>
+																<li><a href="#"><i class="feather feather-eye mr-2"></i>View Ticket</a></li>
+																<li><a href="#"><i class="feather feather-trash-2 mr-2"></i>Delete Ticket</a></li>
+																<li><a href="#"><i class="feather feather-settings mr-2"></i>More</a></li>
+															</ul>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td>#04</td>
+													<td>
+														<div><a href="#" class="h5">Sample Test2</a><span class="badge badge-warning-light ml-2 badge-md">Medium</span></div>
+														<small class="fs-12 text-muted"><i class="fa fa-clock-o mr-1 text-muted"></i>Opened: <span class="font-weight-normal1">05-02-2021 10:45AM</span></small>
+													</td>
+													<td><a href="#" class="">Max Wilson</a></td>
+													<td>Support</td>
+													<td><span class="badge badge-danger">Closed</span></td>
+													<td><span class="fs-13 text-muted">3 weeks ago</span></td>
+													<td>
+														<div class="d-flex">
+															<a href="#" class="action-btns1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="feather feather-more-vertical text-primary"></i></a>
+															<ul class="dropdown-menu dropdown-menu-right" role="menu">
+																<li><a href="#"><i class="feather feather-send mr-2"></i>Reply Ticket</a></li>
+																<li><a href="#"><i class="feather feather-eye mr-2"></i>View Ticket</a></li>
+																<li><a href="#"><i class="feather feather-trash-2 mr-2"></i>Delete Ticket</a></li>
+																<li><a href="#"><i class="feather feather-settings mr-2"></i>More</a></li>
+															</ul>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td>#05</td>
+													<td>
+														<div><a href="#" class="h5">Ut aut reiciendi</a><span class="badge badge-success-light ml-2 badge-md">Low</span></div>
+														<small class="fs-12 text-muted"><i class="fa fa-clock-o mr-1 text-muted"></i>Opened: <span class="font-weight-normal1">21-04-2021 11:50AM</span></small>
+													</td>
+													<td><a href="#" class="">Melanie Coleman</a></td>
+													<td>Services</td>
+													<td><span class="badge badge-success">Open</span></td>
+													<td><span class="fs-13 text-muted">4 weeks ago</span></td>
+													<td>
+														<div class="d-flex">
+															<a href="#" class="action-btns1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="feather feather-more-vertical text-primary"></i></a>
+															<ul class="dropdown-menu dropdown-menu-right" role="menu">
+																<li><a href="#"><i class="feather feather-send mr-2"></i>Reply Ticket</a></li>
+																<li><a href="#"><i class="feather feather-eye mr-2"></i>View Ticket</a></li>
+																<li><a href="#"><i class="feather feather-trash-2 mr-2"></i>Delete Ticket</a></li>
+																<li><a href="#"><i class="feather feather-settings mr-2"></i>More</a></li>
+															</ul>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td>#06</td>
+													<td>
+														<div><a href="#" class="h5">Unde omnis iste natus</a><span class="badge badge-success-light ml-2 badge-md">Low</span></div>
+														<small class="fs-12 text-muted"><i class="fa fa-clock-o mr-1 text-muted"></i>Opened: <span class="font-weight-normal1">11-03-2021 12:50PM</span></small>
+													</td>
+													<td><a href="#" class="">Adam Quinn</a></td>
+													<td>Services</td>
+													<td><span class="badge badge-success">Open</span></td>
+													<td><span class="fs-13 text-muted">1 month ago</span></td>
+													<td>
+														<div class="d-flex">
+															<a href="#" class="action-btns1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="feather feather-more-vertical text-primary"></i></a>
+															<ul class="dropdown-menu dropdown-menu-right" role="menu">
+																<li><a href="#"><i class="feather feather-send mr-2"></i>Reply Ticket</a></li>
+																<li><a href="#"><i class="feather feather-eye mr-2"></i>View Ticket</a></li>
+																<li><a href="#"><i class="feather feather-trash-2 mr-2"></i>Delete Ticket</a></li>
+																<li><a href="#"><i class="feather feather-settings mr-2"></i>More</a></li>
+															</ul>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td>#07</td>
+													<td>
+														<div><a href="#" class="h5">Et harum quidem</a><span class="badge badge-warning-light ml-2 badge-md">Medium</span></div>
+														<small class="fs-12 text-muted"><i class="fa fa-clock-o mr-1 text-muted"></i>Opened: <span class="font-weight-normal1">11-04-2021 03:50PM</span></small>
+													</td>
+													<td><a href="#" class="">Victoria Lyman</a></td>
+													<td>Support</td>
+													<td><span class="badge badge-success">Open</span></td>
+													<td><span class="fs-13 text-muted">3 months ago</span></td>
+													<td>
+														<div class="d-flex">
+															<a href="#" class="action-btns1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="feather feather-more-vertical text-primary"></i></a>
+															<ul class="dropdown-menu dropdown-menu-right" role="menu">
+																<li><a href="#"><i class="feather feather-send mr-2"></i>Reply Ticket</a></li>
+																<li><a href="#"><i class="feather feather-eye mr-2"></i>View Ticket</a></li>
+																<li><a href="#"><i class="feather feather-trash-2 mr-2"></i>Delete Ticket</a></li>
+																<li><a href="#"><i class="feather feather-settings mr-2"></i>More</a></li>
+															</ul>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td>#08</td>
+													<td>
+														<div><a href="#" class="h5">Maiores alias aut</a><span class="badge badge-danger-light ml-2 badge-md">High</span></div>
+														<small class="fs-12 text-muted"><i class="fa fa-clock-o mr-1 text-muted"></i>Opened: <span class="font-weight-normal1">17-03-2021 12:05AM</span></small>
+													</td>
+													<td><a href="#" class="">Peter Hill</a></td>
+													<td>Services</td>
+													<td><span class="badge badge-success">Open</span></td>
+													<td><span class="fs-13 text-muted">4 months ago</span></td>
+													<td>
+														<div class="d-flex">
+															<a href="#" class="action-btns1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="feather feather-more-vertical text-primary"></i></a>
+															<ul class="dropdown-menu dropdown-menu-right" role="menu">
+																<li><a href="#"><i class="feather feather-send mr-2"></i>Reply Ticket</a></li>
+																<li><a href="#"><i class="feather feather-eye mr-2"></i>View Ticket</a></li>
+																<li><a href="#"><i class="feather feather-trash-2 mr-2"></i>Delete Ticket</a></li>
+																<li><a href="#"><i class="feather feather-settings mr-2"></i>More</a></li>
+															</ul>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td>#09</td>
+													<td>
+														<div><a href="#" class="h5">Quis autem vel</a><span class="badge badge-danger-light ml-2 badge-md">High</span></div>
+														<small class="fs-12 text-muted"><i class="fa fa-clock-o mr-1 text-muted"></i>Opened: <span class="font-weight-normal1">17-02-2021 10:00AM</span></small>
+													</td>
+													<td><a href="#" class="">Maria Bower</a></td>
+													<td>Support</td>
+													<td><span class="badge badge-success">Open</span></td>
+													<td><span class="fs-13 text-muted">6 months ago</span></td>
+													<td>
+														<div class="d-flex">
+															<a href="#" class="action-btns1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="feather feather-more-vertical text-primary"></i></a>
+															<ul class="dropdown-menu dropdown-menu-right" role="menu">
+																<li><a href="#"><i class="feather feather-send mr-2"></i>Reply Ticket</a></li>
+																<li><a href="#"><i class="feather feather-eye mr-2"></i>View Ticket</a></li>
+																<li><a href="#"><i class="feather feather-trash-2 mr-2"></i>Delete Ticket</a></li>
+																<li><a href="#"><i class="feather feather-settings mr-2"></i>More</a></li>
+															</ul>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td>#10</td>
+													<td>
+														<div><a href="#" class="h5">Ut aut reiciendi</a><span class="badge badge-danger-light ml-2 badge-md">High</span></div>
+														<small class="fs-12 text-muted"><i class="fa fa-clock-o mr-1 text-muted"></i>Opened: <span class="font-weight-normal1">11-03-2021 02:10PM</span></small>
+													</td>
+													<td><a href="#" class="">Austin Bell</a></td>
+													<td>Services</td>
+													<td><span class="badge badge-danger">closed</span></td>
+													<td><span class="fs-13 text-muted">1 year ago</span></td>
+													<td>
+														<div class="d-flex">
+															<a href="#" class="action-btns1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="feather feather-more-vertical text-primary"></i></a>
+															<ul class="dropdown-menu dropdown-menu-right" role="menu">
+																<li><a href="#"><i class="feather feather-send mr-2"></i>Reply Ticket</a></li>
+																<li><a href="#"><i class="feather feather-eye mr-2"></i>View Ticket</a></li>
+																<li><a href="#"><i class="feather feather-trash-2 mr-2"></i>Delete Ticket</a></li>
+																<li><a href="#"><i class="feather feather-settings mr-2"></i>More</a></li>
+															</ul>
+														</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+										<nav aria-label="navigation">
+											<ul class="pagination justify-content-center mb-0">
+												<li class="page-item disabled">
+													<a class="page-link" href="#" tabindex="-1">
+														<i class="fa fa-angle-left"></i>
+														<span class="sr-only">Previous</span>
+													</a>
+												</li>
+												<li class="page-item"><a class="page-link" href="#">1</a></li>
+												<li class="page-item active"><a class="page-link" href="#">2</a></li>
+												<li class="page-item"><a class="page-link" href="#">3</a></li>
+												<li class="page-item">
+													<a class="page-link" href="#">
+														<i class="fa fa-angle-right"></i>
+														<span class="sr-only">Next</span>
+													</a>
+												</li>
+											</ul>
+										</nav>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--Section-->
+
+		<!-- Section -->
+		<section class="sptb bg-white">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-7 col-xl-6 col-md-12">
+						<div class="sub-newsletter">
+							<h3 class="mb-2 fs-20"><i class="fa fa-paper-plane-o mr-2"></i> Subscribe To Our Onlinesletter</h3>
+							<p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+						</div>
+					</div>
+					<div class="col-lg-5 col-xl-6 col-md-12">
+						<div class="input-group sub-input mt-1">
+							<input class="form-control input-lg" placeholder="Enter your Email" type="text">
+							<div class="input-group-append">
+								<button class="btn ripple btn-primary btn-lg br-tr-3 br-br-3" >Subscribe</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Section -->
+
+		<!--Section-->
+		<section class="spfooter">
+			<footer class="text-white footer-support">
+				<div class="footer-main">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-2 col-md-12">
+								<h6>Our Services</h6>
+								<ul class="list-unstyled mb-0">
+									<li>
+										<a href="#">Our Team</a>
+									</li>
+									<li>
+										<a href="#">Contact US</a>
+									</li>
+									<li>
+										<a href="#">About</a>
+									</li>
+									<li>
+										<a href="#">Services</a>
+									</li>
+								</ul>
+							</div>
+							<div class="col-lg-2 col-md-12">
+								<h6 class="mt-5 mt-md-0">Support</h6>
+								<ul class="list-unstyled mb-0">
+									<li>
+										<a href="#">FAQ</a>
+									</li>
+									<li>
+										<a href="#">Terms of Service</a>
+									</li>
+									<li>
+										<a href="#">Privacy Policy</a>
+									</li>
+									<li>
+										<a href="#">Help</a>
+									</li>
+								</ul>
+							</div>
+							<div class="col-lg-4 col-md-12">
+								<h6 class="mt-5 mt-md-0">Get In Touch</h6>
+								<ul class="list-unstyled mb-0">
+									<li>
+										<a href="#"><i class="fa fa-home mr-3"></i> New York, NY 10012, US-52014</a>
+									</li>
+									<li>
+										<a href="#"><i class="fa fa-envelope mr-3 fs-12"></i> info12323@example.com</a>
+									</li>
+									<li>
+										<a href="#"><i class="fa fa-phone mr-3"></i> + 01 234 567 88, + 01 234 567 88</a>
+									</li>
+									 <li>
+										<a href="#"><i class="fa fa-print mr-3"></i> + 01 234 567 89, + 01 234 567 89</a>
+									</li>
+								</ul>
+							</div>
+							<div class="col-lg-4 col-md-12">
+								<h6 class="mt-5 mt-md-0">Subscribe</h6>
+								<div class="input-group">
+									<input type="text" class="form-control" placeholder="Email">
+									<div class="input-group-append ">
+										<button  class="btn btn-primary">
+											Subscribe
+										</button>
+									</div>
+								</div>
+								<h6 class="mb-2 mt-5">Social Icons</h6>
+								<ul class="social-icons mb-0 mt-3">
+									<li>
+										<a class="social-icon" href=""><i class="fa fa-facebook"></i></a>
+									</li>
+									<li>
+										<a class="social-icon" href=""><i class="fa fa-twitter"></i></a>
+									</li>
+									<li>
+										<a class="social-icon" href=""><i class="fa fa-rss"></i></a>
+									</li>
+									<li>
+										<a class="social-icon" href=""><i class="fa fa-youtube"></i></a>
+									</li>
+									<li>
+										<a class="social-icon" href=""><i class="fa fa-linkedin"></i></a>
+									</li>
+									<li>
+										<a class="social-icon" href=""><i class="fa fa-google-plus"></i></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="sub-footer">
+					<div class="container">
+						<div class="row d-flex">
+							<div class="col-lg-12 col-sm-12 pt-5 pb-5 text-center">
+								<p class="mb-0">Copyright © 2021 <a href="#" class="fs-14 text-primary">Dayone</a>. Designed by <a href="#" class="fs-14 text-primary"> Spruko Technologies Pvt.Ltd </a>All rights reserved. </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</section>
+		<!--Section-->
+
+		<!--Login Modal-->
+		<div class="modal fade"  id="loginmodal">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Login</h5>
+						<button  class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">×</span>
+						</button>
+					</div>
+					<div class="modal-body p-0">
+						<div class="single-page customerpage">
+							<div class="wrapper wrapper2 box-shadow-0 border-0">
+								<div class="card-body pb-4">
+									<div class="btn-list d-flex">
+										<a class="btn btn-google btn-block" href="https://www.google.com/gmail/"><i class="fa fa-google fa-1x mr-2"></i> Google</a>
+										 <a class="btn btn-twitter" href="https://twitter.com/"><i class="fa fa-twitter fa-1x"></i></a>
+										 <a class="btn btn-facebook" href="https://www.facebook.com/"><i class="fa fa-facebook fa-1x"></i></a>
+									</div>
+								</div>
+								<hr class="divider">
+								<form class="card-body pt-3" id="login" name="login">
+									<div class="form-group">
+										<label class="form-label">Mail or Username</label>
+										<input class="form-control" placeholder="Email" type="email">
+									</div>
+									<div class="form-group">
+										<label class="form-label">Password</label>
+										<input class="form-control" placeholder="password" type="password">
+									</div>
+									<div class="submit">
+										<a class="btn btn-primary btn-block" href="index.html">Login</a>
+									</div>
+									<div class="text-center mt-3">
+										<p class="mb-2"><a href="#">Forgot Password</a></p>
+										<p class="text-dark mb-0">Don't have account?<a class="text-primary ml-1" href="#" data-toggle="modal" data-target="#registermodal" data-dismiss="modal">Register</a></p>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Login Modal  -->
+
+		<!--Register Modal-->
+		<div class="modal fade"  id="registermodal">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Register</h5>
+						<button  class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">×</span>
+						</button>
+					</div>
+					<div class="modal-body p-0">
+						<div class="single-page customerpage">
+							<div class="wrapper wrapper2 box-shadow-0 border-0">
+								<div class="card-body pb-4">
+									<div class="btn-list d-flex">
+										<a class="btn btn-google btn-block" href="https://www.google.com/gmail/"><i class="fa fa-google fa-1x mr-2"></i> Google</a>
+										 <a class="btn btn-twitter" href="https://twitter.com/"><i class="fa fa-twitter fa-1x"></i></a>
+										 <a class="btn btn-facebook" href="https://www.facebook.com/"><i class="fa fa-facebook fa-1x"></i></a>
+									</div>
+								</div>
+								<hr class="divider">
+								<form class="card-body pt-3" id="register" name="register">
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-group">
+												<label class="form-label">First Name</label>
+												<input class="form-control" placeholder="First Name" type="text">
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group">
+												<label class="form-label">Last Name</label>
+												<input class="form-control" placeholder="Last Name" type="text">
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="form-label">Mail or Username</label>
+										<input class="form-control" placeholder="Email" type="email">
+									</div>
+									<div class="form-group">
+										<label class="form-label">Password</label>
+										<input class="form-control" placeholder="password" type="password">
+									</div>
+									<div class="form-group">
+										<label class="form-label">Captcha</label>
+										<input class="form-control" placeholder="captch" type="text">
+										<div class="captch-body">
+											<img src="../../assets/images/png/captcha.png" alt="img">
+										</div>
+									</div>
+									<div class="submit">
+										<a class="btn btn-primary btn-block" href="index.html">Submit</a>
+									</div>
+									<div class="text-center mt-3">
+										<p class="text-dark mb-0">Already have an account?<a class="text-primary ml-1" href="#" data-toggle="modal" data-target="#loginmodal" data-dismiss="modal">Login</a></p>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Register Modal  -->
+
+		<!-- Back to top -->
+		<a href="#top" id="back-to-top"><span class="feather feather-chevrons-up"></span></a>
+
+		<!-- Jquery js-->
+		<script src="../../assets/plugins/jquery/jquery.min.js"></script>
+
+		<!--Moment js-->
+		<script src="../../assets/plugins/moment/moment.js"></script>
+
+		<!-- Bootstrap4 js-->
+		<script src="../../assets/plugins/bootstrap/popper.min.js"></script>
+		<script src="../../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+		<!--Othercharts js-->
+		<script src="../../assets/plugins/othercharts/jquery.sparkline.min.js"></script>
+
+		<!-- P-scroll js-->
+		<script src="../../assets/plugins/p-scrollbar/p-scrollbar.js"></script>
+
+		<!-- Select2 js -->
+		<script src="../../assets/plugins/select2/select2.full.min.js"></script>
+
+		<!--INTERNAL Horizontalmenu js -->
+		<script src="../../assets/plugins/horizontal-menu/horizontal-menu.js"></script>
+
+		<!--INTERNAL wowmaster js -->
+		<script src="../../assets/plugins/wowmaster/wow.js"></script>
+
+		<!--INTERNAL jquery.autocomplete js -->
+		<script src="../../assets/plugins/jquery.autocomplete/jquery.autocomplete.js"></script>
+		<script src="../../assets/plugins/jquery.autocomplete/custom-autocomplete.js"></script>
+
+		<!--INTERNAL Sticky js -->
+		<script src="../../assets/js/sticky2.js"></script>
+
+		<!-- INTERNAL Vertical-scroll js-->
+		<script src="../../assets/plugins/vertical-scroll/jquery.bootstrap.newsbox.js"></script>
+
+		<!--INTERNAL Owl-carousel js -->
+		<script src="../../assets/plugins/owl-carousel/owl-carousel.js"></script>
+
+		<!-- INTERNAL Summernote js  -->
+		<script src="../../assets/plugins/summernote/summernote-bs4.js"></script>
+
+		<!-- INTERNAL Data tables -->
+		<script src="../../assets/plugins/datatable/js/jquery.dataTables.min.js"></script>
+		<script src="../../assets/plugins/datatable/js/dataTables.bootstrap4.js"></script>
+		<script src="../../assets/plugins/datatable/dataTables.responsive.min.js"></script>
+		<script src="../../assets/plugins/datatable/responsive.bootstrap4.min.js"></script>
+
+		<!-- INTERNAL Datepicker js -->
+		<script src="../../assets/plugins/modal-datepicker/datepicker.js"></script>
+
+		<!-- INTERNAL Index js-->
+		<script src="../../assets/js/support/support-sidemenu.js"></script>
+		<script src="../../assets/js/support/support-ticketlist.js"></script>
+
+		<!-- Custom js-->
+		<script src="../../assets/js/custom.js"></script>
+
+	</body>
+</html>
