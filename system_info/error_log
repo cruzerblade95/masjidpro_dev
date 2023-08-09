@@ -1,0 +1,32 @@
+[21-Mar-2023 08:52:27 UTC] PHP Notice:  Undefined variable: output in /home/tahfizte/masjidpro.com/system_info/ProcessList.phpclass on line 214
+[21-Mar-2023 08:52:27 UTC] PHP Stack trace:
+[21-Mar-2023 08:52:27 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/system_info/index.php:0
+[21-Mar-2023 08:52:27 UTC] PHP   2. ProcessList->__construct($load = *uninitialized*) /home/tahfizte/masjidpro.com/system_info/index.php:20
+[21-Mar-2023 08:52:27 UTC] PHP   3. ProcessList->Refresh() /home/tahfizte/masjidpro.com/system_info/ProcessList.phpclass:50
+[21-Mar-2023 08:52:27 UTC] PHP   4. ProcessList->UnixPs() /home/tahfizte/masjidpro.com/system_info/ProcessList.phpclass:128
+[21-Mar-2023 08:52:27 UTC] PHP Notice:  Undefined variable: status in /home/tahfizte/masjidpro.com/system_info/ProcessList.phpclass on line 214
+[21-Mar-2023 08:52:27 UTC] PHP Stack trace:
+[21-Mar-2023 08:52:27 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/system_info/index.php:0
+[21-Mar-2023 08:52:27 UTC] PHP   2. ProcessList->__construct($load = *uninitialized*) /home/tahfizte/masjidpro.com/system_info/index.php:20
+[21-Mar-2023 08:52:27 UTC] PHP   3. ProcessList->Refresh() /home/tahfizte/masjidpro.com/system_info/ProcessList.phpclass:50
+[21-Mar-2023 08:52:27 UTC] PHP   4. ProcessList->UnixPs() /home/tahfizte/masjidpro.com/system_info/ProcessList.phpclass:128
+[21-Mar-2023 08:52:27 UTC] PHP Warning:  exec() has been disabled for security reasons in /home/tahfizte/masjidpro.com/system_info/ProcessList.phpclass on line 214
+[21-Mar-2023 08:52:27 UTC] PHP Stack trace:
+[21-Mar-2023 08:52:27 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/system_info/index.php:0
+[21-Mar-2023 08:52:27 UTC] PHP   2. ProcessList->__construct($load = *uninitialized*) /home/tahfizte/masjidpro.com/system_info/index.php:20
+[21-Mar-2023 08:52:27 UTC] PHP   3. ProcessList->Refresh() /home/tahfizte/masjidpro.com/system_info/ProcessList.phpclass:50
+[21-Mar-2023 08:52:27 UTC] PHP   4. ProcessList->UnixPs() /home/tahfizte/masjidpro.com/system_info/ProcessList.phpclass:128
+[21-Mar-2023 08:52:27 UTC] PHP   5. exec('ps -aefwwww', NULL, NULL) /home/tahfizte/masjidpro.com/system_info/ProcessList.phpclass:214
+[21-Mar-2023 08:52:27 UTC] PHP Notice:  Undefined variable: output in /home/tahfizte/masjidpro.com/system_info/ProcessList.phpclass on line 215
+[21-Mar-2023 08:52:27 UTC] PHP Stack trace:
+[21-Mar-2023 08:52:27 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/system_info/index.php:0
+[21-Mar-2023 08:52:27 UTC] PHP   2. ProcessList->__construct($load = *uninitialized*) /home/tahfizte/masjidpro.com/system_info/index.php:20
+[21-Mar-2023 08:52:27 UTC] PHP   3. ProcessList->Refresh() /home/tahfizte/masjidpro.com/system_info/ProcessList.phpclass:50
+[21-Mar-2023 08:52:27 UTC] PHP   4. ProcessList->UnixPs() /home/tahfizte/masjidpro.com/system_info/ProcessList.phpclass:128
+[21-Mar-2023 08:52:27 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/tahfizte/masjidpro.com/system_info/ProcessList.phpclass on line 215
+[21-Mar-2023 08:52:27 UTC] PHP Stack trace:
+[21-Mar-2023 08:52:27 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/system_info/index.php:0
+[21-Mar-2023 08:52:27 UTC] PHP   2. ProcessList->__construct($load = *uninitialized*) /home/tahfizte/masjidpro.com/system_info/index.php:20
+[21-Mar-2023 08:52:27 UTC] PHP   3. ProcessList->Refresh() /home/tahfizte/masjidpro.com/system_info/ProcessList.phpclass:50
+[21-Mar-2023 08:52:27 UTC] PHP   4. ProcessList->UnixPs() /home/tahfizte/masjidpro.com/system_info/ProcessList.phpclass:128
+[21-Mar-2023 08:52:27 UTC] PHP   5. count($var = NULL) /home/tahfizte/masjidpro.com/system_info/ProcessList.phpclass:215

@@ -1,0 +1,4 @@
+[19-Jun-2023 10:33:50 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/tahfizte/masjidpro.com/Masjid/accounts/kewangan/list_rekod_transaksi_kewangan.php on line 29
+[19-Jun-2023 10:33:50 UTC] PHP Stack trace:
+[19-Jun-2023 10:33:50 UTC] PHP   1. {main}() /home/tahfizte/masjidpro.com/Masjid/accounts/kewangan/list_rekod_transaksi_kewangan.php:0
+[19-Jun-2023 10:33:50 UTC] PHP   2. mysqli_fetch_assoc($result = NULL) /home/tahfizte/masjidpro.com/Masjid/accounts/kewangan/list_rekod_transaksi_kewangan.php:29
